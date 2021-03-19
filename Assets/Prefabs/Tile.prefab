@@ -8,8 +8,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3278612175631496064}
-  - component: {fileID: 2600836104882934876}
+  - component: {fileID: 3389767182486135120}
+  - component: {fileID: 5026981084778416119}
+  - component: {fileID: 843984273717202927}
+  - component: {fileID: 3369260251546392642}
   m_Layer: 0
   m_Name: Tile
   m_TagString: Untagged
@@ -17,8 +19,8 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3278612175631496064
-Transform:
+--- !u!224 &3389767182486135120
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -31,7 +33,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &2600836104882934876
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0.64, y: 0.32}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &5026981084778416119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4546358334847060693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 751d509b9ea7444099aa46cd2614d43d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!222 &843984273717202927
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4546358334847060693}
+  m_CullTransparentMesh: 0
+--- !u!212 &3369260251546392642
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -70,12 +97,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 199249360466117110, guid: c3de043b27da54c1ea5683062791d4de, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b21db84cbaf9e47cbaed4c13580a6c4b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.32, y: 0.21}
+  m_Size: {x: 1.26, y: 0.83}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
