@@ -535,7 +535,7 @@ MonoBehaviour:
   defaultTexture: {fileID: 0}
   tileDebugWindow: {fileID: 1227009599}
   drawIsometricGrid: 0
-  drawOrthographicGrid: 1
+  drawOrthographicGrid: 0
   activateCellDebugging: 1
   mapParent: {fileID: 1353238721}
 --- !u!4 &1266281540

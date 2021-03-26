@@ -93,11 +93,18 @@ public class MapLoader : MonoBehaviour {
         var _collisionDebug = "";
         var _sideMultiplierX = _cellPos.x < 0 ? -1 : 1;
         var _sideMultiplierY = _cellPos.y < 0 ? -1 : 1;
-        
+
         _cellPos.x = (int) _cellPos.x;
         _cellPos.y = (int) _cellPos.y;
         
         var _finalCell = new Vector2(_cellPos.x, _cellPos.y);
+        
+        if (_sideMultiplierX < 0)
+            _finalCell.x--;
+        
+        if (_sideMultiplierY < 0)
+            _finalCell.y--;
+        
         _cellPos.x *= widthOffset * 100;
         _cellPos.y *= heightOffest * 100;
 
@@ -109,33 +116,87 @@ public class MapLoader : MonoBehaviour {
         var Q = new Vector2(_cellPos.x + widthOffset / 2f * 100 * _sideMultiplierX, _cellPos.y + heightOffest / 2f * 100 * _sideMultiplierY);
         var P = new Vector2(_mousePosCentered.x, _mousePosCentered.y);
 
+        var _extraRestX = 0;
+        var _extraRestY = 0;
+        
         // Check intersections
         if (lineSegmentsIntersect(A, B, Q, P)) {
             // +1 on y
             _collisionDebug = "AB";
             correctValues(out A, out B, out C, out D, out Q, _cellPos, -widthOffset / 2f * 100, heightOffest / 2f * 100, _sideMultiplierX, _sideMultiplierY);
-            //_finalCell.y++;
+            if (_sideMultiplierX > 0) {
+                _finalCell.y++;
+                _extraRestX--;
+            } else {
+                _finalCell.x++;
+                _extraRestY--;
+            }
+
+            if (_sideMultiplierY < 0) {
+                _finalCell.y--;
+            }
+
+            Debug.Log("In AB");
         }
         
         if (lineSegmentsIntersect(B, C, Q, P)) {
             // +1 on x
             _collisionDebug = "BC";
             correctValues(out A, out B, out C, out D, out Q, _cellPos, widthOffset / 2f * 100, heightOffest / 2f * 100, _sideMultiplierX, _sideMultiplierY);
-            //_finalCell.x++;
+            if (_sideMultiplierX > 0) {
+                _extraRestY++;
+                _finalCell.y++;
+            } else {
+                _finalCell.y++;
+                _extraRestX++;
+            }
+
+            Debug.Log($"In BC, x: {_finalCell.x}, y: {_finalCell.y}");
+            
+            if (_sideMultiplierY < 0) {
+                _finalCell.y -= 3;
+                _extraRestX += 2;
+            }
         }
         
         if (lineSegmentsIntersect(C, D, Q, P)) {
             // -1 on x
             _collisionDebug = "CD";
             correctValues(out A, out B, out C, out D, out Q, _cellPos, widthOffset / 2f * 100, -heightOffest / 2f * 100, _sideMultiplierX, _sideMultiplierY);
-            //_finalCell.x--;
+            if (_sideMultiplierX > 0) {
+                _finalCell.y--;
+                _extraRestX++;
+            } else {
+                _finalCell.x--;
+                _extraRestY++;
+            }
+            
+            if (_sideMultiplierY < 0) {
+                _finalCell.x++;
+                _extraRestY += 2;
+            }
+            
+            Debug.Log("In CD");
         }
         
         if (lineSegmentsIntersect(D, A, Q, P)) {
             // -1 on y
             _collisionDebug = "DA";
             correctValues(out A, out B, out C, out D, out Q, _cellPos, -widthOffset / 2f * 100, -heightOffest / 2f * 100, _sideMultiplierX, _sideMultiplierY);
-            //_finalCell.y--;
+            Debug.Log("In DA");
+            
+            if (_sideMultiplierX > 0) {
+                _finalCell.x--;
+                _extraRestY++;
+            } else {
+                _extraRestX--;
+                _finalCell.y--;
+            }
+            
+            if (_sideMultiplierY < 0) {
+                _finalCell.y--;
+                _extraRestX += 2;
+            }
         }
 
         if (activateCellDebugging) {
@@ -152,7 +213,7 @@ public class MapLoader : MonoBehaviour {
             tileDebugWindow.gameObject.transform.localPosition = new Vector3(_mousePosCentered.x + _windowOffsetX, _mousePosCentered.y + _windowOffsetY);
         }
 
-        return new Vector2((int)_finalCell.x, (int)_finalCell.y);
+        return new Vector2(_finalCell.x + _finalCell.y + _extraRestX * _sideMultiplierX, _finalCell.y - _finalCell.x - _extraRestY * _sideMultiplierY);
     }
 
     private void correctValues(out Vector2 A, out Vector2 B, out Vector2 C, out Vector2 D, out Vector2 Q, Vector2 _cellInitPos, float _xCorrection, float _yCorrection, int _xSideM, int _ySideM) {
