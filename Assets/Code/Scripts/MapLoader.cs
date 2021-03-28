@@ -121,82 +121,39 @@ public class MapLoader : MonoBehaviour {
         
         // Check intersections
         if (lineSegmentsIntersect(A, B, Q, P)) {
-            // +1 on y
             _collisionDebug = "AB";
             correctValues(out A, out B, out C, out D, out Q, _cellPos, -widthOffset / 2f * 100, heightOffest / 2f * 100, _sideMultiplierX, _sideMultiplierY);
-            if (_sideMultiplierX > 0) {
-                _finalCell.y++;
-                _extraRestX--;
-            } else {
-                _finalCell.x++;
-                _extraRestY--;
-            }
-
-            if (_sideMultiplierY < 0) {
-                _finalCell.y--;
-            }
-
-            Debug.Log("In AB");
+            fixFirstQuadrant("AB", _sideMultiplierX, _sideMultiplierY, ref _extraRestX, ref _extraRestY, ref _finalCell);
+            fixSecondQuadrant("AB", _sideMultiplierX, _sideMultiplierY, ref _extraRestX, ref _extraRestY, ref _finalCell);
+            fixThirdQuadrant("AB", _sideMultiplierX, _sideMultiplierY, ref _extraRestX, ref _extraRestY, ref _finalCell);
+            fixFourthQuadrant("AB", _sideMultiplierX, _sideMultiplierY, ref _extraRestX, ref _extraRestY, ref _finalCell);
         }
         
         if (lineSegmentsIntersect(B, C, Q, P)) {
-            // +1 on x
             _collisionDebug = "BC";
             correctValues(out A, out B, out C, out D, out Q, _cellPos, widthOffset / 2f * 100, heightOffest / 2f * 100, _sideMultiplierX, _sideMultiplierY);
-            if (_sideMultiplierX > 0) {
-                _extraRestY++;
-                _finalCell.y++;
-            } else {
-                _finalCell.y++;
-                _extraRestX++;
-            }
-
-            Debug.Log($"In BC, x: {_finalCell.x}, y: {_finalCell.y}");
-            
-            if (_sideMultiplierY < 0) {
-                _finalCell.y -= 3;
-                _extraRestX += 2;
-            }
+            fixFirstQuadrant("BC", _sideMultiplierX, _sideMultiplierY, ref _extraRestX, ref _extraRestY, ref _finalCell);
+            fixSecondQuadrant("BC", _sideMultiplierX, _sideMultiplierY, ref _extraRestX, ref _extraRestY, ref _finalCell);
+            fixThirdQuadrant("BC", _sideMultiplierX, _sideMultiplierY, ref _extraRestX, ref _extraRestY, ref _finalCell);
+            fixFourthQuadrant("BC", _sideMultiplierX, _sideMultiplierY, ref _extraRestX, ref _extraRestY, ref _finalCell);
         }
         
         if (lineSegmentsIntersect(C, D, Q, P)) {
-            // -1 on x
             _collisionDebug = "CD";
             correctValues(out A, out B, out C, out D, out Q, _cellPos, widthOffset / 2f * 100, -heightOffest / 2f * 100, _sideMultiplierX, _sideMultiplierY);
-            if (_sideMultiplierX > 0) {
-                _finalCell.y--;
-                _extraRestX++;
-            } else {
-                _finalCell.x--;
-                _extraRestY++;
-            }
-            
-            if (_sideMultiplierY < 0) {
-                _finalCell.x++;
-                _extraRestY += 2;
-            }
-            
-            Debug.Log("In CD");
+            fixFirstQuadrant("CD", _sideMultiplierX, _sideMultiplierY, ref _extraRestX, ref _extraRestY, ref _finalCell);
+            fixSecondQuadrant("CD", _sideMultiplierX, _sideMultiplierY, ref _extraRestX, ref _extraRestY, ref _finalCell);
+            fixThirdQuadrant("CD", _sideMultiplierX, _sideMultiplierY, ref _extraRestX, ref _extraRestY, ref _finalCell);
+            fixFourthQuadrant("CD", _sideMultiplierX, _sideMultiplierY, ref _extraRestX, ref _extraRestY, ref _finalCell);
         }
         
         if (lineSegmentsIntersect(D, A, Q, P)) {
-            // -1 on y
             _collisionDebug = "DA";
             correctValues(out A, out B, out C, out D, out Q, _cellPos, -widthOffset / 2f * 100, -heightOffest / 2f * 100, _sideMultiplierX, _sideMultiplierY);
-            Debug.Log("In DA");
-            
-            if (_sideMultiplierX > 0) {
-                _finalCell.x--;
-                _extraRestY++;
-            } else {
-                _extraRestX--;
-                _finalCell.y--;
-            }
-            
-            if (_sideMultiplierY < 0) {
-                _finalCell.y--;
-                _extraRestX += 2;
-            }
+            fixFirstQuadrant("DA", _sideMultiplierX, _sideMultiplierY, ref _extraRestX, ref _extraRestY, ref _finalCell);
+            fixSecondQuadrant("DA", _sideMultiplierX, _sideMultiplierY, ref _extraRestX, ref _extraRestY, ref _finalCell);
+            fixThirdQuadrant("DA", _sideMultiplierX, _sideMultiplierY, ref _extraRestX, ref _extraRestY, ref _finalCell);
+            fixFourthQuadrant("DA", _sideMultiplierX, _sideMultiplierY, ref _extraRestX, ref _extraRestY, ref _finalCell);
         }
 
         if (activateCellDebugging) {
@@ -265,6 +222,125 @@ public class MapLoader : MonoBehaviour {
         _tileY += -tileCenter.y * (heightOffest);
         
         return new Vector2(_tileX, _tileY);
+    }
+
+    private void fixFirstQuadrant(string _side, int _sideX, int _sideY, ref int _extraX, ref int _extraY, ref Vector2 _finalCell) {
+        if (_sideX > 0 && _sideY > 0) {
+            switch (_side) {
+                case "AB": {
+                    _finalCell.y++;
+                    _extraX--;
+                    break;
+                }
+
+                case "BC": {
+                    _extraY++;
+                    _finalCell.y++;
+                    break;
+                }
+
+                case "CD": {
+                    _finalCell.y--;
+                    _extraX++;
+                    break;
+                }
+
+                case "DA": {
+                    _finalCell.x--;
+                    _extraY++;
+                    break;
+                }
+            }
+        }
+    }
+    private void fixSecondQuadrant(string _side, int _sideX, int _sideY, ref int _extraX, ref int _extraY, ref Vector2 _finalCell) {
+        if (_sideX <= 0 && _sideY > 0) {
+            switch (_side) {
+                case "AB": {
+                    _finalCell.x++;
+                    _extraY--;
+                    break;
+                }
+
+                case "BC": {
+                    _finalCell.y++;
+                    _extraX++;
+                    break;
+                }
+
+                case "CD": {
+                    _finalCell.x--;
+                    _extraY++;
+                    break;
+                }
+
+                case "DA": {
+                    _extraX--;
+                    _finalCell.y--;
+                    break;
+                }
+            }
+        }
+    }
+    
+    private void fixThirdQuadrant(string _side, int _sideX, int _sideY, ref int _extraX, ref int _extraY, ref Vector2 _finalCell) {
+        if (_sideX <= 0 && _sideY < 0) {
+            switch (_side) {
+                case "AB": {
+                    // _finalCell.x++;
+                    _extraY--;
+                    break;
+                }
+
+                case "BC": {
+                    _finalCell.x--;
+                    _extraY--;
+                    break;
+                }
+
+                case "CD": {
+                    // _finalCell.x--;
+                    _extraY++;
+                    break;
+                }
+
+                case "DA": {
+                    _extraX--;
+                    // _finalCell.y--;
+                    break;
+                }
+            }
+        }
+    }
+    
+    private void fixFourthQuadrant(string _side, int _sideX, int _sideY, ref int _extraX, ref int _extraY, ref Vector2 _finalCell) {
+        if (_sideX > 0 && _sideY < 0) {
+            switch (_side) {
+                case "AB": {
+                    //_finalCell.y++;
+                    _extraX--;
+                    break;
+                }
+
+                case "BC": {
+                    _finalCell.y--;
+                    _extraX++;
+                    break;
+                }
+
+                case "CD": {
+                    _finalCell.y++;
+                    _extraY--;
+                    break;
+                }
+
+                case "DA": {
+                    _finalCell.y++;
+                    _extraX--;
+                    break;
+                }
+            }
+        }
     }
 
     public static bool lineSegmentsIntersect(Vector2 lineOneA, Vector2 lineOneB, Vector2 lineTwoA, Vector2 lineTwoB) {

@@ -531,11 +531,11 @@ MonoBehaviour:
   tilePrefab: {fileID: 4546358334847060693, guid: 16105624afa9a41ddb2fb75618dacd1f,
     type: 3}
   mapSize: {x: 5, y: 5}
-  tileCenter: {x: 0, y: 0}
+  tileCenter: {x: 0, y: 2}
   defaultTexture: {fileID: 0}
   tileDebugWindow: {fileID: 1227009599}
   drawIsometricGrid: 0
-  drawOrthographicGrid: 0
+  drawOrthographicGrid: 1
   activateCellDebugging: 1
   mapParent: {fileID: 1353238721}
 --- !u!4 &1266281540
