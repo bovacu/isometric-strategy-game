@@ -125,8 +125,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ae4982c011f433ab9fdcc7f080d974d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tilePos: {fileID: 4759451128844888498}
-  tileType: {fileID: 7013171262615086318}
+  tilePosOrtho: {fileID: 4759451128844888498}
+  tilePosIso: {fileID: 7013171262615086318}
 --- !u!1 &5454915952606968235
 GameObject:
   m_ObjectHideFlags: 0
@@ -139,7 +139,7 @@ GameObject:
   - component: {fileID: 7737442754547889494}
   - component: {fileID: 7013171262615086318}
   m_Layer: 5
-  m_Name: TileType_Txt
+  m_Name: Iso_Txt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -295,7 +295,7 @@ GameObject:
   - component: {fileID: 4374813156711054401}
   - component: {fileID: 4759451128844888498}
   m_Layer: 5
-  m_Name: Pos_Txt
+  m_Name: Ortho_Txt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

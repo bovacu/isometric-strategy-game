@@ -70,7 +70,7 @@ public class MapLoader : MonoBehaviour {
         // multiply by 100 because of the 100 pixels per unit of Unity
         var _mousePosCentered = new Vector2(Input.mousePosition.x - Screen.width / 2f, Input.mousePosition.y - Screen.height / 2f);
         var _cellPos = new Vector2(_mousePosCentered.x / (100 * widthOffset), _mousePosCentered.y / (100 * heightOffest));
-        tileDebugWindow.tileType.text = $"CellPos: ({_cellPos.x}, {_cellPos.y})";
+        tileDebugWindow.tilePosOrtho.text = $"Ortho: ({(int)_cellPos.x}, {(int)_cellPos.y})";
         var _finalCell = getRealCell(new Vector2(_cellPos.x, _cellPos.y), _mousePosCentered);
 
 
@@ -79,7 +79,7 @@ public class MapLoader : MonoBehaviour {
             if(drawOrthographicGrid) drawGridOrthographic(Color.magenta);
         #endif
         
-        tileDebugWindow.tilePos.text = $"CellposFixed: ({(int)_finalCell.x}, {(int)_finalCell.y})";
+        tileDebugWindow.tilePosIso.text = $"Iso: ({(int)_finalCell.x}, {(int)_finalCell.y})";
     }
 
     private Vector2 getRealCell(Vector2 _cellPos, Vector2 _mousePosCentered) {
