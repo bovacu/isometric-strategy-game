@@ -20,10 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ff4361c-badc-40f2-b68c-20fcfc97eaf9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.isometric-strategy-game/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.isometric-strategy-game/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.isometric-strategy-game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.isometric-strategy-game/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Tiles/base4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Tiles/base4.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Models/Tile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Models/Tile.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/MapLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/MapLoader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Tile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Tile.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/AnnotationManager" beforeDir="false" afterPath="$PROJECT_DIR$/Library/AnnotationManager" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
@@ -55,10 +56,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Models/Entity.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Models/Tile.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Scripts/TileDebugWindow.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Scripts/EditorScripts.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Editor/EditorScripts.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Scripts/TileDebugWindow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Models/Tile.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Scripts/MapLoader.cs" />
       </list>
     </option>
@@ -108,7 +109,8 @@
       <workItem from="1616167116172" duration="26201000" />
       <workItem from="1616606791455" duration="1242000" />
       <workItem from="1616702078639" duration="6470000" />
-      <workItem from="1616953514373" duration="2217000" />
+      <workItem from="1616953514373" duration="3250000" />
+      <workItem from="1617121597967" duration="4392000" />
     </task>
     <servers />
   </component>
@@ -141,5 +143,9 @@
       <screen x="1440" y="25" width="1920" height="1055" />
     </state>
     <state x="2091" y="262" key="Github.UntrackedFilesDialog/0.25.1440.801/1440.25.1920.1055@1440.25.1920.1055" timestamp="1616006024909" />
+    <state x="2063" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1617122689125">
+      <screen x="1440" y="25" width="1920" height="1055" />
+    </state>
+    <state x="2063" y="257" width="672" height="678" key="search.everywhere.popup/1440.25.1920.1055/0.25.1440.799@1440.25.1920.1055" timestamp="1617122689125" />
   </component>
 </project>

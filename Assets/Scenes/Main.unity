@@ -263,7 +263,7 @@ GameObject:
   - component: {fileID: 683985389}
   - component: {fileID: 683985388}
   m_Layer: 5
-  m_Name: Image
+  m_Name: centralDot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -281,7 +281,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1383859970}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -530,12 +530,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tilePrefab: {fileID: 4546358334847060693, guid: 16105624afa9a41ddb2fb75618dacd1f,
     type: 3}
-  mapSize: {x: 5, y: 5}
-  tileCenter: {x: 0, y: 2}
+  mapSize: {x: 10, y: 10}
+  tileCenter: {x: 0, y: 5}
   defaultTexture: {fileID: 0}
   tileDebugWindow: {fileID: 1227009599}
   drawIsometricGrid: 0
-  drawOrthographicGrid: 1
+  drawOrthographicGrid: 0
   activateCellDebugging: 1
   mapParent: {fileID: 1353238721}
 --- !u!4 &1266281540
@@ -672,8 +672,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 1227009598}
   - {fileID: 683985387}
+  - {fileID: 1227009598}
   - {fileID: 20547454}
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -887,7 +887,7 @@ PrefabInstance:
     - target: {fileID: 5350621738881613577, guid: d5f19aa0285ed499c9a74552da4740ed,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5350621738881613577, guid: d5f19aa0285ed499c9a74552da4740ed,
         type: 3}

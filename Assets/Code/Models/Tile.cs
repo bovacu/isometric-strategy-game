@@ -1,9 +1,15 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Tile : MonoBehaviour {
-    
-    public Vector2 gridPosition { get; set; }
+
+    [SerializeField] private TextMeshProUGUI positionText;
+
+    public Vector2 gridPosition {
+        set => positionText.text = $"({value.x}, {value.y})";
+    }
+
     public Image originalSprite { get; set; }
     public string tileId { get; set; }
     
