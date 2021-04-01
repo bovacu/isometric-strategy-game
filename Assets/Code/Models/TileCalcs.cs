@@ -11,16 +11,29 @@ public class TileCalcs {
         var _tileX = (_x - _y ) * (tileWidth / 2f);
         var _tileY = (_x + _y) * (tileHeight / 2f);
 
-        // _tileX += widthOffset / 2f;
-        // _tileY += heightOffest / 2f;
+        _tileY += -tileCenter.y / 2f * (tileHeight) - tileCenter.x / 2f * (tileHeight);
+        _tileX += tileCenter.y / 2f * (tileWidth) - tileCenter.x / 2f * (tileWidth);
+
+        if (tileCenter.x % 2 != 0 && tileCenter.y % 2 == 0) {
+            Debug.Log("x odd, y even");
+            _tileX += tileCenter.y / 2f * (tileWidth) - tileCenter.x / 2f * (tileWidth);
+            _tileY += tileCenter.y / 2f * (tileHeight) - tileCenter.x / 2f * (tileHeight);
+        }
         
-        _tileX += tileCenter.x * (tileWidth);
-        _tileY += -tileCenter.y * (tileHeight);
+        if (tileCenter.y % 2 != 0 && tileCenter.x % 2 == 0) {
+            Debug.Log("x even, y odd");
+            _tileX += tileCenter.y / 2f * (tileWidth) - tileCenter.x / 2f * (tileWidth);
+            _tileY -= tileCenter.y / 2f * (tileHeight) - tileCenter.x / 2f * (tileHeight);
+        }
+
+        if (tileCenter.y % 2 != 0 && tileCenter.x % 2 != 0) {
+            _tileY -= tileHeight / 2f;
+        }
         
         return new Vector2(_tileX, _tileY);
     }
     
-    public static Vector2 getRealCell(Vector2 _cellPos, Vector2 _mousePosCentered) {
+    public static Vector2 getRealCell(Vector2 _cellPos, Vector2 _mousePosCentered, Vector2 _worldOffset) {
         // _cellPos is the left-lower corner of the rectangle of the tile, we need to calc all four vertices of the rhombus (A, B, C, D), and then, the center (Q)
         // With that, we will calc if AB, BC, CD, DA intersects with QMosePos. If no intersection, the mouse is over the rhombus inside the rectangle, else
         //    - if AB, the mouse is over the rhombus on upper-left
@@ -44,7 +57,7 @@ public class TileCalcs {
         _cellPos.y *= tileHeight * 100;
 
         var A = new Vector2(_cellPos.x, _cellPos.y + tileHeight / 2f * 100 * _sideMultiplierY);
-        var B = new Vector2(_cellPos.x + tileWidth / 2f * 100 * _sideMultiplierX, _cellPos.y + tileHeight * 100 * _sideMultiplierY);
+        var B = new Vector2(_cellPos.x+ tileWidth / 2f * 100 * _sideMultiplierX, _cellPos.y + tileHeight * 100 * _sideMultiplierY);
         var C = new Vector2(_cellPos.x + tileWidth * 100 * _sideMultiplierX, _cellPos.y + tileHeight / 2f * 100 * _sideMultiplierY);
         var D = new Vector2(_cellPos.x + tileWidth / 2f * 100 * _sideMultiplierX, _cellPos.y);
         
@@ -99,7 +112,7 @@ public class TileCalcs {
             Debug.DrawLine(new Vector3(B.x / 100f, B.y / 100f), new Vector3(C.x / 100f, C.y / 100f), !_collisionDebug.Contains("BC") ? Color.green : Color.red);
             Debug.DrawLine(new Vector3(C.x / 100f, C.y / 100f), new Vector3(D.x / 100f, D.y / 100f), !_collisionDebug.Contains("CD") ? Color.green : Color.red);
             Debug.DrawLine(new Vector3(D.x / 100f, D.y / 100f), new Vector3(A.x / 100f, A.y / 100f), !_collisionDebug.Contains("DA") ? Color.green : Color.red);
-        
+
             // Line from Q to mouse pos
             Debug.DrawLine(new Vector3(Q.x / 100f, Q.y / 100f), new Vector3(P.x / 100f, P.y / 100f), Color.red);
         }

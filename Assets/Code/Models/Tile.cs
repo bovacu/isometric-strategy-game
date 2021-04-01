@@ -5,30 +5,21 @@ using UnityEngine.UI;
 public class Tile : MonoBehaviour {
 
     [SerializeField] private TextMeshProUGUI positionText;
+    [SerializeField] private Image selected;
 
+    private Vector2 gridPos;
     public Vector2 gridPosition {
-        set => positionText.text = $"({value.x}, {value.y})";
+        get => gridPos;
+
+        set {
+            positionText.text = $"({value.x}, {value.y})";
+            gridPos = value;
+        }
     }
 
-    public Image originalSprite { get; set; }
-    public string tileId { get; set; }
-    
     public Vector2 size { get; set; }
 
-    public bool mouseIsOver(float _x, float _y) {
-        return false;
-    }
-
-    public void setSelected(bool _selected) {
-        if(_selected) select();
-        else deselect();
-    }
-
-    private void select() {
-        originalSprite.color = Color.red;
-    }
-
-    private void deselect() {
-        originalSprite.color = Color.red;
+    public void selectTile(bool _select) {
+        selected.gameObject.SetActive(_select);
     }
 }
