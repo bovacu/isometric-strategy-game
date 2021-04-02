@@ -6,3 +6,7 @@ obj
 Assembly-CSharp-Editor.csproj
 Library
 obj
+obj
+Library
+Assembly-CSharp.csproj
+.idea

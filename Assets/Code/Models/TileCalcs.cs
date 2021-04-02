@@ -15,13 +15,11 @@ public class TileCalcs {
         _tileX += tileCenter.y / 2f * (tileWidth) - tileCenter.x / 2f * (tileWidth);
 
         if (tileCenter.x % 2 != 0 && tileCenter.y % 2 == 0) {
-            Debug.Log("x odd, y even");
             _tileX += tileCenter.y / 2f * (tileWidth) - tileCenter.x / 2f * (tileWidth);
             _tileY += tileCenter.y / 2f * (tileHeight) - tileCenter.x / 2f * (tileHeight);
         }
         
         if (tileCenter.y % 2 != 0 && tileCenter.x % 2 == 0) {
-            Debug.Log("x even, y odd");
             _tileX += tileCenter.y / 2f * (tileWidth) - tileCenter.x / 2f * (tileWidth);
             _tileY -= tileCenter.y / 2f * (tileHeight) - tileCenter.x / 2f * (tileHeight);
         }

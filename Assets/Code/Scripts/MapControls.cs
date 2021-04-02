@@ -5,58 +5,69 @@ using UnityEngine.UIElements;
 
 public class MapControls : MonoBehaviour {
 
+    [Header("Camera")]
     [SerializeField] private Camera camera;
+
+    [Header("Map")]
     [SerializeField] private GameObject map;
-    
+    [SerializeField] private MapLoader mapLoader;
+
+
+    [Header("Debug")]
     [SerializeField] private TileDebugWindow tileDebugWindow;
     [SerializeField] private bool drawIsometricGrid = false;
     [SerializeField] private bool drawOrthographicGrid = false;
     [SerializeField] private bool activateCellDebugging = true;
 
-    [SerializeField] private MapLoader mapLoader;
+    [Header("Control")]
+    [SerializeField] private float extraMoveSpeed = 2f;
     
     private float minZoom = 1f, maxZoom = 5.4f;
     private float currentZoom = 0;
 
-    private float moveSpeed = 50f;
+    private Vector2 initialClickPoint = Vector2.negativeInfinity;
     
-    // Start is called before the first frame update
     void Start() {
         currentZoom = maxZoom;
         tileDebugWindow.gameObject.SetActive(true);
     }
-
-    // Update is called once per frame
+    
     void Update() {
-        // deselectAll();
-        
+
         moveWithScrollButton(Time.deltaTime);
-        zoom(camera);
-        
+
         var _localPosition = new Vector2(map.GetComponent<RectTransform>().localPosition.x, map.GetComponent<RectTransform>().localPosition.y);
         var _mousePosCentered = new Vector2((Input.mousePosition.x - Screen.width / 2f) * (currentZoom / maxZoom) - _localPosition.x,
             (Input.mousePosition.y - Screen.height / 2f) * (currentZoom / maxZoom) - _localPosition.y);
 
+        zoom(camera, _mousePosCentered);
+        
         var _cellPos = new Vector2(_mousePosCentered.x / (100 * TileCalcs.tileWidth), _mousePosCentered.y / (100 * TileCalcs.tileHeight));
         var _finalCell = TileCalcs.getRealCell(new Vector2(_cellPos.x, _cellPos.y), _mousePosCentered, _localPosition);
 
         leftClick(_finalCell);
         
-        debug(_mousePosCentered, _finalCell, _cellPos);
+        debug(_mousePosCentered, _finalCell);
     }
 
     private void moveWithScrollButton(float _delta) {
         var _current = map.transform.localPosition;
-        if (Input.GetKey(KeyCode.A)) {
-            map.transform.localPosition = new Vector3(_current.x + moveSpeed * _delta, _current.y, _current.z);
-        } else if (Input.GetKey(KeyCode.D)) {
-            map.transform.localPosition = new Vector3(_current.x - moveSpeed * _delta, _current.y, _current.z);
-        }
+
+        if (Input.GetMouseButtonDown((int) MouseButton.RightMouse)) 
+            initialClickPoint = new Vector2((Input.mousePosition.x - Screen.width / 2f) * (currentZoom / maxZoom), (Input.mousePosition.y - Screen.height / 2f) * (currentZoom / maxZoom));
         
-        if (Input.GetKey(KeyCode.W)) {
-            map.transform.localPosition = new Vector3(_current.x, _current.y - moveSpeed * _delta, _current.z);
-        } else if (Input.GetKey(KeyCode.S)) {
-            map.transform.localPosition = new Vector3(_current.x, _current.y + moveSpeed * _delta, _current.z);
+        if (Input.GetMouseButtonUp((int) MouseButton.RightMouse)) 
+            initialClickPoint = Vector2.negativeInfinity;
+        
+        if (!initialClickPoint.Equals(Vector2.negativeInfinity)) {
+            var _P = new Vector2((Input.mousePosition.x - Screen.width / 2f) * (currentZoom / maxZoom), (Input.mousePosition.y - Screen.height / 2f) * (currentZoom / maxZoom));
+            var _Q = initialClickPoint;
+            var _PQ = _Q - _P;
+            var _module = Mathf.Sqrt(_PQ.x * _PQ.x + _PQ.y * _PQ.y);
+            _PQ /= _module; // Normalizing the vector
+            
+            if(!float.IsNaN(_PQ.x) && !float.IsNaN(_PQ.y))
+                map.transform.localPosition = new Vector3(_current.x - _PQ.x * _module * _delta * extraMoveSpeed, _current.y - _PQ.y *  _module * _delta * extraMoveSpeed, _current.z);
         }
     }
 
@@ -68,7 +79,7 @@ public class MapControls : MonoBehaviour {
         }
     }
     
-    private void zoom(Camera _cam) {
+    private void zoom(Camera _cam, Vector2 _mousePos) {
         var ScrollWheelChange = Input.GetAxis("Mouse ScrollWheel");
         if (ScrollWheelChange != 0){
             var _zoom = _cam.orthographicSize;
@@ -76,6 +87,9 @@ public class MapControls : MonoBehaviour {
             _zoom = Mathf.Clamp(_zoom, minZoom, maxZoom);
             _cam.orthographicSize = _zoom;
             currentZoom = _zoom;
+            
+            // map.transform.localPosition = new Vector3(_mousePos.x, _mousePos.y, map.transform.localPosition.z);
+            tileDebugWindow.gameObject.transform.localScale = new Vector3(_zoom / maxZoom, _zoom / maxZoom, _zoom / maxZoom);
         }
     }
     
@@ -109,11 +123,17 @@ public class MapControls : MonoBehaviour {
             Debug.DrawLine(new Vector3(TileCalcs.tileWidth * _c - TileCalcs.tileWidth * 45 - TileCalcs.tileWidth * 15.5f, -TileCalcs.tileHeight * 15), new Vector3(TileCalcs.tileWidth * _c - TileCalcs.tileWidth * 15 - TileCalcs.tileWidth * 15.5f, TileCalcs.tileHeight * 15, 0), _color);
     }
 
-    private void debug(Vector2 _mousePosCentered, Vector2 _finalCell, Vector2 _cellPos) {
-        int _windowOffsetX = 96, _windowOffsetY = _windowOffsetX;
-        tileDebugWindow.gameObject.transform.localPosition = new Vector3(_mousePosCentered.x + _windowOffsetX, _mousePosCentered.y + _windowOffsetY);
-        tileDebugWindow.tilePosIso.text = $"Iso: ({(int)_finalCell.x}, {(int)_finalCell.y})";
-        tileDebugWindow.tilePosOrtho.text = $"MousePos: ({_mousePosCentered.x}, {_mousePosCentered.y})";
+    private void debug(Vector2 _mousePosCentered, Vector2 _finalCell) {
+        if (mapLoader.validArea.mouseInsideMap(_finalCell)) {
+            float _windowOffsetX = 96 * (currentZoom / maxZoom), _windowOffsetY = _windowOffsetX * (currentZoom / maxZoom);
+            if(!tileDebugWindow.isActiveAndEnabled)
+                tileDebugWindow.gameObject.SetActive(true);
+            tileDebugWindow.gameObject.transform.localPosition = new Vector3(_mousePosCentered.x + _windowOffsetX, _mousePosCentered.y + _windowOffsetY);
+            tileDebugWindow.tilePosIso.text = $"Iso: ({(int)_finalCell.x}, {(int)_finalCell.y})";
+        } else {
+            if(tileDebugWindow.isActiveAndEnabled)
+                tileDebugWindow.gameObject.SetActive(false);
+        }
         
         #if UNITY_EDITOR
             if(drawIsometricGrid) drawGridIsometric(Color.green);

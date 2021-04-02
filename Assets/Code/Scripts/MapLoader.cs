@@ -6,25 +6,33 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
-public struct ValidArea {
-    public int maxX_left;
-    public int maxX_right;
-    public int maxY_top;
-    public int maxY_bottom;
+public class ValidArea {
+    public int maxX_left = 1000;
+    public int maxX_right = -1000;
+    public int maxY_top = -1000;
+    public int maxY_bottom = 1000;
 
-    public void adjustArea(Vector2 _mapSize, Vector2 _center) {
-        if (_center.x == 0 && _center.y == 0) {
-            maxX_left = 0;
-            maxY_bottom = 0;
-            maxX_right = (int)_mapSize.x;
-            maxY_top = (int)_mapSize.y;
-            return;
+    public void adjustArea(Vector2 _tilePos) {
+        if (_tilePos.x < 0 && _tilePos.x < maxX_left) {
+            maxX_left = (int)_tilePos.x;
+        } else if(_tilePos.x >= 0 && _tilePos.x > maxX_left) {
+            maxX_right = (int)_tilePos.x;
         }
 
-        maxY_top = (int)(_mapSize.y - _center.y - 1);
-        maxY_bottom = (int)(_center.y - _mapSize.y);
-        
-        
+        if (_tilePos.y < 0 && _tilePos.y < maxY_bottom) {
+            maxY_bottom = (int)_tilePos.y;
+        } else if(_tilePos.y >= 0 && _tilePos.y > maxY_bottom) {
+            maxY_top = (int)_tilePos.y;
+        }
+    }
+
+    public bool mouseInsideMap(Vector2 _mouseCell) {
+        return _mouseCell.x >= maxX_left && _mouseCell.x <= maxX_right && _mouseCell.y >= maxY_bottom &&
+               _mouseCell.y <= maxY_top;
+    }
+    
+    public override string ToString() {
+        return $"T: {maxY_top}, B: {maxY_bottom}, L: {maxX_left}, R: {maxX_right}";
     }
     
 }
@@ -33,13 +41,10 @@ public class MapLoader : MonoBehaviour {
 
     [SerializeField] private GameObject tilePrefab;
     [SerializeField] private Vector2 mapSize;
-    [SerializeField] private Vector2 tileCenter;
-    [SerializeField] private Image defaultTexture;
-
     [SerializeField] private Transform mapParent;
     
     public List<Tile> tilePrefabList = new List<Tile>();
-    public ValidArea validArea = new ValidArea();
+    public readonly ValidArea validArea = new ValidArea();
     
     void Awake() {
         var _center = new Vector2(mapSize.x / 2, mapSize.y / 2);
@@ -48,10 +53,9 @@ public class MapLoader : MonoBehaviour {
 
         if (_center.y % 2 != 0)
             _center.y--;
-        
+
         TileCalcs.tileCenter = _center;
-        validArea.adjustArea(mapSize, tileCenter);
-        
+
         for (var _y = 0; _y < mapSize.y; _y++) {
             for (var _x = 0; _x < mapSize.x; _x++) {
                 var _tilePos = TileCalcs.toGrid(_x, _y);
@@ -65,6 +69,7 @@ public class MapLoader : MonoBehaviour {
                 _tile.gridPosition = TileCalcs.getRealCell(_cellPos, _rect, Vector2.zero);
                 _tile.size = new Vector2(TileCalcs.tileWidth, TileCalcs.tileHeight);
                 
+                validArea.adjustArea(_tile.gridPosition);
                 tilePrefabList.Add(_tile);       
             }
         }
