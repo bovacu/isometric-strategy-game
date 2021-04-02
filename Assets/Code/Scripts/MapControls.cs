@@ -50,6 +50,11 @@ public class MapControls : MonoBehaviour {
         debug(_mousePosCentered, _finalCell);
     }
 
+    private void keyboard() {
+        if(Input.GetKeyDown(KeyCode.C))
+            centerMap();
+    }
+
     private void moveWithScrollButton(float _delta) {
         var _current = map.transform.localPosition;
 

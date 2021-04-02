@@ -8,8 +8,10 @@
           <e p="Models" t="Include">
             <e p="Entity.cs" t="Include" />
             <e p="Tile.cs" t="Include" />
+            <e p="TileCalcs.cs" t="Include" />
           </e>
           <e p="Scripts" t="Include">
+            <e p="MapControls.cs" t="Include" />
             <e p="MapLoader.cs" t="Include" />
             <e p="TileDebugWindow.cs" t="Include" />
           </e>
