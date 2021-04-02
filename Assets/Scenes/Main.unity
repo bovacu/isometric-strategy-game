@@ -707,9 +707,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tilePrefab: {fileID: 4546358334847060693, guid: 16105624afa9a41ddb2fb75618dacd1f,
     type: 3}
-  mapSize: {x: 10, y: 13}
-  tileCenter: {x: 5, y: 5}
-  defaultTexture: {fileID: 0}
+  mapSize: {x: 11, y: 11}
   mapParent: {fileID: 2040943731}
   tilePrefabList: []
 --- !u!4 &1266281540
@@ -1100,11 +1098,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camera: {fileID: 2099657601}
   map: {fileID: 2040943730}
+  mapLoader: {fileID: 1266281539}
   tileDebugWindow: {fileID: 1227009599}
   drawIsometricGrid: 0
-  drawOrthographicGrid: 1
+  drawOrthographicGrid: 0
   activateCellDebugging: 0
-  mapLoader: {fileID: 1266281539}
+  extraMoveSpeed: 2
 --- !u!1 &2099657599
 GameObject:
   m_ObjectHideFlags: 0
