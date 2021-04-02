@@ -72,7 +72,7 @@ public class MapControls : MonoBehaviour {
     }
 
     private void leftClick(Vector2 _finalCell) {
-        if (Input.GetMouseButtonDown((int)MouseButton.LeftMouse)) {
+        if (Input.GetMouseButtonDown((int)MouseButton.LeftMouse) && mapLoader.validArea.mouseInsideMap(_finalCell)) {
             foreach (var _tile in mapLoader.tilePrefabList) {
                 _tile.selectTile((int)_finalCell.x == (int)_tile.gridPosition.x && (int)_finalCell.y == (int)_tile.gridPosition.y);
             }
