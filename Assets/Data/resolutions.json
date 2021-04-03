@@ -1,0 +1,50 @@
+{
+  "0" : {
+    "width" : 800,
+    "height" : 450,
+    "aspect_ratio" : "16:9",
+    "usable" : true
+  },
+  "1" : {
+    "width" : 1024,
+    "height" : 450,
+    "aspect_ratio" : "16:9",
+    "usable" : true
+  },
+  "2" : {
+    "width" : 1280,
+    "height" : 720,
+    "aspect_ratio" : "16:9",
+    "usable" : true
+  },
+  "3" : {
+    "width" : 1366,
+    "height" : 450,
+    "aspect_ratio" : "16:9",
+    "usable" : true
+  },
+  "4" : {
+    "width" : 1600,
+    "height" : 900,
+    "aspect_ratio" : "16:9",
+    "usable" : true
+  },
+  "5" : {
+    "width" : 1920,
+    "height" : 1080,
+    "aspect_ratio" : "16:9",
+    "usable" : true
+  },
+  "6" : {
+    "width" : 2048,
+    "height" : 1080,
+    "aspect_ratio" : "16:9",
+    "usable" : true
+  },
+  "7" : {
+    "width" : 2560,
+    "height" : 1440,
+    "aspect_ratio" : "16:9",
+    "usable" : true
+  }
+}

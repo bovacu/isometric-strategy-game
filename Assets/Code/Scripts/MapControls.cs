@@ -34,16 +34,19 @@ public class MapControls : MonoBehaviour {
     
     void Update() {
 
+        keyboard();
+        
         moveWithScrollButton(Time.deltaTime);
 
-        var _localPosition = new Vector2(map.GetComponent<RectTransform>().localPosition.x, map.GetComponent<RectTransform>().localPosition.y);
-        var _mousePosCentered = new Vector2((Input.mousePosition.x - Screen.width / 2f) * (currentZoom / maxZoom) - _localPosition.x,
-            (Input.mousePosition.y - Screen.height / 2f) * (currentZoom / maxZoom) - _localPosition.y);
+        var _mapOffset = new Vector2(map.GetComponent<RectTransform>().localPosition.x, map.GetComponent<RectTransform>().localPosition.y);
+        var _mousePosCentered = getMousePosFixed(_mapOffset);
 
+        Debug.Log(new Vector2(Input.mousePosition.x - Screen.width / 2f, Input.mousePosition.y - Screen.height / 2f));
+        
         zoom(camera, _mousePosCentered);
         
         var _cellPos = new Vector2(_mousePosCentered.x / (100 * TileCalcs.tileWidth), _mousePosCentered.y / (100 * TileCalcs.tileHeight));
-        var _finalCell = TileCalcs.getRealCell(new Vector2(_cellPos.x, _cellPos.y), _mousePosCentered, _localPosition);
+        var _finalCell = TileCalcs.getRealCell(new Vector2(_cellPos.x, _cellPos.y), _mousePosCentered, _mapOffset);
 
         leftClick(_finalCell);
         
@@ -55,6 +58,14 @@ public class MapControls : MonoBehaviour {
             centerMap();
     }
 
+    private Vector2 getMousePosFixed(Vector2 _mapOffset) {
+        // - Screen.* for centering mouse to middle of screen
+        // * (currentZoom / maxZoom) to correct the distance that the mouse travels when zooming in/out
+        // Last rest for different aspect-ratios
+        return new Vector2((Input.mousePosition.x - Screen.width / 2f) * (currentZoom / maxZoom) - (_mapOffset.x * Screen.width / 1920f),
+            (Input.mousePosition.y - Screen.height / 2f) * (currentZoom / maxZoom) - (_mapOffset.y * Screen.height / 1080f));
+    }
+    
     private void moveWithScrollButton(float _delta) {
         var _current = map.transform.localPosition;
 

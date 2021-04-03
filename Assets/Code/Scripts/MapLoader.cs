@@ -47,6 +47,13 @@ public class MapLoader : MonoBehaviour {
     public readonly ValidArea validArea = new ValidArea();
     
     void Awake() {
+
+        Application.targetFrameRate = -1;
+        
+        Debug.Log($"Aspect Ratio: {(float)Screen.height / (float)Screen.width}, w: {Screen.width}, h: {Screen.height}");
+
+        Debug.Log($"Tile Width: {TileCalcs.tileWidth}, Tile height: {TileCalcs.tileHeight}");
+
         var _center = new Vector2(mapSize.x / 2, mapSize.y / 2);
         if (_center.x % 2 != 0)
             _center.x--;
@@ -73,6 +80,10 @@ public class MapLoader : MonoBehaviour {
                 tilePrefabList.Add(_tile);       
             }
         }
+        
+        // For different aspect-ratios
+        TileCalcs.tileWidth = TileCalcs.tileWidth * Screen.width / 1920f;
+        TileCalcs.tileHeight = TileCalcs.tileHeight * Screen.height / 1080f;
     }
 
     public void onReload() {
