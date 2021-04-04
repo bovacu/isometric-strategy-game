@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
-      <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
-      <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Code" t="Include">
@@ -13,56 +11,14 @@
             <e p="TileCalcs.cs" t="Include" />
           </e>
           <e p="Scripts" t="Include">
+            <e p="debug" t="Include">
+              <e p="Console.cs" t="Include" />
+              <e p="DebugInfo.cs" t="Include" />
+            </e>
             <e p="FpsCounter.cs" t="Include" />
             <e p="MapControls.cs" t="Include" />
             <e p="MapLoader.cs" t="Include" />
             <e p="TileDebugWindow.cs" t="Include" />
-          </e>
-        </e>
-        <e p="Plugins" t="Include">
-          <e p="CodeStage" t="Include">
-            <e p="AdvancedFPSCounter" t="Include">
-              <e p="API.txt" t="Include" />
-              <e p="Changelog.txt" t="Include" />
-              <e p="Editor" t="Include">
-                <e p="Scripts" t="Include">
-                  <e p="AFPSCounterEditor.cs" t="Include" />
-                  <e p="AFPSRenderRecorderEditor.cs" t="Include" />
-                  <e p="EditorUIUtils.cs" t="Include" />
-                </e>
-              </e>
-              <e p="Examples" t="Include">
-                <e p="APITester.cs" t="Include" />
-              </e>
-              <e p="Runtime" t="Include">
-                <e p="Scripts" t="Include">
-                  <e p="AFPSCounter.cs" t="Include" />
-                  <e p="CountersData" t="Include">
-                    <e p="Abstract" t="Include">
-                      <e p="BaseCounterData.cs" t="Include" />
-                      <e p="UpdatebleCounterData.cs" t="Include" />
-                    </e>
-                    <e p="DeviceInfoCounterData.cs" t="Include" />
-                    <e p="FPSCounterData.cs" t="Include" />
-                    <e p="MemoryCounterData.cs" t="Include" />
-                  </e>
-                  <e p="Enums" t="Include">
-                    <e p="FPSLevel.cs" t="Include" />
-                    <e p="OperationMode.cs" t="Include" />
-                  </e>
-                  <e p="Label" t="Include">
-                    <e p="DrawableLabel.cs" t="Include" />
-                    <e p="LabelAnchor.cs" t="Include" />
-                    <e p="LabelEffect.cs" t="Include" />
-                  </e>
-                  <e p="Utils" t="Include">
-                    <e p="AFPSRenderRecorder.cs" t="Include" />
-                    <e p="CachedNumbers.cs" t="Include" />
-                    <e p="UIUtils.cs" t="Include" />
-                  </e>
-                </e>
-              </e>
-            </e>
           </e>
         </e>
         <e p="TextMesh Pro" t="Include">

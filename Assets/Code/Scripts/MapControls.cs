@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UIElements;
 
 public class MapControls : MonoBehaviour {
@@ -12,6 +10,8 @@ public class MapControls : MonoBehaviour {
     [SerializeField] private GameObject map;
     [SerializeField] private MapLoader mapLoader;
 
+    [Header("Selected")]
+    [SerializeField] private GameObject selectedPrefab;
 
     [Header("Debug")]
     [SerializeField] private TileDebugWindow tileDebugWindow;
@@ -26,6 +26,7 @@ public class MapControls : MonoBehaviour {
     private float currentZoom = 0;
 
     private Vector2 initialClickPoint = Vector2.negativeInfinity;
+    private GameObject currentSelectedPrefab;
     
     void Start() {
         currentZoom = maxZoom;
@@ -41,8 +42,6 @@ public class MapControls : MonoBehaviour {
         var _mapOffset = new Vector2(map.GetComponent<RectTransform>().localPosition.x, map.GetComponent<RectTransform>().localPosition.y);
         var _mousePosCentered = getMousePosFixed(_mapOffset);
 
-        Debug.Log(new Vector2(Input.mousePosition.x - Screen.width / 2f, Input.mousePosition.y - Screen.height / 2f));
-        
         zoom(camera, _mousePosCentered);
         
         var _cellPos = new Vector2(_mousePosCentered.x / (100 * TileCalcs.tileWidth), _mousePosCentered.y / (100 * TileCalcs.tileHeight));
@@ -50,12 +49,11 @@ public class MapControls : MonoBehaviour {
 
         leftClick(_finalCell);
         
-        debug(_mousePosCentered, _finalCell);
+        debug(new Vector2(_mousePosCentered.x + _mapOffset.x, _mousePosCentered.y + _mapOffset.y), _finalCell);
     }
 
     private void keyboard() {
-        if(Input.GetKeyDown(KeyCode.C))
-            centerMap();
+        centerMap();
     }
 
     private Vector2 getMousePosFixed(Vector2 _mapOffset) {
@@ -88,10 +86,8 @@ public class MapControls : MonoBehaviour {
     }
 
     private void leftClick(Vector2 _finalCell) {
-        if (Input.GetMouseButtonDown((int)MouseButton.LeftMouse) && mapLoader.validArea.mouseInsideMap(_finalCell)) {
-            foreach (var _tile in mapLoader.tilePrefabList) {
-                _tile.selectTile((int)_finalCell.x == (int)_tile.gridPosition.x && (int)_finalCell.y == (int)_tile.gridPosition.y);
-            }
+        if (Input.GetMouseButtonDown((int)MouseButton.LeftMouse)) {
+            selectTile(_finalCell);
         }
     }
     
@@ -159,7 +155,26 @@ public class MapControls : MonoBehaviour {
         TileCalcs.activateCellDebugging = activateCellDebugging;
     }
 
-    public void centerMap() {
-        map.transform.localPosition = Vector3.zero;
+    private void centerMap() {
+        if(Input.GetKeyDown(KeyCode.C))
+            map.transform.localPosition = Vector3.zero;
+    }
+
+    public void selectTile(Vector2 _finalCell) {
+        if (mapLoader.validArea.mouseInsideMap(_finalCell)) {
+                
+            if(currentSelectedPrefab != null)
+                Destroy(currentSelectedPrefab);
+                
+            foreach (var _tile in mapLoader.tilePrefabList) {
+                if ((int) _finalCell.x == (int) _tile.gridPosition.x && (int) _finalCell.y == (int) _tile.gridPosition.y) {
+                    currentSelectedPrefab = Instantiate(selectedPrefab, _tile.transform);
+                    return;
+                }
+            }
+        } else {
+            if(currentSelectedPrefab != null)
+                Destroy(currentSelectedPrefab);
+        }
     }
 }

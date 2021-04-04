@@ -65,6 +65,8 @@
      <Compile Include="Assets\Code\Scripts\MapControls.cs" />
      <Compile Include="Assets\Code\Scripts\MapLoader.cs" />
      <Compile Include="Assets\Code\Scripts\TileDebugWindow.cs" />
+     <Compile Include="Assets\Code\Scripts\debug\Console.cs" />
+     <Compile Include="Assets\Code\Scripts\debug\DebugInfo.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
@@ -701,12 +703,6 @@
  <Reference Include="Boo.Lang">
  <HintPath>/Applications/Unity/Hub/Editor/2019.4.4f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
  </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{93687191-B5CE-CDFE-511E-E6CA48B6ABB7}</Project>
-      <Name>Assembly-CSharp-firstpass</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
