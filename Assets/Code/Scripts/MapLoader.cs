@@ -80,6 +80,13 @@ public class MapLoader : MonoBehaviour {
                 tilePrefabList.Add(_tile);       
             }
         }
+
+        foreach (var _tile in tilePrefabList) {
+            if((int)_tile.gridPosition.x == validArea.maxX_left)
+                _tile.activateLeftSide(true);
+            if((int)_tile.gridPosition.y == validArea.maxY_bottom)
+                _tile.activateRightSide(true);
+        }
         
         // For different aspect-ratios
         TileCalcs.tileWidth = TileCalcs.tileWidth * Screen.width / 1920f;

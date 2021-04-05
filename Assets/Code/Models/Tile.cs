@@ -5,7 +5,8 @@ using UnityEngine.UI;
 public class Tile : MonoBehaviour {
 
     [SerializeField] private TextMeshProUGUI positionText;
-    [SerializeField] private Image selected;
+    [SerializeField] private Image leftSide;
+    [SerializeField] private Image rightSide;
 
     private Vector2 gridPos;
     public Vector2 gridPosition {
@@ -17,9 +18,13 @@ public class Tile : MonoBehaviour {
         }
     }
 
-    public Vector2 size { get; set; }
-
-    public void selectTile(bool _select) {
-        selected.gameObject.SetActive(_select);
+    public void activateLeftSide(bool _activate) {
+        leftSide.gameObject.SetActive(_activate);
     }
+    
+    public void activateRightSide(bool _activate) {
+        rightSide.gameObject.SetActive(_activate);
+    }
+    
+    public Vector2 size { get; set; }
 }
