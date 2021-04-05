@@ -16,7 +16,6 @@
               <e p="Console.cs" t="Include" />
               <e p="DebugInfo.cs" t="Include" />
             </e>
-            <e p="FpsCounter.cs" t="Include" />
             <e p="MapControls.cs" t="Include" />
             <e p="MapLoader.cs" t="Include" />
             <e p="TileDebugWindow.cs" t="Include" />

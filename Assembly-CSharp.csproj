@@ -62,7 +62,6 @@
      <Compile Include="Assets\Code\Models\Entity.cs" />
      <Compile Include="Assets\Code\Models\Map.cs" />
      <Compile Include="Assets\Code\Models\TileCalcs.cs" />
-     <Compile Include="Assets\Code\Scripts\FpsCounter.cs" />
      <Compile Include="Assets\Code\Scripts\MapControls.cs" />
      <Compile Include="Assets\Code\Scripts\MapLoader.cs" />
      <Compile Include="Assets\Code\Scripts\TileDebugWindow.cs" />

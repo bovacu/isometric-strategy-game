@@ -6,6 +6,7 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using Newtonsoft.Json;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class ValidArea {
     public int maxX_left = 1000;
@@ -40,10 +41,11 @@ public class ValidArea {
 
 public class MapLoader : MonoBehaviour {
 
-    [SerializeField] private GameObject tilePrefab;
+    [FormerlySerializedAs("tilePrefab")] [SerializeField] private GameObject placeHolderPrefab;
     [SerializeField] private Vector2 mapSize;
     [SerializeField] private Transform mapParent;
     
+    [NonSerialized]
     public List<Cell> tilePrefabList = new List<Cell>();
     public readonly ValidArea validArea = new ValidArea();
     public static Map mapJson;
@@ -117,6 +119,12 @@ public class MapLoader : MonoBehaviour {
         else {
             Debug.Log($"Loaded prefab: {_tile.underlayTile}");
             _prefab = Resources.Load<GameObject>(_tile.underlayTile);
+
+            if (_prefab == null) {
+                Debug.LogError($"Tried to load prefab '{_tile.underlayTile}', but failed, instantiating placeholder");
+                _prefab = placeHolderPrefab;
+            }
+
             loadedFromResources[_tile.underlayTile] = _prefab;
         }
         
