@@ -58,8 +58,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Code\Models\Cell.cs" />
      <Compile Include="Assets\Code\Models\Entity.cs" />
-     <Compile Include="Assets\Code\Models\Tile.cs" />
+     <Compile Include="Assets\Code\Models\Map.cs" />
      <Compile Include="Assets\Code\Models\TileCalcs.cs" />
      <Compile Include="Assets\Code\Scripts\FpsCounter.cs" />
      <Compile Include="Assets\Code\Scripts\MapControls.cs" />
@@ -342,6 +343,9 @@
  </Reference>
  <Reference Include="UnityEngine.XRModule">
  <HintPath>/Applications/Unity/Hub/Editor/2019.4.4f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+ </Reference>
+ <Reference Include="Newtonsoft.Json">
+ <HintPath>/Users/borjavazquez/Documents/Unity/Projects/isometric-strategy-game/Library/PackageCache/jillejr.newtonsoft.json-for-unity@13.0.102/Plugins/Newtonsoft.Json Editor/Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>/Applications/Unity/Hub/Editor/2019.4.4f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

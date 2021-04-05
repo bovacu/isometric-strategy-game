@@ -2353,7 +2353,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tilePrefab: {fileID: 4546358334847060693, guid: 16105624afa9a41ddb2fb75618dacd1f,
     type: 3}
-  mapSize: {x: 11, y: 11}
+  mapSize: {x: 5, y: 5}
   mapParent: {fileID: 2040943731}
   tilePrefabList: []
 --- !u!4 &1266281540

@@ -20,138 +20,98 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ff4361c-badc-40f2-b68c-20fcfc97eaf9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Anim/Selected.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Anim/Selected.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Anim/SelectedAnim.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Anim/SelectedAnim.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Anim/Selected_Img.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Anim/Selected_Img.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Tiles/selected.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Tiles/selected.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/debug.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/debug/Console.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/debug/Console.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/debug/DebugInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/debug/DebugInfo.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/CommandCommon.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/CommandCommon.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/CommandHelp.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/CommandHelp.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/SelectedTile.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/SelectedTile.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Models/Map.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Models/Map.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Data/map.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Data/map.json.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Console.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Console/CommandCommon.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Console/CommandCommon.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Console/CommandHelp.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Console/CommandHelp.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Debug.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Debug/TileDebug.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Debug/TileDebug.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Tiles.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Tiles/PlaceHolderTile.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Tiles/PlaceHolderTile.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Tiles/SelectedTile.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Tiles/SelectedTile.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Tiles/SpikeTile.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Tiles/SpikeTile.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Tiles/Stone1.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Tiles/Stone1.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AutoInstaller.Editor.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.isometric-strategy-game/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.isometric-strategy-game/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.isometric-strategy-game/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.isometric-strategy-game/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.isometric-strategy-game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.isometric-strategy-game/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Tiles/Tiles.spriteatlas" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Tiles/Tiles.spriteatlas.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/MapControls.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/MapControls.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/API.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/API.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Changelog.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Changelog.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Editor/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Editor/Scripts/AFPSCounterEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Editor/Scripts/AFPSCounterEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Editor/Scripts/AFPSRenderRecorderEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Editor/Scripts/AFPSRenderRecorderEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Editor/Scripts/EditorUIUtils.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Editor/Scripts/EditorUIUtils.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Examples.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Examples/APITester.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Examples/APITester.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Examples/ExampleScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Examples/ExampleScene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Examples/Fonts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Examples/Fonts/VeraMono-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Examples/Fonts/VeraMono-Bold.ttf.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Examples/Fonts/VeraMono.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Examples/Fonts/VeraMono.ttf.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Examples/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Examples/Prefabs/VR Example.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Examples/Prefabs/VR Example.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Examples/Prefabs/World Space Example.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Examples/Prefabs/World Space Example.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Examples/VRExampleScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Examples/VRExampleScene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Prefabs/Advanced FPS Counter.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Prefabs/Advanced FPS Counter.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Readme.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Readme.pdf.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Runtime.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Runtime/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Runtime/Scripts/AFPSCounter.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Runtime/Scripts/AFPSCounter.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Runtime/Scripts/CountersData.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Runtime/Scripts/CountersData/Abstract.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Runtime/Scripts/CountersData/Abstract/BaseCounterData.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Runtime/Scripts/CountersData/Abstract/BaseCounterData.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Runtime/Scripts/CountersData/Abstract/UpdatebleCounterData.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Runtime/Scripts/CountersData/Abstract/UpdatebleCounterData.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Runtime/Scripts/CountersData/DeviceInfoCounterData.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Runtime/Scripts/CountersData/DeviceInfoCounterData.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Runtime/Scripts/CountersData/FPSCounterData.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Runtime/Scripts/CountersData/FPSCounterData.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Runtime/Scripts/CountersData/MemoryCounterData.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Runtime/Scripts/CountersData/MemoryCounterData.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Runtime/Scripts/Enums.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Runtime/Scripts/Enums/FPSLevel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Runtime/Scripts/Enums/FPSLevel.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Runtime/Scripts/Enums/OperationMode.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Runtime/Scripts/Enums/OperationMode.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Runtime/Scripts/Label.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Runtime/Scripts/Label/DrawableLabel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Runtime/Scripts/Label/DrawableLabel.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Runtime/Scripts/Label/LabelAnchor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Runtime/Scripts/Label/LabelAnchor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Runtime/Scripts/Label/LabelEffect.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Runtime/Scripts/Label/LabelEffect.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Runtime/Scripts/Utils.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Runtime/Scripts/Utils/AFPSRenderRecorder.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Runtime/Scripts/Utils/AFPSRenderRecorder.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Runtime/Scripts/Utils/CachedNumbers.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Runtime/Scripts/Utils/CachedNumbers.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Runtime/Scripts/Utils/UIUtils.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Runtime/Scripts/Utils/UIUtils.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Tile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Tile.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TileDebug.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/TileDebug.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anim/SpikeDown.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Anim/SpikeDown.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anim/SpikeTile.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Anim/SpikeTile.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anim/SpikeUp.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Anim/SpikeUp.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Models/Tile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Models/Cell.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Models/Tile.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Models/Cell.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/MapLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/MapLoader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Console.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Console/CommandCommon.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Console/CommandCommon.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Console/CommandHelp.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Console/CommandHelp.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Debug.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Debug/TileDebug.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Debug/TileDebug.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Tiles.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Tiles/CommonTile.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Tiles/CommonTile.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Tiles/SelectedTile.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Tiles/SelectedTile.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Tiles/SpikeTile.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Tiles/SpikeTile.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/AnnotationManager" beforeDir="false" afterPath="$PROJECT_DIR$/Library/AnnotationManager" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/APIUpdater/project-dependencies.graph" beforeDir="false" afterPath="$PROJECT_DIR$/Library/APIUpdater/project-dependencies.graph" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/EditorInstance.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/EditorInstance.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ProtocolInstance.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ProtocolInstance.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/BuiltinAssemblies.stamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/PsdPlugin.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/PsdPlugin.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Mathematics.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Mathematics.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Rider.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Rider.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Timeline.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Timeline.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Timeline.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Timeline.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.VSCode.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.VSCode.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEditor.TestRunner.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEditor.TestRunner.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEditor.UI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEditor.UI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.TestRunner.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.TestRunner.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.UI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.UI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SpriteAtlasDatabase.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SpriteAtlasDatabase.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/isometric-strategy-game.sln" beforeDir="false" afterPath="$PROJECT_DIR$/isometric-strategy-game.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Assembly-CSharp-firstpass.dll" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Assembly-CSharp-firstpass.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Assembly-CSharp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.2D.Animation.Runtime.dll" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.2D.Animation.Runtime.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.2D.Animation.Triangle.Runtime.dll" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.2D.Animation.Triangle.Runtime.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.2D.Common.Runtime.dll" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.2D.Common.Runtime.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.2D.PixelPerfect.dll" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.2D.PixelPerfect.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.2D.SpriteShape.Runtime.dll" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.2D.SpriteShape.Runtime.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.InternalAPIEngineBridge.001.dll" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.InternalAPIEngineBridge.001.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.Mathematics.dll" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.Mathematics.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.TextMeshPro.dll" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.TextMeshPro.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.Timeline.dll" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.Timeline.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/UnityEngine.UI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/UnityEngine.UI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/globalgamemanagers" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/globalgamemanagers" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/globalgamemanagers.assets" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/globalgamemanagers.assets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/level0" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/level0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/resources.assets" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/resources.assets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/sharedassets0.assets" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/sharedassets0.assets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/sharedassets0.assets.resS" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/sharedassets0.assets.resS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,6 +122,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9FBAB937-6C17-4889-B8C2-7DB9B7A9BB6E/6d/6ff3cecf/Camera.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9FBAB937-6C17-4889-B8C2-7DB9B7A9BB6E/0d/31916e6d/Behaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Models/TileCalcs.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Scripts/MapLoader.cs" root0="FORCE_HIGHLIGHTING" />
@@ -174,16 +135,18 @@
         <option value="$PROJECT_DIR$/Assets/Code/Scripts/EditorScripts.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Editor/EditorScripts.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Scripts/TileDebugWindow.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Models/Tile.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Scripts/FpsCounter.cs" />
         <option value="$PROJECT_DIR$/Assets/StatsMonitor/Scripts/StatsMonitor.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Editor/Scripts/EditorUIUtils.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Models/TileCalcs.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Scripts/MapLoader.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Runtime/Scripts/AFPSCounter.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Scripts/DebugInfo.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Scripts/debug/Console.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Scripts/MapControls.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Models/Tile.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Models/Cell.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Models/Map.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Models/TileCalcs.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Scripts/MapLoader.cs" />
       </list>
     </option>
   </component>
@@ -248,7 +211,8 @@
       <workItem from="1617199727525" duration="8020000" />
       <workItem from="1617291247424" duration="8894000" />
       <workItem from="1617325034020" duration="3824000" />
-      <workItem from="1617553577753" duration="11479000" />
+      <workItem from="1617553577753" duration="12077000" />
+      <workItem from="1617622994851" duration="8885000" />
     </task>
     <servers />
   </component>
