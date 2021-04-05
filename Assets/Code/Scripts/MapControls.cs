@@ -28,6 +28,8 @@ public class MapControls : MonoBehaviour {
     private Vector2 initialClickPoint = Vector2.negativeInfinity;
     private GameObject currentSelectedPrefab;
     
+    private Vector2 mouseIconCorrection = new Vector2(5, 5);
+    
     void Start() {
         currentZoom = maxZoom;
         tileDebugWindow.gameObject.SetActive(true);
@@ -60,8 +62,8 @@ public class MapControls : MonoBehaviour {
         // - Screen.* for centering mouse to middle of screen
         // * (currentZoom / maxZoom) to correct the distance that the mouse travels when zooming in/out
         // Last rest for different aspect-ratios
-        return new Vector2((Input.mousePosition.x - Screen.width / 2f) * (currentZoom / maxZoom) - (_mapOffset.x * Screen.width / 1920f),
-            (Input.mousePosition.y - Screen.height / 2f) * (currentZoom / maxZoom) - (_mapOffset.y * Screen.height / 1080f));
+        return new Vector2((Input.mousePosition.x - Screen.width / 2f - mouseIconCorrection.x) * (currentZoom / maxZoom) - (_mapOffset.x * Screen.width / 1920f),
+            (Input.mousePosition.y - Screen.height / 2f - mouseIconCorrection.y) * (currentZoom / maxZoom) - (_mapOffset.y * Screen.height / 1080f));
     }
     
     private void moveWithScrollButton(float _delta) {

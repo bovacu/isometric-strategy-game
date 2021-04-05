@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 0a4c1ba65fbef417d946e57f358daa20
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Avenue Pixel Soft-Stroke
+  fontNames:
+  - Avenue Pixel Soft-Stroke
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: b67c7f269fa9d40e4a5603bfbbea1adf, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

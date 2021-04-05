@@ -547,7 +547,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_subTextObjects:
   - {fileID: 0}
   - {fileID: 0}
@@ -1117,7 +1117,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_subTextObjects:
   - {fileID: 0}
   - {fileID: 0}
@@ -1351,7 +1351,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_subTextObjects:
   - {fileID: 0}
   - {fileID: 0}
@@ -1798,7 +1798,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_subTextObjects:
   - {fileID: 0}
   - {fileID: 0}
@@ -2054,7 +2054,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_subTextObjects:
   - {fileID: 0}
   - {fileID: 0}
@@ -2302,7 +2302,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_subTextObjects:
   - {fileID: 0}
   - {fileID: 0}
@@ -2351,11 +2351,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a03f2f534d8a2400183ed27706de422c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tilePrefab: {fileID: 4546358334847060693, guid: 16105624afa9a41ddb2fb75618dacd1f,
+  placeHolderPrefab: {fileID: 4546358334847060693, guid: 16105624afa9a41ddb2fb75618dacd1f,
     type: 3}
   mapSize: {x: 5, y: 5}
   mapParent: {fileID: 2040943731}
-  tilePrefabList: []
 --- !u!4 &1266281540
 Transform:
   m_ObjectHideFlags: 0
@@ -2608,7 +2607,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_subTextObjects:
   - {fileID: 0}
   - {fileID: 0}
@@ -3173,7 +3172,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_subTextObjects:
   - {fileID: 0}
   - {fileID: 0}
@@ -3386,6 +3385,7 @@ GameObject:
   - component: {fileID: 2099657602}
   - component: {fileID: 2099657601}
   - component: {fileID: 2099657600}
+  - component: {fileID: 2099657603}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3458,6 +3458,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2099657603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2099657599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bafd642333a644207839e507cdfd3975, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseUp: {fileID: 21300000, guid: 6fbcc2d67b37a41609b39a7521ca3456, type: 3}
+  mouseDown: {fileID: 21300000, guid: 9b8cec6e48194488d9571c4d9e11c9a7, type: 3}
+  mouseGrabbed: {fileID: 21300000, guid: 31289f8a663bd4f84835d08fcc0d7109, type: 3}
 --- !u!1001 &4487165708263711298
 PrefabInstance:
   m_ObjectHideFlags: 0

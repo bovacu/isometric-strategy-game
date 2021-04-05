@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: 0d1e6a628259a4f1d897df23a66c645c
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Avenue Pixel
+  fontNames:
+  - Avenue Pixel
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 3012d97002aa044a68f63608dfcd3cba, type: 3}
+  - {fileID: 12800000, guid: f0be642681f5244f18081853e116adbc, type: 3}
+  - {fileID: 12800000, guid: bb9f914f752ee4e6f8b6a6a41f1702a2, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

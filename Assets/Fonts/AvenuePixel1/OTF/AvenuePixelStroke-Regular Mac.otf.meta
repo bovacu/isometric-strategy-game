@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: fdaf25df67b884e23ad616a8d5b3a0bf
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Avenue Pixel Stroke
+  fontNames:
+  - Avenue Pixel Stroke
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 9892ca5d51b51452f93968142d444eaf, type: 3}
+  - {fileID: 12800000, guid: b488afae148a94003ab8b236932e0471, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

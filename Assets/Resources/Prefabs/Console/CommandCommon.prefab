@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8829179758851608908}
   - component: {fileID: 5941495118831451742}
   m_Layer: 5
-  m_Name: CommandHistory
+  m_Name: CommandCommon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_subTextObjects:
   - {fileID: 0}
   - {fileID: 0}
