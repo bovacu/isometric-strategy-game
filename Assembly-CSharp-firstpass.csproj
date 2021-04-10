@@ -58,23 +58,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Plugins\CodeStage\AdvancedFPSCounter\Examples\APITester.cs" />
-     <Compile Include="Assets\Plugins\CodeStage\AdvancedFPSCounter\Runtime\Scripts\AFPSCounter.cs" />
-     <Compile Include="Assets\Plugins\CodeStage\AdvancedFPSCounter\Runtime\Scripts\CountersData\Abstract\BaseCounterData.cs" />
-     <Compile Include="Assets\Plugins\CodeStage\AdvancedFPSCounter\Runtime\Scripts\CountersData\Abstract\UpdatebleCounterData.cs" />
-     <Compile Include="Assets\Plugins\CodeStage\AdvancedFPSCounter\Runtime\Scripts\CountersData\DeviceInfoCounterData.cs" />
-     <Compile Include="Assets\Plugins\CodeStage\AdvancedFPSCounter\Runtime\Scripts\CountersData\FPSCounterData.cs" />
-     <Compile Include="Assets\Plugins\CodeStage\AdvancedFPSCounter\Runtime\Scripts\CountersData\MemoryCounterData.cs" />
-     <Compile Include="Assets\Plugins\CodeStage\AdvancedFPSCounter\Runtime\Scripts\Enums\FPSLevel.cs" />
-     <Compile Include="Assets\Plugins\CodeStage\AdvancedFPSCounter\Runtime\Scripts\Enums\OperationMode.cs" />
-     <Compile Include="Assets\Plugins\CodeStage\AdvancedFPSCounter\Runtime\Scripts\Label\DrawableLabel.cs" />
-     <Compile Include="Assets\Plugins\CodeStage\AdvancedFPSCounter\Runtime\Scripts\Label\LabelAnchor.cs" />
-     <Compile Include="Assets\Plugins\CodeStage\AdvancedFPSCounter\Runtime\Scripts\Label\LabelEffect.cs" />
-     <Compile Include="Assets\Plugins\CodeStage\AdvancedFPSCounter\Runtime\Scripts\Utils\AFPSRenderRecorder.cs" />
-     <Compile Include="Assets\Plugins\CodeStage\AdvancedFPSCounter\Runtime\Scripts\Utils\CachedNumbers.cs" />
-     <Compile Include="Assets\Plugins\CodeStage\AdvancedFPSCounter\Runtime\Scripts\Utils\UIUtils.cs" />
-     <None Include="Assets\Plugins\CodeStage\AdvancedFPSCounter\Changelog.txt" />
-     <None Include="Assets\Plugins\CodeStage\AdvancedFPSCounter\API.txt" />
+     <Compile Include="Assets\Plugins\ILeanTween.cs" />
+     <Compile Include="Assets\Plugins\LTDescr.cs" />
+     <Compile Include="Assets\Plugins\LeanAudio.cs" />
+     <Compile Include="Assets\Plugins\LeanTest.cs" />
+     <Compile Include="Assets\Plugins\LeanTween.cs" />
+     <None Include="Assets\Plugins\CodeStage\Maintainer\API.txt" />
+     <None Include="Assets\Plugins\CodeStage\Maintainer\Changelog.txt" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/Users/borjavazquez/Documents/Unity/Projects/isometric-strategy-game/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
@@ -332,6 +322,9 @@
  </Reference>
  <Reference Include="UnityEngine.XRModule">
  <HintPath>/Applications/Unity/Hub/Editor/2019.4.4f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+ </Reference>
+ <Reference Include="Newtonsoft.Json">
+ <HintPath>/Users/borjavazquez/Documents/Unity/Projects/isometric-strategy-game/Library/PackageCache/jillejr.newtonsoft.json-for-unity@13.0.102/Plugins/Newtonsoft.Json Editor/Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>/Applications/Unity/Hub/Editor/2019.4.4f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -693,6 +686,20 @@
  <Reference Include="Boo.Lang">
  <HintPath>/Applications/Unity/Hub/Editor/2019.4.4f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="ConsoleProRemote.csproj">
+      <Project>{CF88C655-04EB-CA00-27A3-53D507D14CE2}</Project>
+      <Name>ConsoleProRemote</Name>
+    </ProjectReference>
+    <ProjectReference Include="ConsoleProDebug.csproj">
+      <Project>{A42BBE6B-D766-1156-02DA-B279DE453AE1}</Project>
+      <Name>ConsoleProDebug</Name>
+    </ProjectReference>
+    <ProjectReference Include="CodeStage.Maintainer.Editor.csproj">
+      <Project>{2C9070E6-0B18-943F-DA7F-764A882784C2}</Project>
+      <Name>CodeStage.Maintainer.Editor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

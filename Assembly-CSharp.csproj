@@ -60,16 +60,31 @@
   <ItemGroup>
      <Compile Include="Assets\Code\Models\Cell.cs" />
      <Compile Include="Assets\Code\Models\Entity.cs" />
+     <Compile Include="Assets\Code\Models\GameConfig.cs" />
      <Compile Include="Assets\Code\Models\Map.cs" />
      <Compile Include="Assets\Code\Models\TileCalcs.cs" />
-     <Compile Include="Assets\Code\Scripts\MapControls.cs" />
-     <Compile Include="Assets\Code\Scripts\MapLoader.cs" />
-     <Compile Include="Assets\Code\Scripts\TileDebugWindow.cs" />
-     <Compile Include="Assets\Code\Scripts\debug\Console.cs" />
-     <Compile Include="Assets\Code\Scripts\debug\DebugInfo.cs" />
+     <Compile Include="Assets\Code\Scriptables\CardTemplate.cs" />
+     <Compile Include="Assets\Code\Scripts\Debug\Console.cs" />
+     <Compile Include="Assets\Code\Scripts\Debug\DebugInfo.cs" />
+     <Compile Include="Assets\Code\Scripts\Map\CursorModifier.cs" />
+     <Compile Include="Assets\Code\Scripts\Map\MapControls.cs" />
+     <Compile Include="Assets\Code\Scripts\Map\MapLoader.cs" />
+     <Compile Include="Assets\Code\Scripts\Map\TileDebugWindow.cs" />
+     <Compile Include="Assets\Code\Scripts\System\Inventory\Inventory.cs" />
+     <Compile Include="Assets\Code\Scripts\System\Inventory\Item.cs" />
+     <Compile Include="Assets\Code\Scripts\System\Locize.cs" />
+     <Compile Include="Assets\Code\Scripts\System\PlayerData.cs" />
+     <Compile Include="Assets\Code\Scripts\System\Status\TooltipTrigger.cs" />
+     <Compile Include="Assets\Code\Scripts\System\Tooltip\Tooltip.cs" />
+     <Compile Include="Assets\Code\Scripts\System\Tooltip\TooltipManager.cs" />
+     <Compile Include="Assets\Code\Scripts\System\TurnManager.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
+     <None Include="Assets\LeanTween\ReadMe.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
+     <None Include="Assets\_www.unityassetcollection.com.txt" />
+     <None Include="Assets\Fonts\AvenuePixel1\LICENSE (SIL OFL 1.1).txt" />
+     <None Include="Assets\Fonts\AvenuePixel1\CHANGELOG (v1.1).txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
      <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
@@ -706,6 +721,24 @@
  <Reference Include="Boo.Lang">
  <HintPath>/Applications/Unity/Hub/Editor/2019.4.4f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{93687191-B5CE-CDFE-511E-E6CA48B6ABB7}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
+    <ProjectReference Include="ConsoleProRemote.csproj">
+      <Project>{CF88C655-04EB-CA00-27A3-53D507D14CE2}</Project>
+      <Name>ConsoleProRemote</Name>
+    </ProjectReference>
+    <ProjectReference Include="ConsoleProDebug.csproj">
+      <Project>{A42BBE6B-D766-1156-02DA-B279DE453AE1}</Project>
+      <Name>ConsoleProDebug</Name>
+    </ProjectReference>
+    <ProjectReference Include="CodeStage.Maintainer.Editor.csproj">
+      <Project>{2C9070E6-0B18-943F-DA7F-764A882784C2}</Project>
+      <Name>CodeStage.Maintainer.Editor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

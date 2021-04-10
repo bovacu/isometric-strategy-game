@@ -17,26 +17,68 @@ SpriteAtlas:
       textureCompression: 0
       filterMode: 0
       generateMipMaps: 0
-      readable: 0
+      readable: 1
       crunchedCompression: 0
       sRGB: 1
-    platformSettings: []
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 256
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
     packingSettings:
       serializedVersion: 2
-      padding: 4
+      padding: 2
       blockOffset: 1
       allowAlphaSplitting: 0
       enableRotation: 1
-      enableTightPacking: 1
+      enableTightPacking: 0
     variantMultiplier: 1
     packables:
     - {fileID: 21300000, guid: a932798e2e6694341a9a31a0aaba0c0b, type: 3}
-    totalSpriteSurfaceArea: 16384
+    - {fileID: 2800000, guid: 836ca57cc69e64f71aca8926650a3be3, type: 3}
+    - {fileID: 2800000, guid: 8d822704cf58145f4a4da5e8ec3fb089, type: 3}
+    - {fileID: 2800000, guid: 9884fc084837b4181983601bfabcbbd9, type: 3}
+    - {fileID: 2800000, guid: 85baaa750cd3242c38406771418c1413, type: 3}
+    - {fileID: 2800000, guid: 70b3f5c3a9b0e4b2291a0cf99753b150, type: 3}
+    - {fileID: 2800000, guid: 8d308a9eebf674517b213e942b34e6e1, type: 3}
+    - {fileID: 2800000, guid: 892ab1ee7695c465b8128162df398730, type: 3}
+    - {fileID: 2800000, guid: 123303695c249440fbc7a9ca143d2de7, type: 3}
+    - {fileID: 2800000, guid: 583266039696b4dc4851f5222247ac28, type: 3}
+    - {fileID: 2800000, guid: 7a941addc7e124399ad3ad497b323db8, type: 3}
+    totalSpriteSurfaceArea: 38400
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: 21300000, guid: 583266039696b4dc4851f5222247ac28, type: 3}
+  - {fileID: 21300000, guid: 70b3f5c3a9b0e4b2291a0cf99753b150, type: 3}
+  - {fileID: 21300000, guid: 8d822704cf58145f4a4da5e8ec3fb089, type: 3}
+  - {fileID: 21300000, guid: 85baaa750cd3242c38406771418c1413, type: 3}
+  - {fileID: 21300000, guid: 9884fc084837b4181983601bfabcbbd9, type: 3}
+  - {fileID: 21300000, guid: 123303695c249440fbc7a9ca143d2de7, type: 3}
+  - {fileID: 21300000, guid: 836ca57cc69e64f71aca8926650a3be3, type: 3}
+  - {fileID: 21300000, guid: 7a941addc7e124399ad3ad497b323db8, type: 3}
   - {fileID: 21300000, guid: a932798e2e6694341a9a31a0aaba0c0b, type: 3}
+  - {fileID: 21300000, guid: 8d308a9eebf674517b213e942b34e6e1, type: 3}
+  - {fileID: 21300000, guid: 892ab1ee7695c465b8128162df398730, type: 3}
   m_PackedSpriteNamesToIndex:
+  - healthBar
+  - paralizedStatus
+  - burnStatus
+  - frozenStatus
+  - confusedStatus
+  - wetStatus
+  - bleedingStatus
+  - energyBar
   - panel
+  - poisonStatus
+  - tauntedStatus
   m_Tag: Ui
   m_IsVariant: 0

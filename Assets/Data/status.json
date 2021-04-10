@@ -1,0 +1,56 @@
+{
+  "types" : [
+    {
+      "id" : "poisoned",
+      "header" : "#poisonedHeader",
+      "effect" : "#poisonedEffect",
+      "curedBy" : "#poisonedCuredBy"
+    },
+    {
+      "id" : "bleeding",
+      "header" : "#bleedingHeader",
+      "effect" : "#bleedingEffect",
+      "curedBy" : "#bleedingCuredBy"
+    },
+    {
+      "id" : "burnt",
+      "header" : "#burntHeader",
+      "effect" : "#burntEffect",
+      "curedBy" : "#burntCuredBy"
+    },
+    {
+      "id" : "confused",
+      "header" : "#confusedHeader",
+      "effect" : "#confusedEffect",
+      "curedBy" : "#confusedCuredBy"
+    },
+    {
+      "id" : "frozen",
+      "header" : "#frozenHeader",
+      "effect" : "#frozenEffect",
+      "curedBy" : "#frozenCuredBy"
+    },
+    {
+      "id" : "paralized",
+      "header" : "#paralizedHeader",
+      "effect" : "#paralizedEffect",
+      "curedBy" : "#paralizedCuredBy"
+    },
+    {
+      "id" : "taunted",
+      "header" : "#tauntedHeader",
+      "effect" : "#tauntedEffect",
+      "curedBy" : "#tauntedCuredBy"
+    },
+    {
+      "id" : "wet",
+      "header" : "#wetHeader",
+      "effect" : "#wetEffect",
+      "curedBy" : "#wetCuredBy"
+    }
+  ],
+  "tooltipConfig" : {
+    "effect" : "<b><color=\"red\">#tooltipEffect</color></b>",
+    "curedBy" : "<b><color=\"purple\">#tooltipCuredBy</color></b>"
+  }
+}

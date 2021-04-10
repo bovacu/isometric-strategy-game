@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Newtonsoft.Json;
 
 public class MapInfo {
     public int width;
@@ -26,6 +27,15 @@ public class TileInfo {
 }
 
 public class Map {
-    public List<TileInfo> tiles;
-    public MapInfo mapInfo;
+
+    public List<TileInfo> jsonTiles;
+    public MapInfo info;
+    
+    [JsonIgnore] private static Map map;
+    [JsonIgnore] public static Map MapInfo {
+        get => map;
+        set => map = value;
+    }
+    [JsonIgnore] public ValidArea validArea = new ValidArea();
+    [JsonIgnore] public List<Cell> mapTiles = new List<Cell>();
 }

@@ -58,9 +58,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Plugins\CodeStage\AdvancedFPSCounter\Editor\Scripts\AFPSCounterEditor.cs" />
-     <Compile Include="Assets\Plugins\CodeStage\AdvancedFPSCounter\Editor\Scripts\AFPSRenderRecorderEditor.cs" />
-     <Compile Include="Assets\Plugins\CodeStage\AdvancedFPSCounter\Editor\Scripts\EditorUIUtils.cs" />
+     <Compile Include="Assets\Plugins\Demigiant\DOTweenPro\Editor\DOTweenAnimationInspector.cs" />
+     <Compile Include="Assets\Plugins\Demigiant\DOTweenPro\Editor\DOTweenPreviewManager.cs" />
+     <None Include="Assets\Plugins\Demigiant\DemiLib\Core\Editor\DemiEditor.xml" />
  <Reference Include="UnityEditor.TestRunner">
  <HintPath>/Users/borjavazquez/Documents/Unity/Projects/isometric-strategy-game/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
  </Reference>
@@ -339,6 +339,30 @@
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions">
  <HintPath>/Applications/Unity/Hub/Editor/2019.4.4f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="Newtonsoft.Json">
+ <HintPath>/Users/borjavazquez/Documents/Unity/Projects/isometric-strategy-game/Library/PackageCache/jillejr.newtonsoft.json-for-unity@13.0.102/Plugins/Newtonsoft.Json Editor/Newtonsoft.Json.dll</HintPath>
+ </Reference>
+ <Reference Include="ConsolePro.Editor">
+ <HintPath>/Users/borjavazquez/Documents/Unity/Projects/isometric-strategy-game/Assets/ConsolePro/Editor/ConsolePro.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTweenEditor">
+ <HintPath>/Users/borjavazquez/Documents/Unity/Projects/isometric-strategy-game/Assets/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTweenProEditor">
+ <HintPath>/Users/borjavazquez/Documents/Unity/Projects/isometric-strategy-game/Assets/Plugins/Demigiant/DOTweenPro/Editor/DOTweenProEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="DemiLib">
+ <HintPath>/Users/borjavazquez/Documents/Unity/Projects/isometric-strategy-game/Assets/Plugins/Demigiant/DemiLib/Core/DemiLib.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween">
+ <HintPath>/Users/borjavazquez/Documents/Unity/Projects/isometric-strategy-game/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
+ </Reference>
+ <Reference Include="DemiEditor">
+ <HintPath>/Users/borjavazquez/Documents/Unity/Projects/isometric-strategy-game/Assets/Plugins/Demigiant/DemiLib/Core/Editor/DemiEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTweenPro">
+ <HintPath>/Users/borjavazquez/Documents/Unity/Projects/isometric-strategy-game/Assets/Plugins/Demigiant/DOTweenPro/DOTweenPro.dll</HintPath>
  </Reference>
  <Reference Include="nunit.framework">
  <HintPath>/Users/borjavazquez/Documents/Unity/Projects/isometric-strategy-game/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
@@ -708,6 +732,18 @@
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
       <Project>{93687191-B5CE-CDFE-511E-E6CA48B6ABB7}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
+    <ProjectReference Include="ConsoleProRemote.csproj">
+      <Project>{CF88C655-04EB-CA00-27A3-53D507D14CE2}</Project>
+      <Name>ConsoleProRemote</Name>
+    </ProjectReference>
+    <ProjectReference Include="ConsoleProDebug.csproj">
+      <Project>{A42BBE6B-D766-1156-02DA-B279DE453AE1}</Project>
+      <Name>ConsoleProDebug</Name>
+    </ProjectReference>
+    <ProjectReference Include="CodeStage.Maintainer.Editor.csproj">
+      <Project>{2C9070E6-0B18-943F-DA7F-764A882784C2}</Project>
+      <Name>CodeStage.Maintainer.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
