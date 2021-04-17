@@ -14,7 +14,6 @@ public class MapControls : MonoBehaviour {
     [SerializeField] private GameObject selectedPrefab;
 
     [Header("Debug")]
-    [SerializeField] private TileDebugWindow tileDebugWindow;
     [SerializeField] private bool drawIsometricGrid = false;
     [SerializeField] private bool drawOrthographicGrid = false;
     [SerializeField] private bool activateCellDebugging = true;
@@ -23,21 +22,24 @@ public class MapControls : MonoBehaviour {
     [SerializeField] private float extraMoveSpeed = 2f;
     
     private float minZoom = 1f, maxZoom = 5.4f;
-    private float currentZoom = 0;
+    private float currentZoom = 5.4f;
 
     private Vector2 initialClickPoint = Vector2.negativeInfinity;
     private GameObject currentSelectedPrefab;
     
     private Vector2 mouseIconCorrection = new Vector2(5, 5);
+
+    public static Vector2 currentSelectedTile;
     
     void Start() {
+        currentSelectedTile = Vector2.negativeInfinity;
         currentZoom = maxZoom;
-        tileDebugWindow.gameObject.SetActive(false);
     }
     
     void Update() {
 
-        keyboard();
+        if(!Console.consoleActive)
+            keyboard();
         
         moveWithScrollButton(Time.deltaTime);
 
@@ -56,6 +58,25 @@ public class MapControls : MonoBehaviour {
 
     private void keyboard() {
         centerMap();
+        // debugShake();
+    }
+
+    private void debugShake() {
+        if (Input.GetKeyDown(KeyCode.Space)) {
+            float height = Mathf.PerlinNoise(9.5f, 0f)*2.5f;
+            float shakeAmt = height*0.1f; // the degrees to shake the camera
+            float shakePeriodTime = 0.22f; // The period of each shake
+            float dropOffTime = 0.6f; // How long it takes the shaking to settle down to nothing
+            LTDescr shakeTween = LeanTween.rotateAroundLocal( gameObject, Vector3.up, shakeAmt, shakePeriodTime)
+                .setEase( LeanTweenType.easeShake ) // this is a special ease that is good for shaking
+                .setLoopClamp()
+                .setRepeat(-1);
+
+            // Slow the camera shake down to zero
+            LeanTween.value(gameObject, (float val)=>{
+                shakeTween.setTo(Vector3.right*val);
+            }, shakeAmt, 0f, dropOffTime).setEase(LeanTweenType.easeOutQuad);
+        }
     }
 
     private Vector2 getMousePosFixed(Vector2 _mapOffset) {
@@ -88,9 +109,14 @@ public class MapControls : MonoBehaviour {
     }
 
     private void leftClick(Vector2 _finalCell) {
+        selectTile(_finalCell);
         if (Input.GetMouseButtonDown((int)MouseButton.LeftMouse)) {
-            selectTile(_finalCell);
+            doAction(_finalCell);
         }
+    }
+
+    private void doAction(Vector2 _finalCell) {
+        RoomManager.doAction(_finalCell, () => selectTile(Vector2.negativeInfinity));
     }
     
     private void zoom(Camera _cam, Vector2 _mousePos) {
@@ -101,9 +127,6 @@ public class MapControls : MonoBehaviour {
             _zoom = Mathf.Clamp(_zoom, minZoom, maxZoom);
             _cam.orthographicSize = _zoom;
             currentZoom = _zoom;
-            
-            // map.transform.localPosition = new Vector3(_mousePos.x, _mousePos.y, map.transform.localPosition.z);
-            tileDebugWindow.gameObject.transform.localScale = new Vector3(_zoom / maxZoom, _zoom / maxZoom, _zoom / maxZoom);
         }
     }
     
@@ -152,20 +175,28 @@ public class MapControls : MonoBehaviour {
     }
 
     public void selectTile(Vector2 _finalCell) {
-        if (Map.MapInfo.validArea.mouseInsideMap(_finalCell)) {
+        if (_finalCell != currentSelectedTile) {
+            if (Map.MapInfo.validArea.mouseInsideMap(_finalCell)) {
+                if(!selectedPrefab.activeInHierarchy)
+                    selectedPrefab.SetActive(true);
+                // if(currentSelectedPrefab != null)
+                //     Destroy(currentSelectedPrefab);
                 
-            if(currentSelectedPrefab != null)
-                Destroy(currentSelectedPrefab);
-                
-            foreach (var _tile in Map.MapInfo.mapTiles) {
-                if ((int) _finalCell.x == (int) _tile.gridPosition.x && (int) _finalCell.y == (int) _tile.gridPosition.y) {
-                    currentSelectedPrefab = Instantiate(selectedPrefab, _tile.transform);
-                    return;
+                foreach (var _tile in Map.MapInfo.mapTiles) {
+                    if ((int) _finalCell.x == (int) _tile.gridPosition.x && (int) _finalCell.y == (int) _tile.gridPosition.y) {
+                        // currentSelectedPrefab = Instantiate(selectedPrefab, _tile.transform);
+                        selectedPrefab.transform.localPosition = _tile.transform.localPosition;
+                        currentSelectedTile = _finalCell;
+                        return;
+                    }
                 }
+            } else {
+                // if(currentSelectedPrefab != null)
+                //     Destroy(currentSelectedPrefab);
+                if(selectedPrefab.activeInHierarchy)
+                    selectedPrefab.SetActive(false);
+                currentSelectedTile = Vector2.negativeInfinity;
             }
-        } else {
-            if(currentSelectedPrefab != null)
-                Destroy(currentSelectedPrefab);
         }
     }
 }

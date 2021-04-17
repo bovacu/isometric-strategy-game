@@ -97,7 +97,7 @@
                 "x" : 0,
                 "y" : 0
             },
-            "underlayTile" : "Prefabs/Tiles/SpikeTile"
+            "underlayTile" : "Prefabs/Tiles/StoneSpike"
         },
         {
             "pos" : {

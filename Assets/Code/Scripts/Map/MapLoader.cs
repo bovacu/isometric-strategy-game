@@ -48,20 +48,9 @@ public class MapLoader : MonoBehaviour {
     private Dictionary<string, GameObject> loadedFromResources = new Dictionary<string, GameObject>();
 
     private void Awake() {
-        var _mapUrl = $"{Application.dataPath}/Data/status.json";
-        var _sr = new StreamReader(_mapUrl);
-        var _json = _sr.ReadToEnd();
-        _sr.Close();
-        GameConfig.status = JsonConvert.DeserializeObject<Status>(_json);
+        GameConfig.initGameData();
+        Locize.initLocized();
         
-        _mapUrl = $"{Application.dataPath}/Data/en.json";
-        _sr = new StreamReader(_mapUrl);
-        _json = _sr.ReadToEnd();
-        _sr.Close();
-        GameConfig.locized = JsonConvert.DeserializeObject<Dictionary<string, string>>(_json);
-    }
-
-    void Start() {
         LoadMap();
     }
 
@@ -94,9 +83,9 @@ public class MapLoader : MonoBehaviour {
                 var _go = getTilePrefab((int)_isometricPos.x, (int)_isometricPos.y, _tilePos.x, _tilePos.y);
 
                 var _layer = _y * (int) mapSize.x + _x;
-                _go.transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().sortingOrder = _layer;
-                _go.transform.GetChild(1).gameObject.GetComponent<SpriteRenderer>().sortingOrder = _layer;
-                _go.transform.GetChild(2).gameObject.GetComponent<SpriteRenderer>().sortingOrder = _layer;
+                _go.transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().sortingOrder = (int)(mapSize.x * mapSize.y) - (_y * (int) mapSize.x + _x);
+                _go.transform.GetChild(1).gameObject.GetComponent<SpriteRenderer>().sortingOrder = (int)(mapSize.x * mapSize.y) - (_y * (int) mapSize.x + _x);
+                _go.transform.GetChild(2).gameObject.GetComponent<SpriteRenderer>().sortingOrder = (int)(mapSize.x * mapSize.y) - (_y * (int) mapSize.x + _x);
                 
                 var _tile = _go.GetComponent<Cell>();
                 _tile.gridPosition = _isometricPos;

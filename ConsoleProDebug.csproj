@@ -258,11 +258,11 @@
  <Reference Include="UnityEditor.iOS.Extensions">
  <HintPath>/Applications/Unity/Hub/Editor/2019.4.4f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
  </Reference>
- <Reference Include="Newtonsoft.Json">
- <HintPath>/Users/borjavazquez/Documents/Unity/Projects/isometric-strategy-game/Library/PackageCache/jillejr.newtonsoft.json-for-unity@13.0.102/Plugins/Newtonsoft.Json Editor/Newtonsoft.Json.dll</HintPath>
- </Reference>
  <Reference Include="ConsolePro.Editor">
  <HintPath>/Users/borjavazquez/Documents/Unity/Projects/isometric-strategy-game/Assets/ConsolePro/Editor/ConsolePro.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Newtonsoft.Json">
+ <HintPath>/Users/borjavazquez/Documents/Unity/Projects/isometric-strategy-game/Library/PackageCache/jillejr.newtonsoft.json-for-unity@13.0.102/Plugins/Newtonsoft.Json Editor/Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>/Applications/Unity/Hub/Editor/2019.4.4f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

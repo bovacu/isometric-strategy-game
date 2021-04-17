@@ -69,12 +69,18 @@
      <Compile Include="Assets\Code\Scripts\Map\CursorModifier.cs" />
      <Compile Include="Assets\Code\Scripts\Map\MapControls.cs" />
      <Compile Include="Assets\Code\Scripts\Map\MapLoader.cs" />
+     <Compile Include="Assets\Code\Scripts\Map\RoomManager.cs" />
      <Compile Include="Assets\Code\Scripts\Map\TileDebugWindow.cs" />
+     <Compile Include="Assets\Code\Scripts\System\Actions\DoActionManager.cs" />
+     <Compile Include="Assets\Code\Scripts\System\Actions\LoadActionManager.cs" />
+     <Compile Include="Assets\Code\Scripts\System\Health\EnergyBarManager.cs" />
+     <Compile Include="Assets\Code\Scripts\System\Health\HealthBarBatteryController.cs" />
+     <Compile Include="Assets\Code\Scripts\System\Health\HealthBarManager.cs" />
+     <Compile Include="Assets\Code\Scripts\System\Health\TooltipTrigger.cs" />
      <Compile Include="Assets\Code\Scripts\System\Inventory\Inventory.cs" />
      <Compile Include="Assets\Code\Scripts\System\Inventory\Item.cs" />
      <Compile Include="Assets\Code\Scripts\System\Locize.cs" />
      <Compile Include="Assets\Code\Scripts\System\PlayerData.cs" />
-     <Compile Include="Assets\Code\Scripts\System\Status\TooltipTrigger.cs" />
      <Compile Include="Assets\Code\Scripts\System\Tooltip\Tooltip.cs" />
      <Compile Include="Assets\Code\Scripts\System\Tooltip\TooltipManager.cs" />
      <Compile Include="Assets\Code\Scripts\System\TurnManager.cs" />
@@ -82,7 +88,6 @@
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\LeanTween\ReadMe.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
-     <None Include="Assets\_www.unityassetcollection.com.txt" />
      <None Include="Assets\Fonts\AvenuePixel1\LICENSE (SIL OFL 1.1).txt" />
      <None Include="Assets\Fonts\AvenuePixel1\CHANGELOG (v1.1).txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
@@ -731,13 +736,13 @@
       <Project>{CF88C655-04EB-CA00-27A3-53D507D14CE2}</Project>
       <Name>ConsoleProRemote</Name>
     </ProjectReference>
-    <ProjectReference Include="ConsoleProDebug.csproj">
-      <Project>{A42BBE6B-D766-1156-02DA-B279DE453AE1}</Project>
-      <Name>ConsoleProDebug</Name>
-    </ProjectReference>
     <ProjectReference Include="CodeStage.Maintainer.Editor.csproj">
       <Project>{2C9070E6-0B18-943F-DA7F-764A882784C2}</Project>
       <Name>CodeStage.Maintainer.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="ConsoleProDebug.csproj">
+      <Project>{A42BBE6B-D766-1156-02DA-B279DE453AE1}</Project>
+      <Name>ConsoleProDebug</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

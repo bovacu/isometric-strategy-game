@@ -21,30 +21,46 @@ public class Console : MonoBehaviour {
     
     [Header("Mono Behaviours")]
     [SerializeField] private MapControls controls;
+    [SerializeField] private PlayerData playerData;
 
-    private List<string> validCommands = new List<string> {"select", "help", "clean", "close"};
+    [Header("Helpers")] 
+    [SerializeField] private bool allCheats;
+    
+    private List<string> validCommands = new List<string> {"select", "help", "clean", "close", "player", "infinite"};
     private List<string> commandHistory = new List<string>();
 
     private int commandPointer = 0;
+
+    public static bool consoleActive = false;
+    
+    public static bool infiniteEnergy = false;
+    public static bool infiniteHealth = false;
 
     private void Start() {
         fullContainer.SetActive(false);
         commandLine.onSubmit.AddListener(executeCommand);
         logButton.onClick.AddListener(close);
+
+        if (allCheats)
+            infiniteAll();
     }
 
     private void Update() {
         if (Input.GetKeyDown(KeyCode.F2)) {
             fullContainer.SetActive(!commandLine.gameObject.activeInHierarchy);
+            
+            consoleActive = commandLine.gameObject.activeInHierarchy;
+            
             if (commandLine.gameObject.activeInHierarchy) {
                 commandLine.ActivateInputField();
-                
                 logPanel.SetActive(logContent.transform.childCount > 0);
             }
         }
         
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if(Input.GetKeyDown(KeyCode.Escape)) {
             fullContainer.SetActive(false);
+            consoleActive = commandLine.gameObject.activeInHierarchy;
+        }
 
         if (Input.GetKeyDown(KeyCode.UpArrow)) {
             if (commandHistory.Any()) {
@@ -52,6 +68,7 @@ public class Console : MonoBehaviour {
                     commandPointer--;
                     commandLine.text = commandHistory[commandPointer];
                     commandLine.ActivateInputField();
+                    commandLine.caretPosition = commandLine.text.Length;
                 }
             }
         }
@@ -62,6 +79,7 @@ public class Console : MonoBehaviour {
                     commandPointer++;
                     commandLine.text = commandHistory[commandPointer];
                     commandLine.ActivateInputField();
+                    commandLine.caretPosition = commandLine.text.Length;
                 }
             }
         }
@@ -98,6 +116,8 @@ public class Console : MonoBehaviour {
             selectCommand(_arguments);
             closeCommand(_arguments);
             cleanCommand(_arguments);
+            playerCommands(_arguments);
+            cheatCommands(_arguments);
         }
 
         commandLine.text = "";
@@ -142,6 +162,69 @@ public class Console : MonoBehaviour {
                 Destroy(_child.gameObject);
             }
         }
+    }
+
+    private void playerCommands(string[] _arguments) {
+        healthCommand(_arguments);
+        energyCommand(_arguments);
+    }
+    
+    private void energyCommand(string[] _arguments) {
+        if (_arguments[0].ToLower().Equals("player") && _arguments[1].ToLower().Equals("energy")) {
+
+            if (_arguments.Length != 3)
+                return;
+
+            try {
+                var _x = int.Parse(_arguments[2]);
+                playerData.updateEnergy(_x);
+                
+                addResult($"Player energy {_x}");
+            } catch (Exception _e) {
+                Debug.Log(_e);
+                addError("command is 'player energy x' with x the new energy amount");
+            }
+        }
+    }
+    
+    private void healthCommand(string[] _arguments) {
+        if (_arguments[0].ToLower().Equals("player") && _arguments[1].ToLower().Equals("health")) {
+
+            if (_arguments.Length != 3)
+                return;
+
+            try {
+                var _x = int.Parse(_arguments[2]);
+                playerData.updateHealth(_x);
+                
+                addResult($"Player health {_x}");
+            } catch (Exception _e) {
+                Debug.Log(_e);
+                addError("command is 'player health x' with x the new life amount");
+            }
+        }
+    }
+    
+    private void cheatCommands(string[] _arguments) {
+        if (_arguments[0].ToLower().Equals("infinite")) {
+
+            if (_arguments[1].ToLower().Equals("all")) {
+                infiniteAll();
+            } else {
+                if (_arguments[1].ToLower().Equals("energy")) {
+                    infiniteEnergy = _arguments[2].ToLower().Equals("on");
+                } else if (_arguments[1].ToLower().Equals("health")) {
+                    infiniteHealth = _arguments[2].ToLower().Equals("on");
+                }
+            }
+            
+            addResult($"Infinite {_arguments[1]} {_arguments[2]}");
+        }
+    }
+
+    private void infiniteAll() {
+        infiniteEnergy = true;
+        infiniteHealth = true;
     }
     
     private void close() {

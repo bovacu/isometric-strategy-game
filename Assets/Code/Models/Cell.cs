@@ -20,11 +20,11 @@ public class Cell : MonoBehaviour {
     }
 
     public void activateLeftSide(bool _activate) {
-        leftSide.SetActive(_activate);
+        //leftSide.SetActive(_activate);
     }
     
     public void activateRightSide(bool _activate) {
-        rightSide.SetActive(_activate);
+        //rightSide.SetActive(_activate);
     }
     
     public Vector2 size { get; set; }

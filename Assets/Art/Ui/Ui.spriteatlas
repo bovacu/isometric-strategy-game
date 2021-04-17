@@ -23,7 +23,7 @@ SpriteAtlas:
     platformSettings:
     - serializedVersion: 3
       m_BuildTarget: DefaultTexturePlatform
-      m_MaxTextureSize: 256
+      m_MaxTextureSize: 512
       m_ResizeAlgorithm: 0
       m_TextureFormat: -1
       m_TextureCompression: 1
@@ -53,7 +53,8 @@ SpriteAtlas:
     - {fileID: 2800000, guid: 123303695c249440fbc7a9ca143d2de7, type: 3}
     - {fileID: 2800000, guid: 583266039696b4dc4851f5222247ac28, type: 3}
     - {fileID: 2800000, guid: 7a941addc7e124399ad3ad497b323db8, type: 3}
-    totalSpriteSurfaceArea: 38400
+    - {fileID: 2800000, guid: 521a05e5b77e645afbd3ff3e82c39013, type: 3}
+    totalSpriteSurfaceArea: 103936
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -61,6 +62,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 70b3f5c3a9b0e4b2291a0cf99753b150, type: 3}
   - {fileID: 21300000, guid: 8d822704cf58145f4a4da5e8ec3fb089, type: 3}
   - {fileID: 21300000, guid: 85baaa750cd3242c38406771418c1413, type: 3}
+  - {fileID: 21300000, guid: 521a05e5b77e645afbd3ff3e82c39013, type: 3}
   - {fileID: 21300000, guid: 9884fc084837b4181983601bfabcbbd9, type: 3}
   - {fileID: 21300000, guid: 123303695c249440fbc7a9ca143d2de7, type: 3}
   - {fileID: 21300000, guid: 836ca57cc69e64f71aca8926650a3be3, type: 3}
@@ -73,6 +75,7 @@ SpriteAtlas:
   - paralizedStatus
   - burnStatus
   - frozenStatus
+  - purpleButton
   - confusedStatus
   - wetStatus
   - bleedingStatus

@@ -11,8 +11,8 @@ public class TooltipTrigger : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 
     public void OnPointerEnter(PointerEventData eventData) {
         delay = LeanTween.delayedCall(.5f, () => {
-            var _status = GameConfig.status.types.First(_s => _s.id.Equals(id));
-            var _content = string.Concat(GameConfig.status.tooltipConfig.effect, _status.effect, "\n", GameConfig.status.tooltipConfig.curedBy, _status.curedBy);
+            var _status = Locize.status.types.First(_s => _s.id.Equals(id));
+            var _content = string.Concat(Locize.status.tooltipConfig.effect, _status.effect, "\n", Locize.status.tooltipConfig.curedBy, _status.curedBy);
             TooltipManager.Show(Locize.translate(_status.header), Locize.translate(_content));  
         });
     }

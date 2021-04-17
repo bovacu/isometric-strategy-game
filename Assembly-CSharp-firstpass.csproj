@@ -692,13 +692,13 @@
       <Project>{CF88C655-04EB-CA00-27A3-53D507D14CE2}</Project>
       <Name>ConsoleProRemote</Name>
     </ProjectReference>
-    <ProjectReference Include="ConsoleProDebug.csproj">
-      <Project>{A42BBE6B-D766-1156-02DA-B279DE453AE1}</Project>
-      <Name>ConsoleProDebug</Name>
-    </ProjectReference>
     <ProjectReference Include="CodeStage.Maintainer.Editor.csproj">
       <Project>{2C9070E6-0B18-943F-DA7F-764A882784C2}</Project>
       <Name>CodeStage.Maintainer.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="ConsoleProDebug.csproj">
+      <Project>{A42BBE6B-D766-1156-02DA-B279DE453AE1}</Project>
+      <Name>ConsoleProDebug</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

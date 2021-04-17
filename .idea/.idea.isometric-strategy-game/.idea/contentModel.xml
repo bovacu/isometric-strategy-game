@@ -6,7 +6,6 @@
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="_www.unityassetcollection.com.txt" t="Include" />
         <e p="Code" t="Include">
           <e p="Models" t="Include">
             <e p="Cell.cs" t="Include" />
@@ -27,18 +26,26 @@
               <e p="CursorModifier.cs" t="Include" />
               <e p="MapControls.cs" t="Include" />
               <e p="MapLoader.cs" t="Include" />
+              <e p="RoomManager.cs" t="Include" />
               <e p="TileDebugWindow.cs" t="Include" />
             </e>
             <e p="System" t="Include">
+              <e p="Actions" t="Include">
+                <e p="DoActionManager.cs" t="Include" />
+                <e p="LoadActionManager.cs" t="Include" />
+              </e>
+              <e p="Health" t="Include">
+                <e p="EnergyBarManager.cs" t="Include" />
+                <e p="HealthBarBatteryController.cs" t="Include" />
+                <e p="HealthBarManager.cs" t="Include" />
+                <e p="TooltipTrigger.cs" t="Include" />
+              </e>
               <e p="Inventory" t="Include">
                 <e p="Inventory.cs" t="Include" />
                 <e p="Item.cs" t="Include" />
               </e>
               <e p="Locize.cs" t="Include" />
               <e p="PlayerData.cs" t="Include" />
-              <e p="Status" t="Include">
-                <e p="TooltipTrigger.cs" t="Include" />
-              </e>
               <e p="Tooltip" t="Include">
                 <e p="Tooltip.cs" t="Include" />
                 <e p="TooltipManager.cs" t="Include" />

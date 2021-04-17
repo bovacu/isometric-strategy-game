@@ -20,721 +20,143 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ff4361c-badc-40f2-b68c-20fcfc97eaf9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Character.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Character/DinoSprites - doux.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Character/DinoSprites - doux.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Character/DinoSprites - mort.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Character/DinoSprites - mort.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Character/DinoSprites - tard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Character/DinoSprites - tard.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Character/DinoSprites - vita.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Character/DinoSprites - vita.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Ui/bleedingStatus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Ui/bleedingStatus.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Ui/burnStatus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Ui/burnStatus.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Ui/confusedStatus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Ui/confusedStatus.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Ui/energyBar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Ui/energyBar.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Ui/frozenStatus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Ui/frozenStatus.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Ui/healthBar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Ui/healthBar.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Ui/paralizedStatus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Ui/paralizedStatus.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Ui/poisonStatus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Ui/poisonStatus.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Ui/tauntedStatus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Ui/tauntedStatus.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Ui/wetStatus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Ui/wetStatus.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Models/GameConfig.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Models/GameConfig.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Scriptables.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Scriptables/CardTemplate.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Scriptables/CardTemplate.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Map.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Inventory.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Inventory/Inventory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Inventory/Inventory.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Inventory/Item.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Inventory/Item.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Locize.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Locize.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/PlayerData.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/PlayerData.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Status.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Status/TooltipTrigger.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Status/TooltipTrigger.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Tooltip.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Tooltip/Tooltip.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Tooltip/Tooltip.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Tooltip/TooltipManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Tooltip/TooltipManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/TurnManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/TurnManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/ConsoleProDebug.asmdef" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/ConsoleProDebug.asmdef.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/ConsoleProDebug.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/ConsoleProDebug.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Editor Console Pro Documentation.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Editor Console Pro Documentation.pdf.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Editor.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Editor/ConsolePro.Editor.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Editor/ConsolePro.Editor.dll.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Editor/ConsoleProEditor.asmdef" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Editor/ConsoleProEditor.asmdef.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/ConsoleProRemote.asmdef" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/ConsoleProRemote.asmdef.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/ConsoleProRemoteServer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/ConsoleProRemoteServer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/FastBitConverter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/FastBitConverter.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/INetEventListener.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/INetEventListener.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/NatPunchModule.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/NatPunchModule.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/NetConstants.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/NetConstants.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/NetDataReader.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/NetDataReader.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/NetDataWriter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/NetDataWriter.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/NetDebug.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/NetDebug.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/NetEndPoint.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/NetEndPoint.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/NetManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/NetManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/NetPacket.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/NetPacket.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/NetPacketPool.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/NetPacketPool.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/NetPeer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/NetPeer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/NetPeerCollection.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/NetPeerCollection.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/NetSerializer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/NetSerializer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/NetSocket.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/NetSocket.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/NetThread.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/NetThread.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/NetUtils.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/NetUtils.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/NtpSyncModule.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/NtpSyncModule.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/ReliableChannel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/ReliableChannel.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/RemoteFix" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/RemoteFix.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/SequencedChannel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/SequencedChannel.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/SimpleChannel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/SimpleChannel.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Data/en.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Data/en.json.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Data/game_data.sjson/639770839.216328" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Data/game_data.sjson/639770839.216328.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Data/game_data.sjson/639773024.453761" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Data/game_data.sjson/639773024.453761.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Data/status.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Data/status.json.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LeanTween.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LeanTween/Editor.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LeanTween/Editor/LeanTweenDocumentationEditor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LeanTween/Editor/LeanTweenDocumentationEditor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LeanTween/ReadMe.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LeanTween/ReadMe.txt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/API.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/API.txt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Changelog.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Changelog.txt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/CodeStage.Maintainer.Editor.asmdef" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/CodeStage.Maintainer.Editor.asmdef.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Core.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Core/Filtering.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Core/Filtering/FilterItem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Core/Filtering/FilterItem.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Core/Map.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Core/Map/AssetInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Core/Map/AssetInfo.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Core/Map/AssetReferenceInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Core/Map/AssetReferenceInfo.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Core/Map/AssetsMap.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Core/Map/AssetsMap.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Core/Map/Dependencies.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Core/Map/Dependencies/AssetDependenciesSearcher.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Core/Map/Dependencies/AssetDependenciesSearcher.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Core/Map/Dependencies/Parsers.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Core/Map/Dependencies/Parsers/AddressableAssetGroupParser.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Core/Map/Dependencies/Parsers/AddressableAssetGroupParser.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Core/Map/Dependencies/Parsers/AssemblyDefinitionParser.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Core/Map/Dependencies/Parsers/AssemblyDefinitionParser.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Core/Map/Dependencies/Parsers/AssemblyDefinitionReferenceParser.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Core/Map/Dependencies/Parsers/AssemblyDefinitionReferenceParser.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Core/Map/Dependencies/Parsers/IDependenciesParser.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Core/Map/Dependencies/Parsers/IDependenciesParser.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Core/Map/Dependencies/Parsers/ShaderParser.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Core/Map/Dependencies/Parsers/ShaderParser.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Core/Map/Dependencies/Parsers/SpriteAtlasParser.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Core/Map/Dependencies/Parsers/SpriteAtlasParser.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Core/Map/Dependencies/Parsers/TextAssetParser.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Core/Map/Dependencies/Parsers/TextAssetParser.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Core/Map/ReferencedAtAssetInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Core/Map/ReferencedAtAssetInfo.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Core/Map/ReferencedAtInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Core/Map/ReferencedAtInfo.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Core/Map/ReferencedAtOpenedSceneInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Core/Map/ReferencedAtOpenedSceneInfo.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Core/Map/ReferencingEntryData.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Core/Map/ReferencingEntryData.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Core/TreeDataModel.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Core/TreeDataModel/TreeItem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Core/TreeDataModel/TreeItem.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Core/TreeDataModel/TreeItemUtility.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Core/TreeDataModel/TreeItemUtility.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Core/TreeDataModel/TreeModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Core/TreeDataModel/TreeModel.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Maintainer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Maintainer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/MaintainerMarker.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/MaintainerMarker.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Cleaner.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Cleaner/BuildReportAnalyzer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Cleaner/BuildReportAnalyzer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Cleaner/CleanerSortingType.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Cleaner/CleanerSortingType.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Cleaner/ProjectCleaner.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Cleaner/ProjectCleaner.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Cleaner/RecordType.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Cleaner/RecordType.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Cleaner/Records.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Cleaner/Records/AssetRecord.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Cleaner/Records/AssetRecord.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Cleaner/Records/CleanerErrorRecord.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Cleaner/Records/CleanerErrorRecord.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Cleaner/Records/CleanerRecord.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Cleaner/Records/CleanerRecord.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Cleaner/Records/CleanerWarningRecord.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Cleaner/Records/CleanerWarningRecord.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Common.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Common/Enums.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Common/Enums/RecordLocation.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Common/Enums/RecordLocation.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Common/Enums/SortingDirection.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Common/Enums/SortingDirection.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Common/IShowableRecord.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Common/IShowableRecord.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Common/Records.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Common/Records/RecordBase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Common/Records/RecordBase.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Common/RecordsSortings.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Common/RecordsSortings.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Common/ReportsBuilder.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Common/ReportsBuilder.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/Detectors.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/Detectors/Abstraction.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/Detectors/Abstraction/IssueDetectorBase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/Detectors/Abstraction/IssueDetectorBase.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/Detectors/Common.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/Detectors/Common/DuplicateComponentDetector.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/Detectors/Common/DuplicateComponentDetector.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/Detectors/Common/InconsistentTerrainDataDetector.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/Detectors/Common/InconsistentTerrainDataDetector.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/Detectors/Common/MissingComponentDetector.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/Detectors/Common/MissingComponentDetector.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/Detectors/Common/MissingPrefabDetector.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/Detectors/Common/MissingPrefabDetector.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/Detectors/Common/ShaderErrorDetector.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/Detectors/Common/ShaderErrorDetector.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/Detectors/MissingReferenceDetector.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/Detectors/MissingReferenceDetector.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/Detectors/Neatness.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/Detectors/Neatness/EmptyLayerNameDetector.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/Detectors/Neatness/EmptyLayerNameDetector.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/Detectors/Neatness/HugePositionDetector.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/Detectors/Neatness/HugePositionDetector.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/Detectors/ProjectSettings.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/Detectors/ProjectSettings/DuplicateLayersDetector.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/Detectors/ProjectSettings/DuplicateLayersDetector.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/IssueKind.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/IssueKind.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/IssuesDetector.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/IssuesDetector.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/IssuesFinder.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/IssuesFinder.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/IssuesSortingType.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/IssuesSortingType.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/RecordSeverity.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/RecordSeverity.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/Records.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/Records/Abstraction.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/Records/Abstraction/AssetIssueRecord.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/Records/Abstraction/AssetIssueRecord.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/Records/Abstraction/IssueRecord.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/Records/Abstraction/IssueRecord.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/Records/GameObjectIssueRecord.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/Records/GameObjectIssueRecord.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/Records/SceneSettingsIssueRecord.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/Records/SceneSettingsIssueRecord.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/Records/ScriptableObjectIssueRecord.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/Records/ScriptableObjectIssueRecord.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/Records/SettingsIssueRecord.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/Records/SettingsIssueRecord.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/Records/ShaderIssueRecord.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/Records/ShaderIssueRecord.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/Routines.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/Routines/IssuesFixer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/Routines/IssuesFixer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/Routines/SettingsChecker.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/Routines/SettingsChecker.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/Routines/TargetCollector.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/Routines/TargetCollector.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/Routines/TargetProcessor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/Routines/TargetProcessor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/TreeBased.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/TreeBased/References.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/TreeBased/References/Conjunction.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/TreeBased/References/Conjunction/AssetConjunctions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/TreeBased/References/Conjunction/AssetConjunctions.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/TreeBased/References/Conjunction/TreeConjunction.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/TreeBased/References/Conjunction/TreeConjunction.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/TreeBased/References/Data.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/TreeBased/References/Data/HierarchyReferenceItem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/TreeBased/References/Data/HierarchyReferenceItem.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/TreeBased/References/Data/ProjectReferenceItem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/TreeBased/References/Data/ProjectReferenceItem.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/TreeBased/References/Entry.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/TreeBased/References/Entry/EntryAddSettings.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/TreeBased/References/Entry/EntryAddSettings.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/TreeBased/References/Entry/EntryFinder.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/TreeBased/References/Entry/EntryFinder.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/TreeBased/References/Entry/EntryGenerator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/TreeBased/References/Entry/EntryGenerator.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/TreeBased/References/Entry/HierarchyEntryFinder.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/TreeBased/References/Entry/HierarchyEntryFinder.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/TreeBased/References/Entry/Processors.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/TreeBased/References/Entry/Processors/GenericObjectProcessor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/TreeBased/References/Entry/Processors/GenericObjectProcessor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/TreeBased/References/Entry/Processors/ManualComponentProcessor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/TreeBased/References/Entry/Processors/ManualComponentProcessor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/TreeBased/References/Entry/ProjectEntryFinder.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/TreeBased/References/Entry/ProjectEntryFinder.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/TreeBased/References/Entry/SceneSettingsProcessor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/TreeBased/References/Entry/SceneSettingsProcessor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/TreeBased/References/HierarchyScopeReferencesFinder.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/TreeBased/References/HierarchyScopeReferencesFinder.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/TreeBased/References/ProjectScopeReferencesFinder.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/TreeBased/References/ProjectScopeReferencesFinder.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/TreeBased/References/ReferencesFinder.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/TreeBased/References/ReferencesFinder.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/TreeBased/References/Routines.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/TreeBased/References/Routines/ProjectScopeReferencesTreeBuilder.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/TreeBased/References/Routines/ProjectScopeReferencesTreeBuilder.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/SearchResultsStorage.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/SearchResultsStorage.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Settings.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Settings/IssuesFinderSettings.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Settings/IssuesFinderSettings.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Settings/ProjectCleanerSettings.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Settings/ProjectCleanerSettings.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Settings/ProjectSettings.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Settings/ProjectSettings.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Settings/ReferencesFinderSettings.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Settings/ReferencesFinderSettings.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Settings/User.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Settings/User/IssuesFinderPersonalSettings.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Settings/User/IssuesFinderPersonalSettings.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Settings/User/ProjectCleanerPersonalSettings.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Settings/User/ProjectCleanerPersonalSettings.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Settings/User/ReferencesFinderPersonalSettings.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Settings/User/ReferencesFinderPersonalSettings.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Settings/User/UserSettings.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Settings/User/UserSettings.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Tools.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Tools/CSArrayTools.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Tools/CSArrayTools.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Tools/CSAssetTools.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Tools/CSAssetTools.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Tools/CSComponentTools.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Tools/CSComponentTools.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Tools/CSEditorTools.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Tools/CSEditorTools.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Tools/CSFileTools.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Tools/CSFileTools.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Tools/CSFilterTools.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Tools/CSFilterTools.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Tools/CSMenuTools.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Tools/CSMenuTools.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Tools/CSObjectTools.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Tools/CSObjectTools.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Tools/CSPathTools.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Tools/CSPathTools.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Tools/CSPrefabTools.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Tools/CSPrefabTools.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Tools/CSReflectionTools.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Tools/CSReflectionTools.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Tools/CSSceneTools.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Tools/CSSceneTools.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Tools/CSSelectionTools.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Tools/CSSelectionTools.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Tools/CSSettingsTools.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Tools/CSSettingsTools.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Tools/CSTraverseTools.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Tools/CSTraverseTools.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Filters.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Filters/CleanerFiltersWindow.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Filters/CleanerFiltersWindow.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Filters/FilterType.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Filters/FilterType.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Filters/FiltersWindow.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Filters/FiltersWindow.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Filters/IssuesFiltersWindow.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Filters/IssuesFiltersWindow.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Filters/ReferencesFiltersWindow.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Filters/ReferencesFiltersWindow.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Filters/Tabs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Filters/Tabs/ComponentFiltersTab.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Filters/Tabs/ComponentFiltersTab.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Filters/Tabs/PathFiltersTab.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Filters/Tabs/PathFiltersTab.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Filters/Tabs/SceneFiltersTab.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Filters/Tabs/SceneFiltersTab.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Filters/Tabs/StringFiltersTab.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Filters/Tabs/StringFiltersTab.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Filters/Tabs/TabBase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Filters/Tabs/TabBase.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/MaintainerMenu.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/MaintainerMenu.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/MaintainerWindow.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/MaintainerWindow.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Tabs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Tabs/AboutTab.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Tabs/AboutTab.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Tabs/Abstractions.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Tabs/Abstractions/BaseTab.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Tabs/Abstractions/BaseTab.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Tabs/Abstractions/RecordsTab.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Tabs/Abstractions/RecordsTab.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Tabs/Abstractions/TwoColumnsTab.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Tabs/Abstractions/TwoColumnsTab.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Tabs/CleanerTab.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Tabs/CleanerTab.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Tabs/IssuesFinder.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Tabs/IssuesFinder/IssuesFinderSettingsUI.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Tabs/IssuesFinder/IssuesFinderSettingsUI.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Tabs/IssuesFinder/IssuesTab.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Tabs/IssuesFinder/IssuesTab.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Tabs/ReferencesFinder.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Tabs/ReferencesFinder/ChildTabs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Tabs/ReferencesFinder/ChildTabs/Project.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Tabs/ReferencesFinder/ChildTabs/Project/ProjectExactReferencesListPanel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Tabs/ReferencesFinder/ChildTabs/Project/ProjectExactReferencesListPanel.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Tabs/ReferencesFinder/ChildTabs/Project/ProjectReferencesTab.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Tabs/ReferencesFinder/ChildTabs/Project/ProjectReferencesTab.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Tabs/ReferencesFinder/ChildTabs/Project/ProjectReferencesTreePanel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Tabs/ReferencesFinder/ChildTabs/Project/ProjectReferencesTreePanel.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Tabs/ReferencesFinder/ChildTabs/ReferencesChildTab.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Tabs/ReferencesFinder/ChildTabs/ReferencesChildTab.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Tabs/ReferencesFinder/ChildTabs/Scene.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Tabs/ReferencesFinder/ChildTabs/Scene/HierarchyReferencesTab.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Tabs/ReferencesFinder/ChildTabs/Scene/HierarchyReferencesTab.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Tabs/ReferencesFinder/ChildTabs/Scene/HierarchyReferencesTreePanel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Tabs/ReferencesFinder/ChildTabs/Scene/HierarchyReferencesTreePanel.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Tabs/ReferencesFinder/ReferencesTab.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Tabs/ReferencesFinder/ReferencesTab.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/TreeViews.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/TreeViews/ListTreeView.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/TreeViews/ListTreeView.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/TreeViews/MaintainerMultiColumnHeader.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/TreeViews/MaintainerMultiColumnHeader.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/TreeViews/MaintainerTreeView.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/TreeViews/MaintainerTreeView.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/TreeViews/References.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/TreeViews/References/ExactReferencesList.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/TreeViews/References/ExactReferencesList.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/TreeViews/References/ExactReferencesListItem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/TreeViews/References/ExactReferencesListItem.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/TreeViews/References/HierarchyReferencesTreeView.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/TreeViews/References/HierarchyReferencesTreeView.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/TreeViews/References/HierarchyReferencesTreeViewItem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/TreeViews/References/HierarchyReferencesTreeViewItem.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/TreeViews/References/ProjectReferencesTreeView.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/TreeViews/References/ProjectReferencesTreeView.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/TreeViews/References/ProjectReferencesTreeViewItem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/TreeViews/References/ProjectReferencesTreeViewItem.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Utils.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Utils/CSAssetsLoader.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Utils/CSAssetsLoader.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Utils/UIHelpers.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Utils/UIHelpers.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/About.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/About.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/ArrowLeft.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/ArrowLeft.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/ArrowRight.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/ArrowRight.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/AutoFix.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/AutoFix.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/Clean.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/Clean.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/Clear.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/Clear.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/Collapse.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/Collapse.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/Copy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/Copy.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/Delete.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/Delete.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/DoubleArrowLeft.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/DoubleArrowLeft.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/DoubleArrowRight.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/DoubleArrowRight.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/Expand.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/Expand.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/Export.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/Export.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/Filter.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/Filter.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/Find.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/Find.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/Gear.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/Gear.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/HelpOutline.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/HelpOutline.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/Hide.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/Hide.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/Home.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/Home.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/Issue.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/Issue.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/Log.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/Log.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/Maintainer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/Maintainer.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/Minus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/Minus.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/More.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/More.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/Plus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/Plus.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/Publisher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/Publisher.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/Repeat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/Repeat.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/Restore.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/Restore.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/Reveal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/Reveal.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/RevealBig.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/RevealBig.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/SelectAll.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/SelectAll.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/SelectNone.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/SelectNone.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/Show.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/Show.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/Star.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/Star.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/Support.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/Support.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/UAS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Icons/UAS.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForBright/Logo.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/About.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/About.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/ArrowLeft.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/ArrowLeft.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/ArrowRight.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/ArrowRight.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/AutoFix.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/AutoFix.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/Clean.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/Clean.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/Clear.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/Clear.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/Collapse.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/Collapse.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/Copy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/Copy.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/Delete.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/Delete.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/DoubleArrowLeft.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/DoubleArrowLeft.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/DoubleArrowRight.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/DoubleArrowRight.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/Expand.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/Expand.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/Export.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/Export.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/Filter.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/Filter.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/Find.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/Find.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/Gear.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/Gear.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/HelpOutline.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/HelpOutline.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/Hide.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/Hide.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/Home.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/Home.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/Issue.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/Issue.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/Log.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/Log.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/Maintainer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/Maintainer.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/Minus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/Minus.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/More.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/More.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/Plus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/Plus.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/Publisher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/Publisher.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/Repeat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/Repeat.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/Restore.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/Restore.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/Reveal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/Reveal.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/RevealBig.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/RevealBig.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/SelectAll.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/SelectAll.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/SelectNone.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/SelectNone.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/Show.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/Show.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/Star.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/Star.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/Support.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/Support.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/UAS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Icons/UAS.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Editor/Textures/ForDark/Logo.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Readme.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/Readme.pdf.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/CodeStage/Maintainer/package.json.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/ILeanTween.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/ILeanTween.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/LTDescr.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/LTDescr.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/LeanAudio.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/LeanAudio.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/LeanTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/LeanTest.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/LeanTween.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/LeanTween.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/LeanTween.dll.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/LeanTween.dll.zip.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrefabsNonResources.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrefabsNonResources/Console.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrefabsNonResources/Console/CommandCommon.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrefabsNonResources/Console/CommandCommon.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrefabsNonResources/Console/CommandHelp.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrefabsNonResources/Console/CommandHelp.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrefabsNonResources/Debug.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrefabsNonResources/Debug/TileDebug.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrefabsNonResources/Debug/TileDebug.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrefabsNonResources/Inventory.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrefabsNonResources/Inventory/Inventory.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrefabsNonResources/Inventory/Inventory.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrefabsNonResources/Inventory/InventorySpace.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrefabsNonResources/Inventory/InventorySpace.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Status.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Status/BleedingStatus.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Status/BleedingStatus.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Status/BurntStatus.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Status/BurntStatus.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Status/ConfusedStatus.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Status/ConfusedStatus.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Status/FrozenStatus.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Status/FrozenStatus.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Status/ParalizedStatus.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Status/ParalizedStatus.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Status/PoisonedStatus.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Status/PoisonedStatus.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Status/TauntedStatus.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Status/TauntedStatus.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Status/WetStatus.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Status/WetStatus.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_www.unityassetcollection.com.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_www.unityassetcollection.com.txt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeStage.Maintainer.Editor.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsoleProDebug.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsoleProRemote.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/MaintainerSettings.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Battery.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Battery/New Sprite Atlas.spriteatlas" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Battery/New Sprite Atlas.spriteatlas.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Battery/batteries.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Battery/batteries.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Enemies.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Enemies/keys1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Enemies/keys1.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Tiles/tiles1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Tiles/tiles1.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Ui/purpleButton.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Ui/purpleButton.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Map/RoomManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Map/RoomManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Actions.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Actions/DoActionManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Actions/DoActionManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Actions/LoadActionManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Actions/LoadActionManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Health/EnergyBarManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Health/EnergyBarManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Health/HealthBarBatteryController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Health/HealthBarBatteryController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Health/HealthBarManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Health/HealthBarManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Data/config.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Data/config/resolutions.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Data/config/resolutions.json.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Data/gameData.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Data/gameData/basicMovements.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Data/gameData/basicMovements.json.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Data/gameData/status.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Data/gameData/status.json.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Data/game_data.sjson/639845247.947143" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Data/game_data.sjson/639845247.947143.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Data/game_data.sjson/639846523.17558" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Data/game_data.sjson/639846523.17558.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Data/locized.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Data/locized/en.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Data/locized/en.json.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Data/locized/status.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Data/locized/status.json.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Gizmos.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrefabsNonResources/Batteries.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrefabsNonResources/Batteries/EnergyBatteryDown.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrefabsNonResources/Batteries/EnergyBatteryDown.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrefabsNonResources/Batteries/EnergyBatteryUp.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrefabsNonResources/Batteries/EnergyBatteryUp.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrefabsNonResources/Batteries/HealthBatteryDown.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrefabsNonResources/Batteries/HealthBatteryDown.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrefabsNonResources/Batteries/HealthBatteryUp.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrefabsNonResources/Batteries/HealthBatteryUp.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Tiles/StoneSpike.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Tiles/StoneSpike.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/svgImporterSettings.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/svgImporterSettings.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Accessibility.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/ConsoleProDebug.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/ConsoleProRemote.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Mono.Data.Sqlite.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Mono.WebBrowser.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Newtonsoft.Json.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Novell.Directory.Ldap.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/System.ComponentModel.Composition.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/System.ComponentModel.DataAnnotations.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/System.Data.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/System.Design.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/System.Diagnostics.StackTrace.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/System.DirectoryServices.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/System.Drawing.Design.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/System.Drawing.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/System.EnterpriseServices.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/System.Globalization.Extensions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/System.IO.Compression.FileSystem.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/System.IO.Compression.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/System.Net.Http.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/System.Numerics.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/System.Runtime.Serialization.Formatters.Soap.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/System.Runtime.Serialization.Xml.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/System.Runtime.Serialization.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/System.ServiceModel.Internals.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/System.Transactions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/System.Web.ApplicationServices.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/System.Web.Services.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/System.Web.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/System.Windows.Forms.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/System.Xml.Linq.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/System.Xml.XPath.XDocument.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.InternalAPIEngineBridge.003.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.VectorGraphics.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/netstandard.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.isometric-strategy-game/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.isometric-strategy-game/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.isometric-strategy-game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.isometric-strategy-game/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp-Editor-firstpass.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp-Editor-firstpass.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp-firstpass.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp-firstpass.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Mouse/mouseDown.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Mouse/mouseDown.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Mouse/mouseGrabbed.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Mouse/mouseGrabbed.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Mouse/mouseUp.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Mouse/mouseUp.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Art/Ui/Ui.spriteatlas" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Ui/Ui.spriteatlas" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Ui/panel.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Ui/panel.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Models/Map.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Models/Map.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/MapControls.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Map/MapControls.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/MapControls.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Map/MapControls.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/MapLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Map/MapLoader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/MapLoader.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Map/MapLoader.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/TileDebugWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Map/TileDebugWindow.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/TileDebugWindow.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Map/TileDebugWindow.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/debug/Console.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Debug/Console.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/debug/Console.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Debug/Console.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/debug/DebugInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Debug/DebugInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/debug/DebugInfo.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Debug/DebugInfo.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CursorModifier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Map/CursorModifier.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CursorModifier.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Map/CursorModifier.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Models/Cell.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Models/Cell.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Models/GameConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Models/GameConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Models/TileCalcs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Models/TileCalcs.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Debug/Console.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Debug/Console.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Map/MapControls.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Map/MapControls.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Map/MapLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Map/MapLoader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/System/Locize.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Locize.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/System/PlayerData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/PlayerData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/System/Status.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Health.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/System/Status/TooltipTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Health/TooltipTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/System/Status/TooltipTrigger.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Health/TooltipTrigger.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/en.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/en.json.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/game_data.sjson/639770839.216328" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/game_data.sjson/639770839.216328" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Data/game_data.sjson/data" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/game_data.sjson/data" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Data/game_data.sjson/metaData" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/game_data.sjson/metaData" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Data/map.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/map.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Console.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Console/CommandCommon.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Console/CommandCommon.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Console/CommandHelp.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Console/CommandHelp.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Debug.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Debug/TileDebug.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Debug/TileDebug.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/resolutions.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/resolutions.json.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/status.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/status.json.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/AvenuePixel1/SVG/AvenuePixel-Regular.svg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/AvenuePixel1/SVG/AvenuePixel-Regular.svg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/AvenuePixel1/SVG/AvenuePixelSoft-Stroke-Regular.svg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/AvenuePixel1/SVG/AvenuePixelSoft-Stroke-Regular.svg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/AvenuePixel1/SVG/AvenuePixelStroke-Regular.svg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/AvenuePixel1/SVG/AvenuePixelStroke-Regular.svg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Tiles/SelectedTile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Tiles/SelectedTile.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Tiles/SpikeTile.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Tiles/SpikeTile.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Tiles/Stone1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Tiles/Stone1.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_www.unityassetcollection.com.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_www.unityassetcollection.com.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeStage.Maintainer.Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CodeStage.Maintainer.Editor.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleProDebug.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleProDebug.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleProRemote.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleProRemote.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/APIUpdater/project-dependencies.graph" beforeDir="false" afterPath="$PROJECT_DIR$/Library/APIUpdater/project-dependencies.graph" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/EditorInstance.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/EditorInstance.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ProtocolInstance.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ProtocolInstance.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ProtocolInstance.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/BuiltinAssemblies.stamp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/PsdPlugin.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/PsdPlugin.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll" afterDir="false" />
@@ -770,8 +192,28 @@
       <change beforePath="$PROJECT_DIR$/Library/SpriteAtlasDatabase.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SpriteAtlasDatabase.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/UIElements/EditorWindows/UnityEditor.PackageManager.UI.PackageManagerWindow.pref" beforeDir="false" afterPath="$PROJECT_DIR$/Library/UIElements/EditorWindows/UnityEditor.PackageManager.UI.PackageManagerWindow.pref" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/isometric-strategy-game.sln" beforeDir="false" afterPath="$PROJECT_DIR$/isometric-strategy-game.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Assembly-CSharp-firstpass.dll" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Assembly-CSharp-firstpass.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Assembly-CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.2D.Animation.Runtime.dll" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.2D.Animation.Runtime.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.2D.Animation.Triangle.Runtime.dll" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.2D.Animation.Triangle.Runtime.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.2D.Common.Runtime.dll" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.2D.Common.Runtime.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.2D.PixelPerfect.dll" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.2D.PixelPerfect.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.2D.SpriteShape.Runtime.dll" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.2D.SpriteShape.Runtime.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.InternalAPIEngineBridge.001.dll" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.InternalAPIEngineBridge.001.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.Mathematics.dll" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.Mathematics.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.TextMeshPro.dll" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.TextMeshPro.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.Timeline.dll" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.Timeline.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/UnityEngine.UI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/UnityEngine.UI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/globalgamemanagers" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/globalgamemanagers" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/globalgamemanagers.assets" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/globalgamemanagers.assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/level0" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/level0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/resources.assets" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/resources.assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/resources.assets.resS" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/resources.assets.resS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/sharedassets0.assets" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/sharedassets0.assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/sharedassets0.assets.resS" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/sharedassets0.assets.resS" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -802,29 +244,39 @@
         <option value="$PROJECT_DIR$/Assets/Plugins/CodeStage/AdvancedFPSCounter/Runtime/Scripts/AFPSCounter.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Scripts/DebugInfo.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Models/Tile.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Models/Cell.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Models/TileCalcs.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Scripts/MapLoader.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Scripts/MapControls.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Scripts/debug/Console.cs" />
         <option value="$PROJECT_DIR$/Assets/CursorModifier.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/TurnManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/Inventory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/PlayerData.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Models/Map.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/Inventory/Item.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Scriptables/CardTemplate.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Scripts/Map/CursorModifier.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/Status/StatusController.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/Status/StatusView.cs" />
         <option value="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/TestingAllCS.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Scripts/Map/MapControls.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/Tooltip/TooltipManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/Tooltip/Tooltip.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Models/GameConfig.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Scripts/Map/MapLoader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Scripts/Locized.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/Status/TooltipTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/Locize.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Models/GameConfig.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/Actions/ActionManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/SVGAssets_1_3_5/Scripts/SVGAssets/SVGAtlas.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Models/Cell.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Models/TileCalcs.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Scriptables/CardTemplate.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/Actions/LoadActionManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Scripts/Map/MapLoader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/Health/HealthBarBatteryController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/Health/HealthBarManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/Health/EnergyBarManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/PlayerData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Scripts/Map/RoomManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/Actions/DoActionManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Scripts/Debug/Console.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Scripts/Map/MapControls.cs" />
       </list>
     </option>
   </component>
@@ -838,6 +290,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34975636" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.29994586" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -894,7 +348,13 @@
       <workItem from="1617733338344" duration="379000" />
       <workItem from="1617814113037" duration="598000" />
       <workItem from="1618015077629" duration="2337000" />
-      <workItem from="1618050580440" duration="9385000" />
+      <workItem from="1618050580440" duration="20663000" />
+      <workItem from="1618152315130" duration="11692000" />
+      <workItem from="1618250936254" duration="1042000" />
+      <workItem from="1618258653208" duration="225000" />
+      <workItem from="1618480171898" duration="871000" />
+      <workItem from="1618500008301" duration="4148000" />
+      <workItem from="1618589054242" duration="7314000" />
     </task>
     <servers />
   </component>
@@ -920,6 +380,10 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state width="490" height="464" key="DebuggerActiveHint" timestamp="1618165271510">
+      <screen x="1440" y="25" width="1920" height="1055" />
+    </state>
+    <state width="490" height="464" key="DebuggerActiveHint/1440.25.1920.1055/0.25.1440.801@1440.25.1920.1055" timestamp="1618165271510" />
     <state x="2227" y="453" width="546" height="198" key="Github.ShareDialog" timestamp="1616005992029">
       <screen x="1440" y="25" width="1920" height="1055" />
     </state>
@@ -928,15 +392,97 @@
       <screen x="1440" y="25" width="1920" height="1055" />
     </state>
     <state x="2091" y="262" key="Github.UntrackedFilesDialog/0.25.1440.801/1440.25.1920.1055@1440.25.1920.1055" timestamp="1616006024909" />
-    <state x="2192" y="258" key="RiderGenerateDialog" timestamp="1618072521214">
+    <state width="1878" height="381" key="GridCell.Tab.0.bottom" timestamp="1618180423127">
       <screen x="1440" y="25" width="1920" height="1055" />
     </state>
+    <state width="1878" height="381" key="GridCell.Tab.0.bottom/1440.25.1920.1055/0.25.1440.801@1440.25.1920.1055" timestamp="1618180423127" />
+    <state width="1878" height="381" key="GridCell.Tab.0.bottom/1440.25.1920.1055/0.25.1440.804@1440.25.1920.1055" timestamp="1618165365693" />
+    <state width="1878" height="381" key="GridCell.Tab.0.center" timestamp="1618180423126">
+      <screen x="1440" y="25" width="1920" height="1055" />
+    </state>
+    <state width="1878" height="381" key="GridCell.Tab.0.center/1440.25.1920.1055/0.25.1440.801@1440.25.1920.1055" timestamp="1618180423126" />
+    <state width="1878" height="381" key="GridCell.Tab.0.center/1440.25.1920.1055/0.25.1440.804@1440.25.1920.1055" timestamp="1618165365691" />
+    <state width="1878" height="381" key="GridCell.Tab.0.left" timestamp="1618180423125">
+      <screen x="1440" y="25" width="1920" height="1055" />
+    </state>
+    <state width="1878" height="381" key="GridCell.Tab.0.left/1440.25.1920.1055/0.25.1440.801@1440.25.1920.1055" timestamp="1618180423125" />
+    <state width="1878" height="381" key="GridCell.Tab.0.left/1440.25.1920.1055/0.25.1440.804@1440.25.1920.1055" timestamp="1618165365690" />
+    <state width="1878" height="381" key="GridCell.Tab.0.right" timestamp="1618180423126">
+      <screen x="1440" y="25" width="1920" height="1055" />
+    </state>
+    <state width="1878" height="381" key="GridCell.Tab.0.right/1440.25.1920.1055/0.25.1440.801@1440.25.1920.1055" timestamp="1618180423126" />
+    <state width="1878" height="381" key="GridCell.Tab.0.right/1440.25.1920.1055/0.25.1440.804@1440.25.1920.1055" timestamp="1618165365692" />
+    <state width="1878" height="381" key="GridCell.Tab.1.bottom" timestamp="1618180423128">
+      <screen x="1440" y="25" width="1920" height="1055" />
+    </state>
+    <state width="1878" height="381" key="GridCell.Tab.1.bottom/1440.25.1920.1055/0.25.1440.801@1440.25.1920.1055" timestamp="1618180423128" />
+    <state width="1878" height="381" key="GridCell.Tab.1.bottom/1440.25.1920.1055/0.25.1440.804@1440.25.1920.1055" timestamp="1618165365696" />
+    <state width="1878" height="381" key="GridCell.Tab.1.center" timestamp="1618180423128">
+      <screen x="1440" y="25" width="1920" height="1055" />
+    </state>
+    <state width="1878" height="381" key="GridCell.Tab.1.center/1440.25.1920.1055/0.25.1440.801@1440.25.1920.1055" timestamp="1618180423128" />
+    <state width="1878" height="381" key="GridCell.Tab.1.center/1440.25.1920.1055/0.25.1440.804@1440.25.1920.1055" timestamp="1618165365694" />
+    <state width="1878" height="381" key="GridCell.Tab.1.left" timestamp="1618180423128">
+      <screen x="1440" y="25" width="1920" height="1055" />
+    </state>
+    <state width="1878" height="381" key="GridCell.Tab.1.left/1440.25.1920.1055/0.25.1440.801@1440.25.1920.1055" timestamp="1618180423128" />
+    <state width="1878" height="381" key="GridCell.Tab.1.left/1440.25.1920.1055/0.25.1440.804@1440.25.1920.1055" timestamp="1618165365694" />
+    <state width="1878" height="381" key="GridCell.Tab.1.right" timestamp="1618180423128">
+      <screen x="1440" y="25" width="1920" height="1055" />
+    </state>
+    <state width="1878" height="381" key="GridCell.Tab.1.right/1440.25.1920.1055/0.25.1440.801@1440.25.1920.1055" timestamp="1618180423128" />
+    <state width="1878" height="381" key="GridCell.Tab.1.right/1440.25.1920.1055/0.25.1440.804@1440.25.1920.1055" timestamp="1618165365695" />
+    <state width="1878" height="381" key="GridCell.Tab.2.bottom" timestamp="1618180423130">
+      <screen x="1440" y="25" width="1920" height="1055" />
+    </state>
+    <state width="1878" height="381" key="GridCell.Tab.2.bottom/1440.25.1920.1055/0.25.1440.801@1440.25.1920.1055" timestamp="1618180423130" />
+    <state width="1878" height="381" key="GridCell.Tab.2.bottom/1440.25.1920.1055/0.25.1440.804@1440.25.1920.1055" timestamp="1618165365698" />
+    <state width="1878" height="381" key="GridCell.Tab.2.center" timestamp="1618180423129">
+      <screen x="1440" y="25" width="1920" height="1055" />
+    </state>
+    <state width="1878" height="381" key="GridCell.Tab.2.center/1440.25.1920.1055/0.25.1440.801@1440.25.1920.1055" timestamp="1618180423129" />
+    <state width="1878" height="381" key="GridCell.Tab.2.center/1440.25.1920.1055/0.25.1440.804@1440.25.1920.1055" timestamp="1618165365697" />
+    <state width="1878" height="381" key="GridCell.Tab.2.left" timestamp="1618180423129">
+      <screen x="1440" y="25" width="1920" height="1055" />
+    </state>
+    <state width="1878" height="381" key="GridCell.Tab.2.left/1440.25.1920.1055/0.25.1440.801@1440.25.1920.1055" timestamp="1618180423129" />
+    <state width="1878" height="381" key="GridCell.Tab.2.left/1440.25.1920.1055/0.25.1440.804@1440.25.1920.1055" timestamp="1618165365697" />
+    <state width="1878" height="381" key="GridCell.Tab.2.right" timestamp="1618180423129">
+      <screen x="1440" y="25" width="1920" height="1055" />
+    </state>
+    <state width="1878" height="381" key="GridCell.Tab.2.right/1440.25.1920.1055/0.25.1440.801@1440.25.1920.1055" timestamp="1618180423129" />
+    <state width="1878" height="381" key="GridCell.Tab.2.right/1440.25.1920.1055/0.25.1440.804@1440.25.1920.1055" timestamp="1618165365698" />
+    <state width="1878" height="381" key="GridCell.Tab.3.bottom" timestamp="1618180423131">
+      <screen x="1440" y="25" width="1920" height="1055" />
+    </state>
+    <state width="1878" height="381" key="GridCell.Tab.3.bottom/1440.25.1920.1055/0.25.1440.801@1440.25.1920.1055" timestamp="1618180423131" />
+    <state width="1878" height="381" key="GridCell.Tab.3.bottom/1440.25.1920.1055/0.25.1440.804@1440.25.1920.1055" timestamp="1618165365700" />
+    <state width="1878" height="381" key="GridCell.Tab.3.center" timestamp="1618180423130">
+      <screen x="1440" y="25" width="1920" height="1055" />
+    </state>
+    <state width="1878" height="381" key="GridCell.Tab.3.center/1440.25.1920.1055/0.25.1440.801@1440.25.1920.1055" timestamp="1618180423130" />
+    <state width="1878" height="381" key="GridCell.Tab.3.center/1440.25.1920.1055/0.25.1440.804@1440.25.1920.1055" timestamp="1618165365699" />
+    <state width="1878" height="381" key="GridCell.Tab.3.left" timestamp="1618180423130">
+      <screen x="1440" y="25" width="1920" height="1055" />
+    </state>
+    <state width="1878" height="381" key="GridCell.Tab.3.left/1440.25.1920.1055/0.25.1440.801@1440.25.1920.1055" timestamp="1618180423130" />
+    <state width="1878" height="381" key="GridCell.Tab.3.left/1440.25.1920.1055/0.25.1440.804@1440.25.1920.1055" timestamp="1618165365699" />
+    <state width="1878" height="381" key="GridCell.Tab.3.right" timestamp="1618180423130">
+      <screen x="1440" y="25" width="1920" height="1055" />
+    </state>
+    <state width="1878" height="381" key="GridCell.Tab.3.right/1440.25.1920.1055/0.25.1440.801@1440.25.1920.1055" timestamp="1618180423130" />
+    <state width="1878" height="381" key="GridCell.Tab.3.right/1440.25.1920.1055/0.25.1440.804@1440.25.1920.1055" timestamp="1618165365700" />
+    <state x="2192" y="258" key="RiderGenerateDialog" timestamp="1618250978898">
+      <screen x="1440" y="25" width="1920" height="1055" />
+    </state>
+    <state x="2192" y="258" key="RiderGenerateDialog/1440.25.1920.1055/0.25.1440.799@1440.25.1920.1055" timestamp="1618250978898" />
+    <state x="2192" y="258" key="RiderGenerateDialog/1440.25.1920.1055/0.25.1440.804@1440.25.1920.1055" timestamp="1618086612887" />
     <state x="2192" y="258" key="RiderGenerateDialog/1440.25.1920.1055/0.25.1440.805@1440.25.1920.1055" timestamp="1618072521214" />
-    <state x="2063" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1618078934721">
+    <state x="2063" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1618591748470">
       <screen x="1440" y="25" width="1920" height="1055" />
     </state>
-    <state x="2063" y="257" width="672" height="678" key="search.everywhere.popup/1440.25.1920.1055/0.25.1440.799@1440.25.1920.1055" timestamp="1617122689125" />
-    <state x="2063" y="257" width="672" height="678" key="search.everywhere.popup/1440.25.1920.1055/0.25.1440.801@1440.25.1920.1055" timestamp="1618052474195" />
+    <state x="2063" y="257" width="672" height="678" key="search.everywhere.popup/1440.25.1920.1055/0.25.1440.799@1440.25.1920.1055" timestamp="1618591748470" />
+    <state x="2063" y="257" width="672" height="678" key="search.everywhere.popup/1440.25.1920.1055/0.25.1440.801@1440.25.1920.1055" timestamp="1618520363177" />
     <state x="2063" y="257" width="672" height="678" key="search.everywhere.popup/1440.25.1920.1055/0.25.1440.804@1440.25.1920.1055" timestamp="1617389770225" />
     <state x="2063" y="257" width="672" height="678" key="search.everywhere.popup/1440.25.1920.1055/0.25.1440.805@1440.25.1920.1055" timestamp="1618078934721" />
   </component>
