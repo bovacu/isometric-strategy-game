@@ -7,8 +7,15 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Code" t="Include">
+          <e p="Math" t="Include">
+            <e p="IsoMath.cs" t="Include" />
+          </e>
           <e p="Models" t="Include">
-            <e p="Cell.cs" t="Include" />
+            <e p="Cells" t="Include">
+              <e p="Cell.cs" t="Include" />
+              <e p="NonInteractableCell.cs" t="Include" />
+              <e p="SpikeUpDownCell.cs" t="Include" />
+            </e>
             <e p="Entity.cs" t="Include" />
             <e p="GameConfig.cs" t="Include" />
             <e p="Map.cs" t="Include" />
@@ -33,11 +40,14 @@
               <e p="Actions" t="Include">
                 <e p="DoActionManager.cs" t="Include" />
                 <e p="LoadActionManager.cs" t="Include" />
+                <e p="Target.cs" t="Include" />
               </e>
               <e p="Health" t="Include">
                 <e p="EnergyBarManager.cs" t="Include" />
                 <e p="HealthBarBatteryController.cs" t="Include" />
                 <e p="HealthBarManager.cs" t="Include" />
+                <e p="StatusManager.cs" t="Include" />
+                <e p="StatusView.cs" t="Include" />
                 <e p="TooltipTrigger.cs" t="Include" />
               </e>
               <e p="Inventory" t="Include">

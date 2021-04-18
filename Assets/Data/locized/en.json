@@ -3,7 +3,7 @@
   "poisonedEffect" : "Target looses 15% of its maximum health at the end of each turn.",
   "poisonedCuredBy" : "Potion or exiting the room.",
   "bleedingHeader" : "Bleeding",
-  "bleedingEffect" : "Target receives x1.25 of damage.",
+  "bleedingEffect" : "Target an extra point of damage.",
   "bleedingCuredBy" : "Potion, exit room or level.",
   "burntHeader" : "Burnt",
   "burntEffect" : "Target receives 2.5% of its maximum health per move.",
@@ -24,5 +24,5 @@
   "wetEffect" : "Target gets wet.",
   "wetCuredBy" : "Hit by fire, passed 3 turns or exit room.",
   "tooltipEffect" : "Effect: ",
-  "tooltipCuredBy" : "Cured by: "
+  "tooltipCuredBy" : "CuredBy: "
 }

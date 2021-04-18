@@ -35,7 +35,7 @@ public class LoadActionManager {
     
     public bool loadAction(RoomManager _roomManager, int _range, RangeType _rangeType, int _action) {
         try {
-            _roomManager.unloadAvailablePositions();
+            _roomManager.clearTurn();
             return actions[_rangeType](_roomManager, _range, _action);
         }
         catch (Exception e) {
@@ -53,8 +53,8 @@ public class LoadActionManager {
             for (var _j = -_range; _j < _range; _j++) {
                 if(_i == 0 && _j == 0) continue;
                 if (Map.MapInfo.validArea.mouseInsideMap(new Vector2(_targetCell.x + _j, _targetCell.y + _i))) {
-                    Map.MapInfo.mapTiles.First(_c => (int) _c.gridPosition.x == (int)_targetCell.x + _j &&
-                                                     (int) _targetCell.y + _i == (int) _c.gridPosition.y).upSide.GetComponent<SpriteRenderer>().color = _color;
+                    Map.MapInfo.mapCellPrefabs.First(_c => (int) _c.mapCellJson.pos.x == (int)_targetCell.x + _j &&
+                                                     (int) _targetCell.y + _i == (int) _c.mapCellJson.pos.y).upSide.GetComponent<SpriteRenderer>().color = _color;
                     _roomManager.availableCells.Add(new Vector2(_targetCell.x + _j, _targetCell.y + _i));
                 }
             }
@@ -69,32 +69,32 @@ public class LoadActionManager {
 
         for (var _i = 1; _i <= _range; _i++) {
             if (Map.MapInfo.validArea.mouseInsideMap(new Vector2(_targetCell.x + _i, _targetCell.y))) {
-                Map.MapInfo.mapTiles.First(_c => (int) _c.gridPosition.x == (int) _targetCell.x + _i &&
-                                                 (int) _targetCell.y == (int) _c.gridPosition.y).upSide.GetComponent<SpriteRenderer>().color = _color;
+                Map.MapInfo.mapCellPrefabs.First(_c => (int) _c.mapCellJson.pos.x == (int) _targetCell.x + _i &&
+                                                 (int) _targetCell.y == (int) _c.mapCellJson.pos.y).upSide.GetComponent<SpriteRenderer>().color = _color;
                 _roomManager.availableCells.Add(new Vector2(_targetCell.x + _i, _targetCell.y));
             }
         }
 
         for (var _i = 1; _i <= _range; _i++) {
             if (Map.MapInfo.validArea.mouseInsideMap(new Vector2(_targetCell.x - _i, _targetCell.y))) {
-                Map.MapInfo.mapTiles.First(_c => (int) _c.gridPosition.x == (int) _targetCell.x - _i &&
-                                                 (int) _targetCell.y == (int) _c.gridPosition.y).upSide.GetComponent<SpriteRenderer>().color = _color;
+                Map.MapInfo.mapCellPrefabs.First(_c => (int) _c.mapCellJson.pos.x == (int) _targetCell.x - _i &&
+                                                 (int) _targetCell.y == (int) _c.mapCellJson.pos.y).upSide.GetComponent<SpriteRenderer>().color = _color;
                 _roomManager.availableCells.Add(new Vector2(_targetCell.x - _i, _targetCell.y));
             }
         }
 
         for (var _i = 1; _i <= _range; _i++) {
             if (Map.MapInfo.validArea.mouseInsideMap(new Vector2(_targetCell.x, _targetCell.y + _i))) {
-                Map.MapInfo.mapTiles.First(_c => (int) _c.gridPosition.x == (int) _targetCell.x &&
-                                                 (int) _targetCell.y + _i == (int) _c.gridPosition.y).upSide.GetComponent<SpriteRenderer>().color = _color;
+                Map.MapInfo.mapCellPrefabs.First(_c => (int) _c.mapCellJson.pos.x == (int) _targetCell.x &&
+                                                 (int) _targetCell.y + _i == (int) _c.mapCellJson.pos.y).upSide.GetComponent<SpriteRenderer>().color = _color;
                 _roomManager.availableCells.Add(new Vector2(_targetCell.x, _targetCell.y + _i));
             }
         }
 
         for (var _i = 1; _i <= _range; _i++) {
             if (Map.MapInfo.validArea.mouseInsideMap(new Vector2(_targetCell.x, _targetCell.y - _i))) {
-                Map.MapInfo.mapTiles.First(_c => (int) _c.gridPosition.x == (int) _targetCell.x &&
-                                                 (int) _targetCell.y - _i == (int) _c.gridPosition.y).upSide.GetComponent<SpriteRenderer>().color = _color;
+                Map.MapInfo.mapCellPrefabs.First(_c => (int) _c.mapCellJson.pos.x == (int) _targetCell.x &&
+                                                 (int) _targetCell.y - _i == (int) _c.mapCellJson.pos.y).upSide.GetComponent<SpriteRenderer>().color = _color;
                 _roomManager.availableCells.Add(new Vector2(_targetCell.x, _targetCell.y - _i));
             }
         }
@@ -105,8 +105,8 @@ public class LoadActionManager {
         var _color = debugColorSelectionForTiles(_action);
         var _targetCell = _roomManager.getPlayerData().currentCell;
         _roomManager.availableCells.Add(_targetCell);
-        Map.MapInfo.mapTiles.First(_c => (int) _c.gridPosition.x == (int) _targetCell.x &&
-                                         (int) _targetCell.y == (int) _c.gridPosition.y).upSide.GetComponent<SpriteRenderer>().color = _color;
+        Map.MapInfo.mapCellPrefabs.First(_c => (int) _c.mapCellJson.pos.x == (int) _targetCell.x &&
+                                         (int) _targetCell.y == (int) _c.mapCellJson.pos.y).upSide.GetComponent<SpriteRenderer>().color = _color;
         return true;
     }
     

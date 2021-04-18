@@ -182,8 +182,8 @@ public class MapControls : MonoBehaviour {
                 // if(currentSelectedPrefab != null)
                 //     Destroy(currentSelectedPrefab);
                 
-                foreach (var _tile in Map.MapInfo.mapTiles) {
-                    if ((int) _finalCell.x == (int) _tile.gridPosition.x && (int) _finalCell.y == (int) _tile.gridPosition.y) {
+                foreach (var _tile in Map.MapInfo.mapCellPrefabs) {
+                    if ((int) _finalCell.x == (int) _tile.mapCellJson.pos.x && (int) _finalCell.y == (int) _tile.mapCellJson.pos.y) {
                         // currentSelectedPrefab = Instantiate(selectedPrefab, _tile.transform);
                         selectedPrefab.transform.localPosition = _tile.transform.localPosition;
                         currentSelectedTile = _finalCell;

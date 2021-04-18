@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using Newtonsoft.Json;
+using UnityEngine;
 
 public class MapInfo {
     public int width;
@@ -10,25 +11,15 @@ public class MapInfo {
     public int right;
 }
 
-public class Position {
-    public int x;
-    public int y;
-}
-
-public class Tile {
-    public string basePath;
-    public string leftPath;
-    public string rightPath;
-}
-
-public class TileInfo {
-    public Position pos;
+public class MapCellJson {
+    public Vector2 pos;
     public string underlayTile;
+    public int id;
 }
 
 public class Map {
 
-    public List<TileInfo> jsonTiles;
+    public List<MapCellJson> jsonTiles;
     public MapInfo info;
     
     [JsonIgnore] private static Map map;
@@ -37,5 +28,5 @@ public class Map {
         set => map = value;
     }
     [JsonIgnore] public ValidArea validArea = new ValidArea();
-    [JsonIgnore] public List<Cell> mapTiles = new List<Cell>();
+    [JsonIgnore] public List<Cell> mapCellPrefabs = new List<Cell>();
 }

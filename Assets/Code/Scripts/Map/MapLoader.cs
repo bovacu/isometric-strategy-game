@@ -80,28 +80,15 @@ public class MapLoader : MonoBehaviour {
                 var _orthographicPos = new Vector2(_spawnOrigin.x / (100 * TileCalcs.tileWidth), _spawnOrigin.y / (100 * TileCalcs.tileHeight));
                 var _isometricPos = TileCalcs.getRealCell(_orthographicPos, _spawnOrigin, Vector2.zero);
                 
-                var _go = getTilePrefab((int)_isometricPos.x, (int)_isometricPos.y, _tilePos.x, _tilePos.y);
-
-                var _layer = _y * (int) mapSize.x + _x;
-                _go.transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().sortingOrder = (int)(mapSize.x * mapSize.y) - (_y * (int) mapSize.x + _x);
-                _go.transform.GetChild(1).gameObject.GetComponent<SpriteRenderer>().sortingOrder = (int)(mapSize.x * mapSize.y) - (_y * (int) mapSize.x + _x);
-                _go.transform.GetChild(2).gameObject.GetComponent<SpriteRenderer>().sortingOrder = (int)(mapSize.x * mapSize.y) - (_y * (int) mapSize.x + _x);
+                var _cell = getTilePrefab((int)_isometricPos.x, (int)_isometricPos.y, _tilePos.x, _tilePos.y);
                 
-                var _tile = _go.GetComponent<Cell>();
-                _tile.gridPosition = _isometricPos;
-                _tile.size = new Vector2(TileCalcs.tileWidth, TileCalcs.tileHeight);
+                _cell.mapCellJson.pos = _isometricPos;
+                _cell.size = new Vector2(TileCalcs.tileWidth, TileCalcs.tileHeight);
+                _cell.setLayer((int)(mapSize.x * mapSize.y) - (_y * (int) mapSize.x + _x));
                 
-                Map.MapInfo.validArea.adjustArea(_tile.gridPosition);
-                Map.MapInfo.mapTiles.Add(_tile);       
+                Map.MapInfo.validArea.adjustArea(_cell.mapCellJson.pos);
+                Map.MapInfo.mapCellPrefabs.Add(_cell);       
             }
-        }
-
-        // Move ifs inside loop in future, as top, left, bottom, right is included in the map json
-        foreach (var _tile in Map.MapInfo.mapTiles) {
-            if((int)_tile.gridPosition.x == Map.MapInfo.validArea.maxX_left)
-                _tile.activateLeftSide(true);
-            if((int)_tile.gridPosition.y == Map.MapInfo.validArea.maxY_bottom)
-                _tile.activateRightSide(true);
         }
 
         // For different aspect-ratios
@@ -111,26 +98,29 @@ public class MapLoader : MonoBehaviour {
         Resources.UnloadUnusedAssets();
     }
 
-    private GameObject getTilePrefab(int _isoX, int _isoY, float _spawnPosX, float _spawnPosY) {
-        var _tile = Map.MapInfo.jsonTiles.FirstOrDefault(_t => _t.pos.x == _isoX && _t.pos.y == _isoY);
+    private Cell getTilePrefab(int _isoX, int _isoY, float _spawnPosX, float _spawnPosY) {
+        var _mapCellJson = Map.MapInfo.jsonTiles.FirstOrDefault(_t => _t.pos.x == _isoX && _t.pos.y == _isoY);
 
         GameObject _prefab;
 
-        if (loadedFromResources.ContainsKey(_tile.underlayTile))
-            _prefab = loadedFromResources[_tile.underlayTile];
+        if (loadedFromResources.ContainsKey(_mapCellJson.underlayTile))
+            _prefab = loadedFromResources[_mapCellJson.underlayTile];
         else {
-            Debug.Log($"Loaded prefab: {_tile.underlayTile}");
-            _prefab = Resources.Load<GameObject>(_tile.underlayTile);
+            Debug.Log($"Loaded prefab: {_mapCellJson.underlayTile}");
+            _prefab = Resources.Load<GameObject>(_mapCellJson.underlayTile);
 
             if (_prefab == null) {
-                Debug.LogError($"Tried to load prefab '{_tile.underlayTile}', but failed, instantiating placeholder");
+                Debug.LogError($"Tried to load prefab '{_mapCellJson.underlayTile}', but failed, instantiating placeholder");
                 _prefab = placeHolderPrefab;
             }
 
-            loadedFromResources[_tile.underlayTile] = _prefab;
+            loadedFromResources[_mapCellJson.underlayTile] = _prefab;
         }
         
         var _go = Instantiate(_prefab, new Vector3(_spawnPosX, _spawnPosY, 0), Quaternion.identity, mapParent);
-        return _go;
+        var _cell = _go.GetComponent<Cell>();
+        _cell.mapCellJson = _mapCellJson;
+        
+        return _cell;
     }
 }

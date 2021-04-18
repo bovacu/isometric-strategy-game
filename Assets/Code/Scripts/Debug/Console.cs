@@ -177,7 +177,7 @@ public class Console : MonoBehaviour {
 
             try {
                 var _x = int.Parse(_arguments[2]);
-                playerData.updateEnergy(_x);
+                playerData.setEnergy(_x);
                 
                 addResult($"Player energy {_x}");
             } catch (Exception _e) {
@@ -195,7 +195,7 @@ public class Console : MonoBehaviour {
 
             try {
                 var _x = int.Parse(_arguments[2]);
-                playerData.updateHealth(_x);
+                playerData.setHealth(_x);
                 
                 addResult($"Player health {_x}");
             } catch (Exception _e) {

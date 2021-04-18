@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
@@ -12,32 +13,83 @@ public class RoomManager : MonoBehaviour {
     [SerializeField] private GameObject statusContainer;
     [SerializeField] private TextMeshProUGUI nextActionTxt;
     [SerializeField] private TextMeshProUGUI turnTxt;
-
-    [SerializeField] private Button finishMoveBtn;
     [SerializeField] private Button finishTurnBtn;
     
+    [Header("DebugButtons")]
+    [SerializeField] private Button moveBtn;
+    [SerializeField] private Button meleeBtn;
+    [SerializeField] private Button rangeBtn;
+    [SerializeField] private Button defenseBtn;
+    
     private NextAction nextAction;
-    private int turnCount = 1;
     public List<Vector2> availableCells = new List<Vector2>();
     private DoActionManager doActionManager = new DoActionManager();
     private LoadActionManager loadActionManager = new LoadActionManager();
+
+    public Target UserTarget;
+    public List<Target> AffectedTargets;
+    public List<Target> RoomTargets;
+    
+    public int Turn { get; set; } = 1;
 
     private void Awake() {
         roomManager = this;
         playerData.gameObject.SetActive(true);
         nextAction = NextAction.IDLE;
         nextActionTxt.text = $"Next Action: {nextAction}";
-        turnTxt.text = $"Turn: {turnCount}";
+        turnTxt.text = $"Turn: {Turn}";
         
         loadActionManager.initLoadActionManager();
         doActionManager.initDoActionManager();
     }
 
     private void Start() {
-        finishMoveBtn.interactable = false;
-        playerData.updatePosToCellPos(playerData.currentCell, true);
+        playerData.moveAnim(playerData.currentCell, true);
+        finishTurnBtn.onClick.AddListener(() => {
+            StartCoroutine(changeTurnAndUpdateTilesAndEnemies());
+        });
+
+        AffectedTargets = new List<Target>();
+        RoomTargets = new List<Target> {playerData};
+
+
+        moveBtn.onClick.AddListener(() => {
+            UserTarget = playerData;
+            SetNextAction(NextAction.MOVE);
+        });
+        
+        meleeBtn.onClick.AddListener(() => {
+            UserTarget = playerData;
+            SetNextAction(NextAction.MELEE);
+        });
+        
+        rangeBtn.onClick.AddListener(() => {
+            UserTarget = playerData;
+            SetNextAction(NextAction.RANGE);
+        });
+        
+        defenseBtn.onClick.AddListener(() => {
+            UserTarget = playerData;
+            SetNextAction(NextAction.DEFENSE);
+        });
     }
 
+    IEnumerator changeTurnAndUpdateTilesAndEnemies() {
+        Turn++;
+        //Enemy update
+        
+        // Cell update
+        foreach (var _cell in Map.MapInfo.mapCellPrefabs)
+            _cell.update(this);
+
+        foreach (var _target in RoomTargets) 
+            _target.updateHealthStatus();
+
+        playerData.setEnergy(playerData.currentEnergy + playerData.baseEnergy / 2);
+
+        yield return null;
+    }
+    
     public PlayerData getPlayerData() {
         return roomManager.playerData;
     }
@@ -50,13 +102,13 @@ public class RoomManager : MonoBehaviour {
             _onEnd?.Invoke();
     }
 
-    public void SetNextAction(int _action) {
-        if ((int) nextAction == _action && availableCells.Any()) {
-            unloadAvailablePositions();
+    public void SetNextAction(NextAction _action) {
+        if ( nextAction == _action && availableCells.Any()) {
+            clearTurn();
             return;
         }
         
-        nextAction = (NextAction) _action;
+        nextAction = _action;
         nextActionTxt.text = $"Next Action: {nextAction}";
         loadAction(nextAction);
     }
@@ -69,23 +121,28 @@ public class RoomManager : MonoBehaviour {
         loadActionManager.loadAction(roomManager, _range, GameConfig.basicMovements[_intAction].rangeType, _intAction);
     }
 
-    public void unloadAvailablePositions() {
+    public void clearTurn(bool _full = false) {
         foreach (var _cell in availableCells) 
-            Map.MapInfo.mapTiles.First(_c => _c.gridPosition.Equals(_cell)).upSide.GetComponent<SpriteRenderer>().color = Color.white;
+            Map.MapInfo.mapCellPrefabs.First(_c => _c.mapCellJson.pos.Equals(_cell)).upSide.GetComponent<SpriteRenderer>().color = Color.white;
         availableCells.Clear();
-    }
 
-    private static string statusToString(State _state) {
-        switch (_state) {
-            case State.NONE: return "none";
-            case State.BURNT: return "burnt";
-            case State.FROZEN: return "frozen";
-            case State.PARALIZED: return "paralized";
-            case State.POISONED: return "poisoned";
-            case State.CONFUSED: return "confused";
-            case State.TAUNTED: return "taunted";
-            default:
-                throw new ArgumentOutOfRangeException(nameof(_state), _state, null);
+        if (_full) {
+            UserTarget = null;
+            AffectedTargets.Clear();
         }
     }
+
+    // private static string statusToString(State _state) {
+    //     switch (_state) {
+    //         case State.NONE: return "none";
+    //         case State.BURNT: return "burnt";
+    //         case State.FROZEN: return "frozen";
+    //         case State.PARALIZED: return "paralized";
+    //         case State.POISONED: return "poisoned";
+    //         case State.CONFUSED: return "confused";
+    //         case State.TAUNTED: return "taunted";
+    //         default:
+    //             throw new ArgumentOutOfRangeException(nameof(_state), _state, null);
+    //     }
+    // }
 }

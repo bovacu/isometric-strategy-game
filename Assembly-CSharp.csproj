@@ -58,7 +58,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Code\Models\Cell.cs" />
+     <Compile Include="Assets\Code\Math\IsoMath.cs" />
+     <Compile Include="Assets\Code\Models\Cells\Cell.cs" />
+     <Compile Include="Assets\Code\Models\Cells\NonInteractableCell.cs" />
+     <Compile Include="Assets\Code\Models\Cells\SpikeUpDownCell.cs" />
      <Compile Include="Assets\Code\Models\Entity.cs" />
      <Compile Include="Assets\Code\Models\GameConfig.cs" />
      <Compile Include="Assets\Code\Models\Map.cs" />
@@ -73,9 +76,12 @@
      <Compile Include="Assets\Code\Scripts\Map\TileDebugWindow.cs" />
      <Compile Include="Assets\Code\Scripts\System\Actions\DoActionManager.cs" />
      <Compile Include="Assets\Code\Scripts\System\Actions\LoadActionManager.cs" />
+     <Compile Include="Assets\Code\Scripts\System\Actions\Target.cs" />
      <Compile Include="Assets\Code\Scripts\System\Health\EnergyBarManager.cs" />
      <Compile Include="Assets\Code\Scripts\System\Health\HealthBarBatteryController.cs" />
      <Compile Include="Assets\Code\Scripts\System\Health\HealthBarManager.cs" />
+     <Compile Include="Assets\Code\Scripts\System\Health\StatusManager.cs" />
+     <Compile Include="Assets\Code\Scripts\System\Health\StatusView.cs" />
      <Compile Include="Assets\Code\Scripts\System\Health\TooltipTrigger.cs" />
      <Compile Include="Assets\Code\Scripts\System\Inventory\Inventory.cs" />
      <Compile Include="Assets\Code\Scripts\System\Inventory\Item.cs" />

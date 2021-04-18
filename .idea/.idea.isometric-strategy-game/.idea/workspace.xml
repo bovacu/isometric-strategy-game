@@ -20,200 +20,76 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ff4361c-badc-40f2-b68c-20fcfc97eaf9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Battery.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Battery/New Sprite Atlas.spriteatlas" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Battery/New Sprite Atlas.spriteatlas.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Battery/batteries.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Battery/batteries.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Enemies.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Enemies/keys1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Enemies/keys1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Tiles/tiles1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Tiles/tiles1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Ui/purpleButton.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Ui/purpleButton.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Map/RoomManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Map/RoomManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Actions.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Actions/DoActionManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Actions/DoActionManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Actions/LoadActionManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Actions/LoadActionManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Health/EnergyBarManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Health/EnergyBarManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Health/HealthBarBatteryController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Health/HealthBarBatteryController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Health/HealthBarManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Health/HealthBarManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Data/config.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Data/config/resolutions.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Data/config/resolutions.json.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Data/gameData.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Data/gameData/basicMovements.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Data/gameData/basicMovements.json.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Data/gameData/status.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Data/gameData/status.json.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Data/game_data.sjson/639845247.947143" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Data/game_data.sjson/639845247.947143.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Data/game_data.sjson/639846523.17558" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Data/game_data.sjson/639846523.17558.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Data/locized.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Data/locized/en.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Data/locized/en.json.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Data/locized/status.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Data/locized/status.json.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Gizmos.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrefabsNonResources/Batteries.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrefabsNonResources/Batteries/EnergyBatteryDown.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrefabsNonResources/Batteries/EnergyBatteryDown.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrefabsNonResources/Batteries/EnergyBatteryUp.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrefabsNonResources/Batteries/EnergyBatteryUp.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrefabsNonResources/Batteries/HealthBatteryDown.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrefabsNonResources/Batteries/HealthBatteryDown.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrefabsNonResources/Batteries/HealthBatteryUp.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrefabsNonResources/Batteries/HealthBatteryUp.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Tiles/StoneSpike.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Tiles/StoneSpike.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/svgImporterSettings.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/svgImporterSettings.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Accessibility.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/ConsoleProDebug.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/ConsoleProRemote.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Mono.Data.Sqlite.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Mono.WebBrowser.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Newtonsoft.Json.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Novell.Directory.Ldap.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/System.ComponentModel.Composition.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/System.ComponentModel.DataAnnotations.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/System.Data.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/System.Design.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/System.Diagnostics.StackTrace.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/System.DirectoryServices.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/System.Drawing.Design.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/System.Drawing.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/System.EnterpriseServices.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/System.Globalization.Extensions.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/System.IO.Compression.FileSystem.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/System.IO.Compression.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/System.Net.Http.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/System.Numerics.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/System.Runtime.Serialization.Formatters.Soap.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/System.Runtime.Serialization.Xml.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/System.Runtime.Serialization.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/System.ServiceModel.Internals.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/System.Transactions.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/System.Web.ApplicationServices.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/System.Web.Services.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/System.Web.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/System.Windows.Forms.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/System.Xml.Linq.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/System.Xml.XPath.XDocument.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.InternalAPIEngineBridge.003.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.VectorGraphics.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/netstandard.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Ui/Status.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Ui/Status.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Math.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Math/IsoMath.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Math/IsoMath.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Models/Cells.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Models/Cells/NonInteractableCell.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Models/Cells/NonInteractableCell.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Models/Cells/SpikeUpDownCell.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Models/Cells/SpikeUpDownCell.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Actions/Target.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Actions/Target.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Health/StatusManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Health/StatusManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Health/StatusView.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Health/StatusView.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Data/gameData/cells.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Data/gameData/cells.json.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Data/game_data.sjson/640449358.511737" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Data/game_data.sjson/640449358.511737.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Tiles/StoneSpikeDynamic.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Tiles/StoneSpikeDynamic.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.isometric-strategy-game/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.isometric-strategy-game/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.isometric-strategy-game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.isometric-strategy-game/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp-firstpass.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp-firstpass.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Art/Ui/Ui.spriteatlas" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Ui/Ui.spriteatlas" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Models/Cell.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Models/Cell.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Ui/purpleButton.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Ui/purpleButton.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Models/Cell.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Models/Cells/Cell.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Models/Cell.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Models/Cells/Cell.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Models/GameConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Models/GameConfig.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Models/TileCalcs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Models/TileCalcs.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Models/Map.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Models/Map.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Debug/Console.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Debug/Console.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Map/MapControls.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Map/MapControls.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Map/MapLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Map/MapLoader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/System/Locize.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Locize.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Map/RoomManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Map/RoomManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/System/Actions/DoActionManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Actions/DoActionManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/System/Actions/LoadActionManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Actions/LoadActionManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/System/Health/HealthBarManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Health/HealthBarManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/System/PlayerData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/PlayerData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/System/Status.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Health.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/System/Status/TooltipTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Health/TooltipTrigger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/System/Status/TooltipTrigger.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Health/TooltipTrigger.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/en.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/en.json.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/game_data.sjson/639770839.216328" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/game_data.sjson/639770839.216328" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/System/Tooltip/Tooltip.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Tooltip/Tooltip.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/gameData/status.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/gameData/status.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/game_data.sjson/639773024.453761" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/game_data.sjson/639773024.453761" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/game_data.sjson/639846523.17558" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/game_data.sjson/639846523.17558" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Data/game_data.sjson/data" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/game_data.sjson/data" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Data/game_data.sjson/metaData" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/game_data.sjson/metaData" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/locized/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/locized/en.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Data/map.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/map.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/resolutions.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/resolutions.json.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/status.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/status.json.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/AvenuePixel1/SVG/AvenuePixel-Regular.svg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/AvenuePixel1/SVG/AvenuePixel-Regular.svg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/AvenuePixel1/SVG/AvenuePixelSoft-Stroke-Regular.svg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/AvenuePixel1/SVG/AvenuePixelSoft-Stroke-Regular.svg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/AvenuePixel1/SVG/AvenuePixelStroke-Regular.svg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/AvenuePixel1/SVG/AvenuePixelStroke-Regular.svg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Tiles/SelectedTile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Tiles/SelectedTile.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Tiles/SpikeTile.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Tiles/SpikeTile.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Status/BleedingStatus.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Status/BleedingStatus.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Status/BurntStatus.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Status/BurntStatus.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Status/ConfusedStatus.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Status/ConfusedStatus.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Status/FrozenStatus.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Status/FrozenStatus.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Status/ParalizedStatus.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Status/ParalizedStatus.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Status/PoisonedStatus.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Status/PoisonedStatus.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Status/TauntedStatus.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Status/TauntedStatus.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Status/WetStatus.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Status/WetStatus.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Tiles/PlaceHolderTile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Tiles/PlaceHolderTile.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Tiles/Stone1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Tiles/Stone1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Tiles/StoneSpike.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Tiles/StoneSpike.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_www.unityassetcollection.com.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_www.unityassetcollection.com.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeStage.Maintainer.Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CodeStage.Maintainer.Editor.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleProDebug.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleProDebug.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleProRemote.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleProRemote.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/APIUpdater/project-dependencies.graph" beforeDir="false" afterPath="$PROJECT_DIR$/Library/APIUpdater/project-dependencies.graph" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/EditorInstance.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/EditorInstance.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ProtocolInstance.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ProtocolInstance.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ProtocolInstance.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/PsdPlugin.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/PsdPlugin.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Mathematics.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Mathematics.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Rider.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Rider.Editor.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Timeline.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Timeline.Editor.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Timeline.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Timeline.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.VSCode.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.VSCode.Editor.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEditor.TestRunner.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEditor.TestRunner.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEditor.UI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEditor.UI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.TestRunner.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.TestRunner.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.UI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.UI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptMapper" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptMapper" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/BuiltinAssemblies.stamp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SpriteAtlasDatabase.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SpriteAtlasDatabase.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/UIElements/EditorWindows/UnityEditor.PackageManager.UI.PackageManagerWindow.pref" beforeDir="false" afterPath="$PROJECT_DIR$/Library/UIElements/EditorWindows/UnityEditor.PackageManager.UI.PackageManagerWindow.pref" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/isometric-strategy-game.sln" beforeDir="false" afterPath="$PROJECT_DIR$/isometric-strategy-game.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Assembly-CSharp-firstpass.dll" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Assembly-CSharp-firstpass.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Assembly-CSharp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.2D.Animation.Runtime.dll" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.2D.Animation.Runtime.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.2D.Animation.Triangle.Runtime.dll" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.2D.Animation.Triangle.Runtime.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.2D.Common.Runtime.dll" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.2D.Common.Runtime.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.2D.PixelPerfect.dll" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.2D.PixelPerfect.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.2D.SpriteShape.Runtime.dll" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.2D.SpriteShape.Runtime.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.InternalAPIEngineBridge.001.dll" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.InternalAPIEngineBridge.001.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.Mathematics.dll" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.Mathematics.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.TextMeshPro.dll" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.TextMeshPro.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.Timeline.dll" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/Unity.Timeline.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/UnityEngine.UI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/Managed/UnityEngine.UI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/globalgamemanagers" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/globalgamemanagers" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/globalgamemanagers.assets" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/globalgamemanagers.assets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/level0" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/level0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/resources.assets" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/resources.assets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/resources.assets.resS" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/resources.assets.resS" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/sharedassets0.assets" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/sharedassets0.assets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.app/Contents/Resources/Data/sharedassets0.assets.resS" beforeDir="false" afterPath="$PROJECT_DIR$/test.app/Contents/Resources/Data/sharedassets0.assets.resS" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -234,7 +110,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Models/Entity.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Scripts/EditorScripts.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Editor/EditorScripts.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Scripts/TileDebugWindow.cs" />
@@ -250,33 +125,42 @@
         <option value="$PROJECT_DIR$/Assets/CursorModifier.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/TurnManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/Inventory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Models/Map.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/Inventory/Item.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Scripts/Map/CursorModifier.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/Status/StatusController.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/Status/StatusView.cs" />
         <option value="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/TestingAllCS.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/Tooltip/TooltipManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/Tooltip/Tooltip.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Scripts/Locized.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/Status/TooltipTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/Locize.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Models/GameConfig.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/Actions/ActionManager.cs" />
         <option value="$PROJECT_DIR$/Assets/SVGAssets_1_3_5/Scripts/SVGAssets/SVGAtlas.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Models/Cell.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Models/TileCalcs.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Scriptables/CardTemplate.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/Actions/LoadActionManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Scripts/Map/MapLoader.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/Health/HealthBarBatteryController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/Health/HealthBarManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/Health/EnergyBarManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/PlayerData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Scripts/Map/RoomManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/Actions/DoActionManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Scripts/Debug/Console.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Models/Cell.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/IsoMath.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Scripts/Map/MapControls.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/Health/HealthBarManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Scripts/Debug/Console.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/Actions/LoadActionManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Models/Cells/CellInteract.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Models/Cells/NonInteractableCell.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/Actions/DoActionManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/Tooltip/Tooltip.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Scripts/Map/MapLoader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Models/Map.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Models/Cells/Cell.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/Actions/Target.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Scripts/Map/RoomManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Models/GameConfig.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Math/IsoMath.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/PlayerData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/Health/StatusManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/Health/StatusView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Models/Cells/SpikeUpDownCell.cs" />
       </list>
     </option>
   </component>
@@ -354,7 +238,9 @@
       <workItem from="1618258653208" duration="225000" />
       <workItem from="1618480171898" duration="871000" />
       <workItem from="1618500008301" duration="4148000" />
-      <workItem from="1618589054242" duration="7314000" />
+      <workItem from="1618589054242" duration="7451000" />
+      <workItem from="1618658570528" duration="8068000" />
+      <workItem from="1618745549171" duration="13508000" />
     </task>
     <servers />
   </component>
@@ -472,16 +358,20 @@
     </state>
     <state width="1878" height="381" key="GridCell.Tab.3.right/1440.25.1920.1055/0.25.1440.801@1440.25.1920.1055" timestamp="1618180423130" />
     <state width="1878" height="381" key="GridCell.Tab.3.right/1440.25.1920.1055/0.25.1440.804@1440.25.1920.1055" timestamp="1618165365700" />
-    <state x="2192" y="258" key="RiderGenerateDialog" timestamp="1618250978898">
+    <state x="2192" y="258" key="RiderGenerateDialog" timestamp="1618747010925">
       <screen x="1440" y="25" width="1920" height="1055" />
     </state>
-    <state x="2192" y="258" key="RiderGenerateDialog/1440.25.1920.1055/0.25.1440.799@1440.25.1920.1055" timestamp="1618250978898" />
+    <state x="2192" y="258" key="RiderGenerateDialog/1440.25.1920.1055/0.25.1440.799@1440.25.1920.1055" timestamp="1618747010925" />
     <state x="2192" y="258" key="RiderGenerateDialog/1440.25.1920.1055/0.25.1440.804@1440.25.1920.1055" timestamp="1618086612887" />
     <state x="2192" y="258" key="RiderGenerateDialog/1440.25.1920.1055/0.25.1440.805@1440.25.1920.1055" timestamp="1618072521214" />
-    <state x="2063" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1618591748470">
+    <state x="1993" y="68" width="784" height="548" key="find.popup" timestamp="1618758644202">
       <screen x="1440" y="25" width="1920" height="1055" />
     </state>
-    <state x="2063" y="257" width="672" height="678" key="search.everywhere.popup/1440.25.1920.1055/0.25.1440.799@1440.25.1920.1055" timestamp="1618591748470" />
+    <state x="1993" y="68" width="784" height="548" key="find.popup/1440.25.1920.1055/0.25.1440.799@1440.25.1920.1055" timestamp="1618758644202" />
+    <state x="2063" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1618757804135">
+      <screen x="1440" y="25" width="1920" height="1055" />
+    </state>
+    <state x="2063" y="257" width="672" height="678" key="search.everywhere.popup/1440.25.1920.1055/0.25.1440.799@1440.25.1920.1055" timestamp="1618757804135" />
     <state x="2063" y="257" width="672" height="678" key="search.everywhere.popup/1440.25.1920.1055/0.25.1440.801@1440.25.1920.1055" timestamp="1618520363177" />
     <state x="2063" y="257" width="672" height="678" key="search.everywhere.popup/1440.25.1920.1055/0.25.1440.804@1440.25.1920.1055" timestamp="1617389770225" />
     <state x="2063" y="257" width="672" height="678" key="search.everywhere.popup/1440.25.1920.1055/0.25.1440.805@1440.25.1920.1055" timestamp="1618078934721" />

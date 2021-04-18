@@ -1,98 +1,114 @@
 {
-  "0" : {
+  "1" : {
     "name" : "poisoned",
     "probabilityToAffect" : 1,
-    "damagePerMovement" : 0,
-    "damagePerTurn" : 0.1,
-    "movmentsDuration" : -1,
+    "damagePerTurn" : 2,
     "paralized" : false,
     "statsModification" : {
       "damageTaken" : 1,
       "damageDone" : 1
+    },
+    "duration" : {
+      "min" : 1,
+      "max" : 3
     }
   },
-  "1" : {
+  "2" : {
     "name" : "bleeding",
     "probabilityToAffect" : 1,
-    "damagePerMovement" : 0,
     "damagePerTurn" : 0,
-    "movmentsDuration" : -1,
     "paralized" : false,
     "statsModification" : {
       "damageTaken" : 1.2,
       "damageDone" : 1
-    }
-  },
-  "2" : {
-    "name" : "burnt",
-    "probabilityToAffect" : 1,
-    "damagePerMovement" : 0.05,
-    "damagePerTurn" : 0,
-    "movmentsDuration" : -1,
-    "paralized" : false,
-    "statsModification" : {
-      "damageTaken" : 1,
-      "damageDone" : 1
+    },
+    "duration" : {
+      "min" : 2,
+      "max" : 4
     }
   },
   "3" : {
-    "name" : "confused",
-    "probabilityToAffect" : 0.25,
-    "damagePerMovement" : 0,
-    "damagePerTurn" : 0,
-    "movmentsDuration" : 7,
+    "name" : "burnt",
+    "probabilityToAffect" : 1,
+    "damagePerTurn" : 1,
     "paralized" : false,
     "statsModification" : {
       "damageTaken" : 1,
       "damageDone" : 1
+    },
+    "duration" : {
+      "min" : 2,
+      "max" : 4
     }
   },
   "4" : {
-    "name" : "frozen",
-    "damagePerMovement" : 0,
-    "probabilityToAffect" : 1,
+    "name" : "confused",
+    "probabilityToAffect" : 0.25,
     "damagePerTurn" : 0,
-    "movmentsDuration" : 5,
-    "paralized" : true,
+    "paralized" : false,
     "statsModification" : {
       "damageTaken" : 1,
       "damageDone" : 1
+    },
+    "duration" : {
+      "min" : 2,
+      "max" : 5
     }
   },
   "5" : {
-    "name" : "paralized",
-    "probabilityToAffect" : 0.15,
-    "damagePerMovement" : 0,
+    "name" : "frozen",
+    "probabilityToAffect" : 1,
     "damagePerTurn" : 0,
-    "movmentsDuration" : 5,
     "paralized" : true,
     "statsModification" : {
       "damageTaken" : 1,
       "damageDone" : 1
+    },
+    "duration" : {
+      "min" : 1,
+      "max" : 4
     }
   },
   "6" : {
+    "name" : "paralized",
+    "probabilityToAffect" : 0.15,
+    "damagePerTurn" : 0,
+    "paralized" : true,
+    "statsModification" : {
+      "damageTaken" : 1,
+      "damageDone" : 1
+    },
+    "duration" : {
+      "min" : 2,
+      "max" : 5
+    }
+  },
+  "7" : {
     "name" : "taunted",
     "probabilityToAffect" : 1,
-    "damagePerMovement" : 0,
     "damagePerTurn" : 0,
-    "movmentsDuration" : 6,
     "paralized" : false,
     "statsModification" : {
       "damageTaken" : 1,
       "damageDone" : 1.2
+    },
+    "duration" : {
+      "min" : 2,
+      "max" : 4
     }
   },
-  "7" : {
+  "8" : {
     "name" : "wet",
     "probabilityToAffect" : 1,
-    "damagePerMovement" : 0,
     "damagePerTurn" : 0,
-    "turnsDuration" : 3,
     "paralized" : false,
     "statsModification" : {
       "damageTaken" : 1,
       "damageDone" : 1
+    },
+    "duration" : {
+      "min" : 2,
+      "max" : 5
     }
   }
 }

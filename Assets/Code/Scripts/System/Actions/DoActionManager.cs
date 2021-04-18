@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class DoActionManager {
@@ -31,14 +32,14 @@ public class DoActionManager {
             finalCell = _finalCell,
             cost = Console.infiniteEnergy ? 0 : GameConfig.basicMovements[(int)_action].cost
         };
-        
-        _roomManager.unloadAvailablePositions();
 
         if (actions[_action](_data)) {
-            _roomManager.getPlayerData().updateEnergy(_roomManager.getPlayerData().currentEnergy);
+            _data.roomManager.UserTarget.setEnergy(_data.roomManager.UserTarget.getEnergy() - _data.cost);
+            _roomManager.clearTurn(true);
             return true;
         }
 
+        _roomManager.clearTurn();
         return false;
     }
 
@@ -56,18 +57,19 @@ public class DoActionManager {
     }
 
     private bool basicMove(ActionData _data) {
-        _data.roomManager.getPlayerData().updatePosToCellPos(_data.finalCell);
-        _data.roomManager.getPlayerData().currentCell = _data.finalCell;
+        _data.roomManager.UserTarget.moveAnim(_data.finalCell);
+        _data.roomManager.UserTarget.setCell(_data.finalCell);
+
+        Map.MapInfo.mapCellPrefabs.First(_c => _c.mapCellJson.pos.Equals(_data.finalCell)).interact(_data.roomManager.UserTarget);
+        
         _data.roomManager.SetNextAction((int) NextAction.IDLE);
-        _data.roomManager.getPlayerData().currentEnergy -= _data.cost;
         return true;
     }
     
     private bool basicMelee(ActionData _data) {
         try {
-            _data.roomManager.getPlayerData().updatePosToCellPosThenGoBack(_data.finalCell);
+            _data.roomManager.UserTarget.meleeAnim(_data.finalCell);
             _data.roomManager.SetNextAction((int)NextAction.IDLE);
-            _data.roomManager.getPlayerData().currentEnergy -= _data.cost;
             return true;
         } catch (Exception _e) {
             Debug.Log($"Error happened on basicMelee: {_e}");
@@ -77,8 +79,8 @@ public class DoActionManager {
     
     private bool basicRange(ActionData _data) {
         try {
+            _data.roomManager.UserTarget.rangeAnim(_data.finalCell);
             _data.roomManager.SetNextAction((int) NextAction.IDLE);
-            _data.roomManager.getPlayerData().currentEnergy -= _data.cost;
             return true;
         } catch (Exception _e) {
             Debug.Log($"Error happened on basicRange: {_e}");
@@ -88,10 +90,8 @@ public class DoActionManager {
     
     private bool basicDefense(ActionData _data) {
         try {
-            _data.roomManager.getPlayerData().testDefenseTween();
-            _data.roomManager.getPlayerData().currentCell = _data.finalCell;
+            _data.roomManager.UserTarget.defenseAnim(_data.finalCell);
             _data.roomManager.SetNextAction((int)NextAction.IDLE);
-            _data.roomManager.getPlayerData().currentEnergy -= _data.cost;
             return true;
         } catch (Exception _e) {
             Debug.Log($"Error happened on basicDefense: {_e}");
