@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class TileCalcs {
 
-    public static float tileWidth = 2.56f;
-    public static float tileHeight = 1.28f;
+    public static float tileWidth = 1.92f;
+    public static float tileHeight = 0.96f;
     public static bool activateCellDebugging;
     public static Vector2 tileCenter;
 

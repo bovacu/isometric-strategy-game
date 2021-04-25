@@ -26,7 +26,7 @@ public class Console : MonoBehaviour {
     [Header("Helpers")] 
     [SerializeField] private bool allCheats;
     
-    private List<string> validCommands = new List<string> {"select", "help", "clean", "close", "player", "infinite"};
+    private List<string> validCommands = new List<string> {"select", "help", "clean", "close", "player", "infinite", "tp"};
     private List<string> commandHistory = new List<string>();
 
     private int commandPointer = 0;
@@ -167,6 +167,7 @@ public class Console : MonoBehaviour {
     private void playerCommands(string[] _arguments) {
         healthCommand(_arguments);
         energyCommand(_arguments);
+        moveCommand(_arguments);
     }
     
     private void energyCommand(string[] _arguments) {
@@ -198,6 +199,30 @@ public class Console : MonoBehaviour {
                 playerData.setHealth(_x);
                 
                 addResult($"Player health {_x}");
+            } catch (Exception _e) {
+                Debug.Log(_e);
+                addError("command is 'player health x' with x the new life amount");
+            }
+        }
+    }
+
+    private void moveCommand(string[] _arguments) {
+        if (_arguments[0].ToLower().Equals("tp")) {
+
+            if (_arguments.Length != 3)
+                return;
+
+            try {
+                var _x = int.Parse(_arguments[1]);
+                var _y = int.Parse(_arguments[2]);
+                var _vec = new Vector2(_x, _y);
+                if (Map.MapInfo.validArea.mouseInsideMap(_vec)) {
+                    playerData.moveAnim(_vec);
+                    playerData.currentCell = _vec;
+                    addResult($"Moved player to ({_x}, {_y})");
+                } else {
+                    addError($"Position ({_x}, {_y}) is out of the map");
+                }
             } catch (Exception _e) {
                 Debug.Log(_e);
                 addError("command is 'player health x' with x the new life amount");

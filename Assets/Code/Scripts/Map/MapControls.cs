@@ -9,9 +9,11 @@ public class MapControls : MonoBehaviour {
     [Header("Map")]
     [SerializeField] private GameObject map;
     [SerializeField] private MapLoader mapLoader;
+    [SerializeField] private GameObject floorShadow;
 
     [Header("Selected")]
     [SerializeField] private GameObject selectedPrefab;
+    [SerializeField] private TileVisualizer tileVisualizer;
 
     [Header("Debug")]
     [SerializeField] private bool drawIsometricGrid = false;
@@ -20,9 +22,11 @@ public class MapControls : MonoBehaviour {
 
     [Header("Control")]
     [SerializeField] private float extraMoveSpeed = 2f;
+
+    private const float DEFAULT_ZOOM = 5.4f; 
     
-    private float minZoom = 1f, maxZoom = 5.4f;
-    private float currentZoom = 5.4f;
+    private float minZoom = 3.5f, maxZoom = 5.4f;
+    private float currentZoom = DEFAULT_ZOOM;
 
     private Vector2 initialClickPoint = Vector2.negativeInfinity;
     private GameObject currentSelectedPrefab;
@@ -30,10 +34,34 @@ public class MapControls : MonoBehaviour {
     private Vector2 mouseIconCorrection = new Vector2(5, 5);
 
     public static Vector2 currentSelectedTile;
+    public static bool inputIsAvailable = true;
     
     void Start() {
         currentSelectedTile = Vector2.negativeInfinity;
         currentZoom = maxZoom;
+        
+        floorShadow.SetActive(true);
+        LeanTween.moveLocalY(floorShadow, floorShadow.GetComponent<RectTransform>().anchoredPosition.y + 15, 4f).setLoopClamp().setLoopPingPong();
+        
+        simulateZoomToAdjustOnInit();
+        
+        tileVisualizer.setupForRoom();
+    }
+
+    void simulateZoomToAdjustOnInit() {
+        var ScrollWheelChange = 0.1f;
+        var _zoom = camera.orthographicSize;
+        _zoom -= ScrollWheelChange;
+        _zoom = Mathf.Clamp(_zoom, minZoom, maxZoom);
+        camera.orthographicSize = _zoom;
+        currentZoom = _zoom;
+        
+        ScrollWheelChange = -0.1f;
+        _zoom = camera.orthographicSize;
+        _zoom -= ScrollWheelChange;
+        _zoom = Mathf.Clamp(_zoom, minZoom, maxZoom);
+        camera.orthographicSize = _zoom;
+        currentZoom = _zoom;
     }
     
     void Update() {
@@ -41,23 +69,27 @@ public class MapControls : MonoBehaviour {
         if(!Console.consoleActive)
             keyboard();
         
-        moveWithScrollButton(Time.deltaTime);
+        if(inputIsAvailable)
+            moveWithScrollButton(Time.deltaTime);
 
         var _mapOffset = new Vector2(map.GetComponent<RectTransform>().localPosition.x, map.GetComponent<RectTransform>().localPosition.y);
         var _mousePosCentered = getMousePosFixed(_mapOffset);
 
-        zoom(camera, _mousePosCentered);
+        if(inputIsAvailable)
+            zoom(camera);
         
         var _cellPos = new Vector2(_mousePosCentered.x / (100 * TileCalcs.tileWidth), _mousePosCentered.y / (100 * TileCalcs.tileHeight));
         var _finalCell = TileCalcs.getRealCell(new Vector2(_cellPos.x, _cellPos.y), _mousePosCentered, _mapOffset);
 
-        leftClick(_finalCell);
+        if(inputIsAvailable)
+            leftClick(_finalCell);
         
         debug(new Vector2(_mousePosCentered.x + _mapOffset.x, _mousePosCentered.y + _mapOffset.y), _finalCell);
     }
 
     private void keyboard() {
         centerMap();
+        resetZoom();
         // debugShake();
     }
 
@@ -118,15 +150,25 @@ public class MapControls : MonoBehaviour {
     private void doAction(Vector2 _finalCell) {
         RoomManager.doAction(_finalCell, () => selectTile(Vector2.negativeInfinity));
     }
+
+    private void resetZoom() {
+        if(Input.GetKeyDown(KeyCode.R))
+            zoom(camera, true);
+    }
     
-    private void zoom(Camera _cam, Vector2 _mousePos) {
-        var ScrollWheelChange = Input.GetAxis("Mouse ScrollWheel");
-        if (ScrollWheelChange != 0){
-            var _zoom = _cam.orthographicSize;
-            _zoom -= ScrollWheelChange;
-            _zoom = Mathf.Clamp(_zoom, minZoom, maxZoom);
-            _cam.orthographicSize = _zoom;
-            currentZoom = _zoom;
+    private void zoom(Camera _cam, bool _reset = false) {
+        if (!_reset) {
+            var ScrollWheelChange = Input.GetAxis("Mouse ScrollWheel");
+            if (ScrollWheelChange != 0){
+                var _zoom = _cam.orthographicSize;
+                _zoom -= ScrollWheelChange;
+                _zoom = Mathf.Clamp(_zoom, minZoom, maxZoom);
+                _cam.orthographicSize = _zoom;
+                currentZoom = _zoom;
+            }
+        } else {
+            _cam.orthographicSize = DEFAULT_ZOOM;
+            currentZoom = DEFAULT_ZOOM;
         }
     }
     
@@ -176,23 +218,21 @@ public class MapControls : MonoBehaviour {
 
     public void selectTile(Vector2 _finalCell) {
         if (_finalCell != currentSelectedTile) {
+            
+            tileVisualizer.update(_finalCell);
+            
             if (Map.MapInfo.validArea.mouseInsideMap(_finalCell)) {
                 if(!selectedPrefab.activeInHierarchy)
                     selectedPrefab.SetActive(true);
-                // if(currentSelectedPrefab != null)
-                //     Destroy(currentSelectedPrefab);
-                
+
                 foreach (var _tile in Map.MapInfo.mapCellPrefabs) {
                     if ((int) _finalCell.x == (int) _tile.mapCellJson.pos.x && (int) _finalCell.y == (int) _tile.mapCellJson.pos.y) {
-                        // currentSelectedPrefab = Instantiate(selectedPrefab, _tile.transform);
                         selectedPrefab.transform.localPosition = _tile.transform.localPosition;
                         currentSelectedTile = _finalCell;
                         return;
                     }
                 }
             } else {
-                // if(currentSelectedPrefab != null)
-                //     Destroy(currentSelectedPrefab);
                 if(selectedPrefab.activeInHierarchy)
                     selectedPrefab.SetActive(false);
                 currentSelectedTile = Vector2.negativeInfinity;

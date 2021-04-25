@@ -24,8 +24,13 @@ public class DoActionManager {
     }
 
     public bool doAction(RoomManager _roomManager, Vector2 _finalCell, NextAction _action) {
-        if (!canActionBeDone(_roomManager, _finalCell, (int)_action)) 
+        if (!canActionBeDone(_roomManager, _finalCell, (int)_action)) {
+            
+            if(_roomManager.UserTarget.getEnergy() - GameConfig.basicMovements[(int)_action].cost < 0)
+                _roomManager.clearTurn();
+            
             return false;
+        }
 
         var _data = new ActionData {
             roomManager = _roomManager,
@@ -46,12 +51,14 @@ public class DoActionManager {
     private bool canActionBeDone(RoomManager _roomManager, Vector2 _finalCell, int _action) {
         var _energyCost = GameConfig.basicMovements[_action].cost;
         var _cellOk = _roomManager.availableCells.Contains(_finalCell);
-        if(!_cellOk)
+        if(!_cellOk && Map.MapInfo.validArea.mouseInsideMap(_finalCell))
             Debug.Log("Action cannot be done! Selected tile is not a valid one!");
         
         var _energyOk = _roomManager.getPlayerData().currentEnergy - _energyCost >= 0;
-        if(!_energyOk)
+        if(!_energyOk && Map.MapInfo.validArea.mouseInsideMap(_finalCell)) {
+            _roomManager.getPlayerData().shakeIfEmptyEnergy();
             Debug.Log("Action cannot be done! You have not enough energy!");
+        }
         
         return _cellOk && _energyOk;
     }

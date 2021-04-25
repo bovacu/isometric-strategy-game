@@ -1,0 +1,25 @@
+{
+  "0" : {
+    "name" : "Trash bin",
+    "loot" : {
+      "probability" : 0.1,
+      "pool" : {
+        "0" : 0.4,
+        "1" : 0.15,
+        "2" : 0.1
+      }
+    },
+    "destructible" : {
+      "canDestroy" : true,
+      "by" : [
+        0
+      ]
+    },
+    "movable" : {
+      "canMove" : true,
+      "by" : [
+        0
+      ]
+    }
+  }
+}

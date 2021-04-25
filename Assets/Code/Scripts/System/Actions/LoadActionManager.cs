@@ -15,20 +15,25 @@ public class LoadActionManager {
         };
     }
     
-    private Color debugColorSelectionForTiles(int _nextAction) {
+    private Color debugColorSelectionForTiles(int _nextAction, RoomManager _roomManager) {
         Color _color;
-        switch (_nextAction) {
-            case (int)NextAction.MOVE: _color = new Color(103 / 255f, 245 / 255f, 13 / 255f, 1);
-                break;
-            case (int)NextAction.MELEE: _color = new Color(1, 66 / 255f, 66 / 255f, 1);
-                break;
-            case (int)NextAction.RANGE: _color = new Color(193 / 255f, 54 / 255f, 1, 1);
-                break;
-            case (int)NextAction.DEFENSE: _color = new Color(1, 192 / 255f, 40 / 255f, 1);
-                break;
-            default:
-                throw new ArgumentOutOfRangeException(nameof(_nextAction), _nextAction, null);
-        }
+        // switch (_nextAction) {
+        //     case (int)NextAction.MOVE: _color = new Color(103 / 255f, 245 / 255f, 13 / 255f, 1);
+        //         break;
+        //     case (int)NextAction.MELEE: _color = new Color(1, 66 / 255f, 66 / 255f, 1);
+        //         break;
+        //     case (int)NextAction.RANGE: _color = new Color(193 / 255f, 54 / 255f, 1, 1);
+        //         break;
+        //     case (int)NextAction.DEFENSE: _color = new Color(1, 192 / 255f, 40 / 255f, 1);
+        //         break;
+        //     default:
+        //         throw new ArgumentOutOfRangeException(nameof(_nextAction), _nextAction, null);
+        // }
+
+        if (_roomManager.UserTarget.getEnergy() - GameConfig.basicMovements[_nextAction].cost < 0) {
+            _color = Color.red;
+        } else
+            _color = new Color(103 / 255f, 245 / 255f, 13 / 255f, 1);
 
         return _color;
     }
@@ -45,17 +50,29 @@ public class LoadActionManager {
         return false;
     }
 
+    void checkIfMovePossible(RoomManager _roomManager, Vector2 _finalPos, int _action, Cell _cell) {
+        if(_action == (int)NextAction.MOVE)
+            if (Map.MapInfo.props.FirstOrDefault(_p => _p.getCell().Equals(_finalPos)) != null) {
+                _cell.upSide.GetComponent<SpriteRenderer>().color = Color.white;
+                _roomManager.availableCells.Remove(_finalPos);
+            }
+    }
+    
     private bool allDirectionsRange(RoomManager _roomManager, int _range, int _action) {
-        var _color = debugColorSelectionForTiles(_action);
+        var _color = debugColorSelectionForTiles(_action, _roomManager);
         var _targetCell = _roomManager.getPlayerData().currentCell;
 
-        for (var _i = -_range; _i < _range; _i++) {
-            for (var _j = -_range; _j < _range; _j++) {
+        for (var _i = -_range; _i <= _range; _i++) {
+            for (var _j = -_range; _j <= _range; _j++) {
                 if(_i == 0 && _j == 0) continue;
                 if (Map.MapInfo.validArea.mouseInsideMap(new Vector2(_targetCell.x + _j, _targetCell.y + _i))) {
-                    Map.MapInfo.mapCellPrefabs.First(_c => (int) _c.mapCellJson.pos.x == (int)_targetCell.x + _j &&
-                                                     (int) _targetCell.y + _i == (int) _c.mapCellJson.pos.y).upSide.GetComponent<SpriteRenderer>().color = _color;
-                    _roomManager.availableCells.Add(new Vector2(_targetCell.x + _j, _targetCell.y + _i));
+                    var _cell = Map.MapInfo.mapCellPrefabs.First(_c => (int) _c.mapCellJson.pos.x == (int)_targetCell.x + _j &&
+                                                     (int) _targetCell.y + _i == (int) _c.mapCellJson.pos.y);
+                    _cell.upSide.GetComponent<SpriteRenderer>().color = _color;
+                    
+                    var _pos = new Vector2(_targetCell.x + _j, _targetCell.y + _i);
+                    _roomManager.availableCells.Add(_pos);
+                    checkIfMovePossible(_roomManager, _pos, _action, _cell);
                 }
             }
         }
@@ -64,45 +81,57 @@ public class LoadActionManager {
     }
 
     private bool crossRange(RoomManager _roomManager, int _range, int _action) {
-        var _color = debugColorSelectionForTiles(_action);
+        var _color = debugColorSelectionForTiles(_action, _roomManager);
         var _targetCell = _roomManager.getPlayerData().currentCell;
 
         for (var _i = 1; _i <= _range; _i++) {
             if (Map.MapInfo.validArea.mouseInsideMap(new Vector2(_targetCell.x + _i, _targetCell.y))) {
-                Map.MapInfo.mapCellPrefabs.First(_c => (int) _c.mapCellJson.pos.x == (int) _targetCell.x + _i &&
-                                                 (int) _targetCell.y == (int) _c.mapCellJson.pos.y).upSide.GetComponent<SpriteRenderer>().color = _color;
-                _roomManager.availableCells.Add(new Vector2(_targetCell.x + _i, _targetCell.y));
+                var _cell = Map.MapInfo.mapCellPrefabs.First(_c => (int) _c.mapCellJson.pos.x == (int) _targetCell.x + _i &&
+                                                       (int) _targetCell.y == (int) _c.mapCellJson.pos.y);
+                _cell.upSide.GetComponent<SpriteRenderer>().color = _color;
+                var _pos = new Vector2(_targetCell.x + _i, _targetCell.y);
+                _roomManager.availableCells.Add(_pos);
+                checkIfMovePossible(_roomManager, _pos, _action, _cell);
             }
         }
 
         for (var _i = 1; _i <= _range; _i++) {
             if (Map.MapInfo.validArea.mouseInsideMap(new Vector2(_targetCell.x - _i, _targetCell.y))) {
-                Map.MapInfo.mapCellPrefabs.First(_c => (int) _c.mapCellJson.pos.x == (int) _targetCell.x - _i &&
-                                                 (int) _targetCell.y == (int) _c.mapCellJson.pos.y).upSide.GetComponent<SpriteRenderer>().color = _color;
-                _roomManager.availableCells.Add(new Vector2(_targetCell.x - _i, _targetCell.y));
+                var _cell = Map.MapInfo.mapCellPrefabs.First(_c => (int) _c.mapCellJson.pos.x == (int) _targetCell.x - _i &&
+                                                       (int) _targetCell.y == (int) _c.mapCellJson.pos.y);
+                _cell.upSide.GetComponent<SpriteRenderer>().color = _color;
+                var _pos = new Vector2(_targetCell.x - _i, _targetCell.y);
+                _roomManager.availableCells.Add(_pos);
+                checkIfMovePossible(_roomManager, _pos, _action, _cell);
             }
         }
 
         for (var _i = 1; _i <= _range; _i++) {
             if (Map.MapInfo.validArea.mouseInsideMap(new Vector2(_targetCell.x, _targetCell.y + _i))) {
-                Map.MapInfo.mapCellPrefabs.First(_c => (int) _c.mapCellJson.pos.x == (int) _targetCell.x &&
-                                                 (int) _targetCell.y + _i == (int) _c.mapCellJson.pos.y).upSide.GetComponent<SpriteRenderer>().color = _color;
-                _roomManager.availableCells.Add(new Vector2(_targetCell.x, _targetCell.y + _i));
+                var _cell = Map.MapInfo.mapCellPrefabs.First(_c => (int) _c.mapCellJson.pos.x == (int) _targetCell.x &&
+                                                       (int) _targetCell.y + _i == (int) _c.mapCellJson.pos.y);
+                _cell.upSide.GetComponent<SpriteRenderer>().color = _color;
+                var _pos = new Vector2(_targetCell.x, _targetCell.y + _i);
+                _roomManager.availableCells.Add(_pos);
+                checkIfMovePossible(_roomManager, _pos, _action, _cell);
             }
         }
 
         for (var _i = 1; _i <= _range; _i++) {
             if (Map.MapInfo.validArea.mouseInsideMap(new Vector2(_targetCell.x, _targetCell.y - _i))) {
-                Map.MapInfo.mapCellPrefabs.First(_c => (int) _c.mapCellJson.pos.x == (int) _targetCell.x &&
-                                                 (int) _targetCell.y - _i == (int) _c.mapCellJson.pos.y).upSide.GetComponent<SpriteRenderer>().color = _color;
-                _roomManager.availableCells.Add(new Vector2(_targetCell.x, _targetCell.y - _i));
+                var _cell = Map.MapInfo.mapCellPrefabs.First(_c => (int) _c.mapCellJson.pos.x == (int) _targetCell.x &&
+                                                       (int) _targetCell.y - _i == (int) _c.mapCellJson.pos.y);
+                _cell.upSide.GetComponent<SpriteRenderer>().color = _color;
+                var _pos = new Vector2(_targetCell.x, _targetCell.y - _i);
+                _roomManager.availableCells.Add(_pos);
+                checkIfMovePossible(_roomManager, _pos, _action, _cell);
             }
         }
         return true;
     }
     
     private bool individualRange(RoomManager _roomManager, int _range, int _action) {
-        var _color = debugColorSelectionForTiles(_action);
+        var _color = debugColorSelectionForTiles(_action, _roomManager);
         var _targetCell = _roomManager.getPlayerData().currentCell;
         _roomManager.availableCells.Add(_targetCell);
         Map.MapInfo.mapCellPrefabs.First(_c => (int) _c.mapCellJson.pos.x == (int) _targetCell.x &&

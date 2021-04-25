@@ -74,19 +74,45 @@ public class RoomManager : MonoBehaviour {
         });
     }
 
+    private void enableButtons(bool _enable) {
+        finishTurnBtn.interactable = _enable;
+        meleeBtn.interactable = _enable;
+        moveBtn.interactable = _enable;
+        rangeBtn.interactable = _enable;
+        defenseBtn.interactable = _enable;
+
+        var _color = _enable ? Color.white : new Color(160f / 255f, 160f / 255f, 160f / 255f, 1);
+        finishTurnBtn.image.color = _color;
+        meleeBtn.image.color = _color;
+        moveBtn.image.color = _color;
+        rangeBtn.image.color = _color;
+        defenseBtn.image.color = _color;
+
+        finishTurnBtn.transform.GetChild(0).gameObject.GetComponent<Image>().color = _color;
+        meleeBtn.transform.GetChild(0).gameObject.GetComponent<Image>().color = _color;
+        moveBtn.transform.GetChild(0).gameObject.GetComponent<Image>().color = _color;
+        rangeBtn.transform.GetChild(0).gameObject.GetComponent<Image>().color = _color;
+        defenseBtn.transform.GetChild(0).gameObject.GetComponent<Image>().color = _color;
+    }
+    
     IEnumerator changeTurnAndUpdateTilesAndEnemies() {
+        enableButtons(false);
         Turn++;
-        //Enemy update
+        // Enemy update
         
         // Cell update
         foreach (var _cell in Map.MapInfo.mapCellPrefabs)
             _cell.update(this);
 
+        // Status update
         foreach (var _target in RoomTargets) 
             _target.updateHealthStatus();
 
-        playerData.setEnergy(playerData.currentEnergy + playerData.baseEnergy / 2);
-
+        playerData.setEnergy(playerData.baseEnergy);
+        SetNextAction(NextAction.IDLE);
+        
+        turnTxt.text = $"Turn: {Turn}";
+        enableButtons(true);
         yield return null;
     }
     
@@ -103,14 +129,19 @@ public class RoomManager : MonoBehaviour {
     }
 
     public void SetNextAction(NextAction _action) {
-        if ( nextAction == _action && availableCells.Any()) {
+        if (_action == NextAction.IDLE) {
             clearTurn();
-            return;
-        }
+            nextAction = _action;
+        } else {
+            if ( nextAction == _action && availableCells.Any()) {
+                clearTurn();
+                return;
+            }
         
-        nextAction = _action;
-        nextActionTxt.text = $"Next Action: {nextAction}";
-        loadAction(nextAction);
+            nextAction = _action;
+            nextActionTxt.text = $"Next Action: {nextAction}";
+            loadAction(nextAction);
+        }
     }
 
     private void loadAction(NextAction _action) {

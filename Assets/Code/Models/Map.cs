@@ -17,9 +17,16 @@ public class MapCellJson {
     public int id;
 }
 
+public class MapPropJson {
+    public Vector2 pos;
+    public string underlayTile;
+    public int id;
+}
+
 public class Map {
 
     public List<MapCellJson> jsonTiles;
+    public List<MapPropJson> jsonProps;
     public MapInfo info;
     
     [JsonIgnore] private static Map map;
@@ -27,6 +34,8 @@ public class Map {
         get => map;
         set => map = value;
     }
+    
     [JsonIgnore] public ValidArea validArea = new ValidArea();
+    [JsonIgnore] public List<Prop> props = new List<Prop>();
     [JsonIgnore] public List<Cell> mapCellPrefabs = new List<Cell>();
 }

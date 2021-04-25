@@ -12,11 +12,32 @@ public enum RangeType { CROSS = 0, INDIVIDUAL = 1, CIRCLE = 2, DIAGONAL = 3, ALL
 
 // ------------ ENUMS -----------
 
+// ---------- PROP INFO ---------
+
+public class Movable {
+    public bool canMove;
+}
+
+public class Destructible {
+    public bool canDestroy;
+}
+
+public class PropInfoJson {
+    public string name;
+    public Destructible destructible;
+    public Movable movable;
+}
+
+// ---------- PROP INFO ---------
+
+
 // ---------- CELL INFO ---------
 
-public class CellInfo {
+public class CellInfoJson {
+    public string id;
     public string name;
     public int damage;
+    public string mechanic;
     public ApplyStatusJson applyStatus;
 }
 
@@ -54,6 +75,7 @@ public class ApplyStatusJson {
 
 public class MovementJson {
     public string name;
+    public string description;
     public RangeType rangeType;
     public int range;
     public int cost;
@@ -69,25 +91,36 @@ public class MovementJson {
 public class GameConfig {
     public static Dictionary<int, MovementJson> basicMovements;
     public static Dictionary<int, Status> status;
-    public static Dictionary<int, CellInfo> cellsInfo;
+    public static Dictionary<int, CellInfoJson> cellsInfo;
+    public static Dictionary<int, PropInfoJson> propsInfo;
 
     public static void initGameData() {
         initBasicMovements();
         initStatus();
+        initPropsInfo();
         initCellsInfo();
     }
 
-    private static void initCellsInfo() {
-        var _mapUrl = $"{Application.dataPath}/Data/gameData/cells.json";
+    private static void initPropsInfo() {
+        var _mapUrl = $"{Application.streamingAssetsPath}/Data/gameData/propsInfo.json";
         var _sr = new StreamReader(_mapUrl);
         var _json = _sr.ReadToEnd();
         _sr.Close();
-        cellsInfo = JsonConvert.DeserializeObject<Dictionary<int, CellInfo>>(_json);
+        propsInfo = JsonConvert.DeserializeObject<Dictionary<int, PropInfoJson>>(_json);
+        Debug.Log("Loaded props info");
+    }
+    
+    private static void initCellsInfo() {
+        var _mapUrl = $"{Application.streamingAssetsPath}/Data/gameData/cells.json";
+        var _sr = new StreamReader(_mapUrl);
+        var _json = _sr.ReadToEnd();
+        _sr.Close();
+        cellsInfo = JsonConvert.DeserializeObject<Dictionary<int, CellInfoJson>>(_json);
         Debug.Log("Loaded cells info");
     }
     
     private static void initBasicMovements() {
-        var _mapUrl = $"{Application.dataPath}/Data/gameData/basicMovements.json";
+        var _mapUrl = $"{Application.streamingAssetsPath}/Data/gameData/basicMovements.json";
         var _sr = new StreamReader(_mapUrl);
         var _json = _sr.ReadToEnd();
         _sr.Close();
@@ -96,7 +129,7 @@ public class GameConfig {
     }
 
     private static void initStatus() {
-        var _mapUrl = $"{Application.dataPath}/Data/gameData/status.json";
+        var _mapUrl = $"{Application.streamingAssetsPath}/Data/gameData/status.json";
         var _sr = new StreamReader(_mapUrl);
         var _json = _sr.ReadToEnd();
         _sr.Close();

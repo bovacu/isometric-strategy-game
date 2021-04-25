@@ -1,73 +1,76 @@
 fileFormatVersion: 2
-guid: 052d0664279da4862892797f416e1360
+guid: 92986f56e9f3d41daaed541bc54c691a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3590444558137282449
-    second: tiles1_0
+      213: -1869328153477114120
+    second: Tiles2_0
   - first:
-      213: -3153096644503783213
-    second: tiles1_1
+      213: -4289654968448028074
+    second: Tiles2_1
   - first:
-      213: 7536379709003923705
-    second: tiles1_2
+      213: 6425203255335965193
+    second: Tiles2_2
   - first:
-      213: 1760586018758148508
-    second: tiles1_3
+      213: 6059639155888417348
+    second: Tiles2_3
   - first:
-      213: -299948979788754390
-    second: tiles1_4
+      213: -2200252834671627533
+    second: Tiles2_4
   - first:
-      213: 3453242705986091422
-    second: tiles1_5
+      213: 252161442191513478
+    second: Tiles2_5
   - first:
-      213: -2300675760187857797
-    second: tiles1_6
+      213: -5657303321430768637
+    second: Tiles2_6
   - first:
-      213: -5008615636113488167
-    second: tiles1_7
+      213: 2453265517729645862
+    second: Tiles2_7
   - first:
-      213: -2300804140289987431
-    second: tiles1_8
+      213: 640955456474698073
+    second: Tiles2_8
   - first:
-      213: 7614801378135701332
-    second: tiles1_9
+      213: -3357620081788928607
+    second: Tiles2_9
   - first:
-      213: -816083292686282056
-    second: tiles1_10
+      213: -4336138883065823632
+    second: Tiles2_10
   - first:
-      213: -3978875860423003466
-    second: tiles1_11
+      213: 2104733889569269765
+    second: Tiles2_11
   - first:
-      213: -1911174713103952664
-    second: tiles1_12
+      213: 6067989105521392229
+    second: Tiles2_12
   - first:
-      213: 4754949962213934816
-    second: tiles1_13
+      213: -1309799833538538644
+    second: Tiles2_13
   - first:
-      213: -5585811010326509261
-    second: tiles1_14
+      213: 5703386078975772705
+    second: Tiles2_14
   - first:
-      213: -7062110208264498494
-    second: tiles1_15
+      213: 2482674688477715752
+    second: Tiles2_15
   - first:
-      213: -5050662426263468038
-    second: tiles1_16
+      213: 8277280954809768681
+    second: Tiles2_16
   - first:
-      213: 1971589644107158372
-    second: tiles1_17
+      213: 4368084649229120755
+    second: Tiles2_17
   - first:
-      213: 3007197092277095020
-    second: tiles1_18
+      213: -6611323732994475427
+    second: Tiles2_18
   - first:
-      213: 381131382792577866
-    second: tiles1_19
+      213: 5927471678145015634
+    second: Tiles2_19
   - first:
-      213: -5275739328930127163
-    second: tiles1_20
+      213: -6563035403828356022
+    second: Tiles2_20
   - first:
-      213: 7358891626280566916
-    second: tiles1_21
+      213: -8717304953578917468
+    second: Tiles2_21
+  - first:
+      213: -1484518524199303064
+    second: Tiles2_22
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -177,7 +180,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tiles1_0
+      name: Tiles2_0
       rect:
         serializedVersion: 2
         x: 14
@@ -191,17 +194,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f603e7682bd2c2ec0800000000000000
-      internalID: -3590444558137282449
+      spriteID: 8f61c53d2ffce06e0800000000000000
+      internalID: -1869328153477114120
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tiles1_1
+      name: Tiles2_1
       rect:
         serializedVersion: 2
-        x: 536
+        x: 535
         y: 1682
         width: 519
         height: 363
@@ -212,40 +215,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d830e1ce43fd34d0800000000000000
-      internalID: -3153096644503783213
+      spriteID: 6527aa4a8851874c0800000000000000
+      internalID: -4289654968448028074
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tiles1_2
+      name: Tiles2_2
       rect:
         serializedVersion: 2
-        x: 593
-        y: 1444
-        width: 401
-        height: 225
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9f004a77a69969860800000000000000
-      internalID: 7536379709003923705
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tiles1_3
-      rect:
-        serializedVersion: 2
-        x: 8
+        x: 9
         y: 1401
-        width: 520
+        width: 519
         height: 263
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -254,8 +236,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c914994f7abde6810800000000000000
-      internalID: 1760586018758148508
+      spriteID: 902dbfb8158ea2950800000000000000
+      internalID: 6425203255335965193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles2_3
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 1135
+        width: 511
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44ae6c9f4b9281450800000000000000
+      internalID: 6059639155888417348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles2_4
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 1445
+        width: 401
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f2f95d44b12771e0800000000000000
+      internalID: -2200252834671627533
       vertices: []
       indices: 
       edges: []

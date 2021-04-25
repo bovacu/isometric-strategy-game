@@ -9,6 +9,10 @@ public abstract class Cell : MonoBehaviour {
 
     public MapCellJson mapCellJson;
 
+    public void setDebugText(Vector2 _pos) {
+        positionText.text = $"({_pos.x}, {_pos.y})";
+    }
+    
     public Vector2 size { get; set; }
 
     public abstract void update(RoomManager _roomManager);

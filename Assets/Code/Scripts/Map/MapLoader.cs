@@ -58,16 +58,21 @@ public class MapLoader : MonoBehaviour {
         Debug.Log($"Aspect Ratio: {(float)Screen.height / (float)Screen.width}, w: {Screen.width}, h: {Screen.height}");
         Debug.Log($"Tile Width: {TileCalcs.tileWidth}, Tile height: {TileCalcs.tileHeight}");
 
-        var _mapUrl = $"{Application.dataPath}/Data/map.json";
+        var _mapUrl = $"{Application.streamingAssetsPath}/Data/map.json";
         var _sr = new StreamReader(_mapUrl);
         var _json = _sr.ReadToEnd();
         _sr.Close();
         Map.MapInfo = JsonConvert.DeserializeObject<Map>(_json);
+
+        if (Map.MapInfo == null) {
+            Debug.LogError("Fatal error: mapInfo was null");
+            return;
+        }
         
-        var _center = new Vector2(mapSize.x / 2, mapSize.y / 2);
+        var _center = new Vector2(Map.MapInfo.info.width / 2f, Map.MapInfo.info.height / 2f);
         if (_center.x % 2 != 0)
             _center.x--;
-
+        
         if (_center.y % 2 != 0)
             _center.y--;
 
@@ -81,13 +86,13 @@ public class MapLoader : MonoBehaviour {
                 var _isometricPos = TileCalcs.getRealCell(_orthographicPos, _spawnOrigin, Vector2.zero);
                 
                 var _cell = getTilePrefab((int)_isometricPos.x, (int)_isometricPos.y, _tilePos.x, _tilePos.y);
-                
                 _cell.mapCellJson.pos = _isometricPos;
+                _cell.setDebugText(_isometricPos);
                 _cell.size = new Vector2(TileCalcs.tileWidth, TileCalcs.tileHeight);
-                _cell.setLayer((int)(mapSize.x * mapSize.y) - (_y * (int) mapSize.x + _x));
+                _cell.setLayer(Map.MapInfo.info.width * Map.MapInfo.info.height - (_y * Map.MapInfo.info.width + _x));
                 
                 Map.MapInfo.validArea.adjustArea(_cell.mapCellJson.pos);
-                Map.MapInfo.mapCellPrefabs.Add(_cell);       
+                Map.MapInfo.mapCellPrefabs.Add(_cell);
             }
         }
 
@@ -100,7 +105,6 @@ public class MapLoader : MonoBehaviour {
 
     private Cell getTilePrefab(int _isoX, int _isoY, float _spawnPosX, float _spawnPosY) {
         var _mapCellJson = Map.MapInfo.jsonTiles.FirstOrDefault(_t => _t.pos.x == _isoX && _t.pos.y == _isoY);
-
         GameObject _prefab;
 
         if (loadedFromResources.ContainsKey(_mapCellJson.underlayTile))
@@ -121,6 +125,24 @@ public class MapLoader : MonoBehaviour {
         var _cell = _go.GetComponent<Cell>();
         _cell.mapCellJson = _mapCellJson;
         
+        instantiatePropOnCell(_go, new Vector2(_isoX, _isoY));
+        
         return _cell;
+    }
+
+    private void instantiatePropOnCell(GameObject _parentCell, Vector2 _pos) {
+        var _mapProplJson = Map.MapInfo.jsonProps.FirstOrDefault(_t => _t.pos.Equals(_pos));
+        if (_mapProplJson != null) {
+            var _binPref = Resources.Load(_mapProplJson.underlayTile) as GameObject;
+            var _go = Instantiate(_binPref, mapParent);
+            _go.GetComponent<RectTransform>().anchoredPosition = _parentCell.GetComponent<RectTransform>().anchoredPosition;
+                    
+            var _prop = _go.GetComponent<Prop>();
+            _prop.setCell(_pos);
+            _prop.setJsonInfo(GameConfig.propsInfo[_mapProplJson.id]);
+            Debug.Log($"Loaded prop: {_prop.getJsonInfo().name}");
+            _prop.setLayer(100);
+            Map.MapInfo.props.Add(_prop);
+        }
     }
 }

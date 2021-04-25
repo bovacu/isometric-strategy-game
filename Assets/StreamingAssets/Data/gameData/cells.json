@@ -1,0 +1,22 @@
+{
+  "0" : {
+    "id" : "Stone1",
+    "name" : "Stone floor",
+    "damage" : 0,
+    "mechanic" : "#stone1Mechanic",
+    "applyStatus" : {
+      "probability" : 0,
+      "statusId" : -1
+    }
+  },
+  "1" : {
+    "id" : "StoneSpikeDynamic",
+    "name" : "Spikes",
+    "damage" : 1,
+    "applyStatus" : {
+      "probability" : 0.15,
+      "statusId" : 2
+    },
+    "mechanic" : "#stoneSpikeDynamicMechanic"
+  }
+}

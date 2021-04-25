@@ -1,0 +1,19 @@
+{
+  "cells" : {
+    "Stone1" : {
+      "header" : "#stone1Header",
+      "mechanic" : "#stone1Mechanic"
+    },
+    "StoneSpikeDynamic" : {
+      "header" : "#stoneSpikeDynamicHeader",
+      "mechanic" : "#stoneSpikeDynamicMechanic"
+    }
+  },
+  "visualizerConfig" : {
+    "header" : "<b><color=\"black\">{tileId}</color></b>",
+    "effect" : "<b><color=\"orange\">#cellEffect</color></b> {effectId} {probValue}",
+    "damage" : "<b><color=\"red\">#cellDamage</color></b> {damageValue}",
+    "heal" : "<b><color=\"oragne\">#cellHeal</color></b>",
+    "mechanic" : "<b><color=\"green\">#cellMechanic</color></b>"
+  }
+}

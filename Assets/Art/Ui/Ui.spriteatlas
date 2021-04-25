@@ -50,7 +50,8 @@ SpriteAtlas:
     - {fileID: -9111092196008513476, guid: d671fcd05ad10408788202c62615f1dc, type: 3}
     - {fileID: -4791753407910122166, guid: d671fcd05ad10408788202c62615f1dc, type: 3}
     - {fileID: -7115641777840415526, guid: d671fcd05ad10408788202c62615f1dc, type: 3}
-    totalSpriteSurfaceArea: 753824
+    - {fileID: 21300000, guid: e4256e5b77b784af0bb70b2dfb3369aa, type: 3}
+    totalSpriteSurfaceArea: 884896
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -62,6 +63,7 @@ SpriteAtlas:
   - {fileID: -4791753407910122166, guid: d671fcd05ad10408788202c62615f1dc, type: 3}
   - {fileID: -7115641777840415526, guid: d671fcd05ad10408788202c62615f1dc, type: 3}
   - {fileID: 21300000, guid: 521a05e5b77e645afbd3ff3e82c39013, type: 3}
+  - {fileID: 21300000, guid: e4256e5b77b784af0bb70b2dfb3369aa, type: 3}
   m_PackedSpriteNamesToIndex:
   - Status_0
   - Status_1
@@ -71,5 +73,6 @@ SpriteAtlas:
   - Status_5
   - Status_6
   - purpleButton
+  - Visualizer
   m_Tag: Ui
   m_IsVariant: 0

@@ -9,19 +9,15 @@ public class StatusManager : MonoBehaviour {
     [SerializeField] private GameObject container;
     public StatusType currentAppliedStatus;
 
-    private Dictionary<StatusType, StatusView> statusTurnCounter;
+    private Dictionary<StatusType, StatusView> statusTurnCounter = new Dictionary<StatusType, StatusView>();
 
     public static bool hasStatus(StatusType _statuses, StatusType _specificStatus) {
         return (_statuses & _specificStatus) == _specificStatus;
     }
-    
-    private void Start() {
-        statusTurnCounter = new Dictionary<StatusType, StatusView>();
-    }
 
     public void update() {
         foreach (var _status in statusTurnCounter)
-            _status.Value.update(() => { Debug.Log($"Status to remove: {_status.Value.status}");removeStatusFlag(_status.Value.status); });
+            _status.Value.update(() => { Debug.Log($"Status to remove: {_status.Value.status}"); removeStatusFlag(_status.Value.status); });
     }
     
     public void addStatus(StatusType _status) {

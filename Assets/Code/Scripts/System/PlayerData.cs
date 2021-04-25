@@ -35,11 +35,10 @@ public class PlayerData : MonoBehaviour, Target {
         currentDefense = baseDefense;
         currentEnergy = baseEnergy;
         currentHealth = baseHealth;
-        energyBarManager.MaxEnergy = currentEnergy;
     }
 
-    public void testDefenseTween() {
-        
+    public void shakeIfEmptyEnergy() {
+        energyBarManager.shake();
     }
 
     public void setHealth(int _health) {

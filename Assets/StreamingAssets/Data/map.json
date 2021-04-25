@@ -1,0 +1,483 @@
+{
+    "info" : {
+        "width": 7,
+        "height" : 7, 
+        "top" : 3,
+        "bottom" : -3,
+        "left" : -3,
+        "right": 3
+    },
+    "jsonTiles" : [
+        {
+            "pos" : {
+                "x" : 3,
+                "y" : 3
+            },
+            "underlayTile" : "Prefabs/Tiles/Stone1",
+            "id" : 0
+        },
+        {
+            "pos" : {
+                "x" : 3,
+                "y" : 2
+            },
+            "underlayTile" : "Prefabs/Tiles/Stone1",
+            "id" : 0
+        },
+        {
+            "pos" : {
+                "x" : 3,
+                "y" : 1
+            },
+            "underlayTile" : "Prefabs/Tiles/Stone1",
+            "id" : 0
+        },
+        {
+            "pos" : {
+                "x" : 3,
+                "y" : 0
+            },
+            "underlayTile" : "Prefabs/Tiles/Stone1",
+            "id" : 0
+        },
+        {
+            "pos" : {
+                "x" : 3,
+                "y" : -1
+            },
+            "underlayTile" : "Prefabs/Tiles/Stone1",
+            "id" : 0
+        },
+        {
+            "pos" : {
+                "x" : 3,
+                "y" : -2
+            },
+            "underlayTile" : "Prefabs/Tiles/Stone1",
+            "id" : 0
+        },
+        {
+            
+            "pos" : {
+                "x" : 3,
+                "y" : -3
+            },
+            "underlayTile" : "Prefabs/Tiles/Stone1",
+            "id" : 0
+        },
+
+
+        {
+            "pos" : {
+                "x" : -3,
+                "y" : 3
+            },
+            "underlayTile" : "Prefabs/Tiles/Stone1",
+            "id" : 0
+        },
+        {
+            "pos" : {
+                "x" : -3,
+                "y" : 2
+            },
+            "underlayTile" : "Prefabs/Tiles/Stone1",
+            "id" : 0
+        },
+        {
+            "pos" : {
+                "x" : -3,
+                "y" : 1
+            },
+            "underlayTile" : "Prefabs/Tiles/Stone1",
+            "id" : 0
+        },
+        {
+            "pos" : {
+                "x" : -3,
+                "y" : 0
+            },
+            "underlayTile" : "Prefabs/Tiles/Stone1",
+            "id" : 0
+        },
+        {
+            "pos" : {
+                "x" : -3,
+                "y" : -1
+            },
+            "underlayTile" : "Prefabs/Tiles/Stone1",
+            "id" : 0
+        },
+        {
+            "pos" : {
+                "x" : -3,
+                "y" : -2
+            },
+            "underlayTile" : "Prefabs/Tiles/Stone1",
+            "id" : 0
+        },
+        {
+            
+            "pos" : {
+                "x" : -3,
+                "y" : -3
+            },
+            "underlayTile" : "Prefabs/Tiles/Stone1",
+            "id" : 0
+        },
+
+
+        {
+            "pos" : {
+                "x" : 3,
+                "y" : 3
+            },
+            "underlayTile" : "Prefabs/Tiles/Stone1",
+            "id" : 0
+        },
+        {
+            "pos" : {
+                "x" : 2,
+                "y" : 3
+            },
+            "underlayTile" : "Prefabs/Tiles/Stone1",
+            "id" : 0
+        },
+        {
+            "pos" : {
+                "x" : 1,
+                "y" : 3
+            },
+            "underlayTile" : "Prefabs/Tiles/Stone1",
+            "id" : 0
+        },
+        {
+            "pos" : {
+                "x" : 0,
+                "y" : 3
+            },
+            "underlayTile" : "Prefabs/Tiles/Stone1",
+            "id" : 0
+        },
+        {
+            "pos" : {
+                "x" : -1,
+                "y" : 3
+            },
+            "underlayTile" : "Prefabs/Tiles/Stone1",
+            "id" : 0
+        },
+        {
+            "pos" : {
+                "x" : -2,
+                "y" : 3
+            },
+            "underlayTile" : "Prefabs/Tiles/Stone1",
+            "id" : 0
+        },
+        {
+            
+            "pos" : {
+                "x" : -3,
+                "y" : 3
+            },
+            "underlayTile" : "Prefabs/Tiles/Stone1",
+            "id" : 0
+        },
+
+
+        {
+            "pos" : {
+                "x" : 3,
+                "y" : -3
+            },
+            "underlayTile" : "Prefabs/Tiles/Stone1",
+            "id" : 0
+        },
+        {
+            "pos" : {
+                "x" : 2,
+                "y" : -3
+            },
+            "underlayTile" : "Prefabs/Tiles/Stone1",
+            "id" : 0
+        },
+        {
+            "pos" : {
+                "x" : 1,
+                "y" : -3
+            },
+            "underlayTile" : "Prefabs/Tiles/Stone1",
+            "id" : 0
+        },
+        {
+            "pos" : {
+                "x" : 0,
+                "y" : -3
+            },
+            "underlayTile" : "Prefabs/Tiles/Stone1",
+            "id" : 0
+        },
+        {
+            "pos" : {
+                "x" : -1,
+                "y" : -3
+            },
+            "underlayTile" : "Prefabs/Tiles/Stone1",
+            "id" : 0
+        },
+        {
+            "pos" : {
+                "x" : -2,
+                "y" : -3
+            },
+            "underlayTile" : "Prefabs/Tiles/Stone1",
+            "id" : 0
+        },
+        {
+            
+            "pos" : {
+                "x" : -3,
+                "y" : -3
+            },
+            "underlayTile" : "Prefabs/Tiles/Stone1",
+            "id" : 0
+        },
+
+
+
+        {
+            "pos" : {
+                "x" : -2,
+                "y" : -2
+            },
+            "underlayTile" : "Prefabs/Tiles/Stone1",
+            "id" : 0
+        },
+        {
+            "pos" : {
+                "x" : -1,
+                "y" : -2
+            },
+            "underlayTile" : "Prefabs/Tiles/Stone1",
+            "id" : 0
+        },
+        {
+            "pos" : {
+                "x" : 0,
+                "y" : -2
+            },
+            "underlayTile" : "Prefabs/Tiles/Stone1",
+            "id" : 0
+        },
+        {
+            "pos" : {
+                "x" : 1,
+                "y" : -2
+            },
+            "underlayTile" : "Prefabs/Tiles/Stone1",
+            "id" : 0
+        },
+        {
+            "pos" : {
+                "x" : 2,
+                "y" : -2
+            },
+            "underlayTile" : "Prefabs/Tiles/Stone1",
+            "id" : 0
+        },
+        {
+            "pos" : {
+                "x" : -2,
+                "y" : -1
+            },
+            "underlayTile" : "Prefabs/Tiles/Stone1",
+            "id" : 0
+        },
+        {
+            "pos" : {
+                "x" : -1,
+                "y" : -1
+            },
+            "underlayTile" : "Prefabs/Tiles/Stone1",
+            "id" : 0
+        },
+        {
+            "pos" : {
+                "x" : 0,
+                "y" : -1
+            },
+            "underlayTile" : "Prefabs/Tiles/Stone1",
+            "id" : 0
+        },
+        {
+            "pos" : {
+                "x" : 1,
+                "y" : -1
+            },
+            "underlayTile" : "Prefabs/Tiles/Stone1",
+            "id" : 0
+        },
+        {
+            "pos" : {
+                "x" : 2,
+                "y" : -1
+            },
+            "underlayTile" : "Prefabs/Tiles/Stone1",
+            "id" : 0
+        },
+        {
+            "pos" : {
+                "x" : -2,
+                "y" : 0
+            },
+            "underlayTile" : "Prefabs/Tiles/Stone1",
+            "id" : 0
+        },
+        {
+            "pos" : {
+                "x" : -1,
+                "y" : 0
+            },
+            "underlayTile" : "Prefabs/Tiles/Stone1",
+            "id" : 0
+        },
+        {
+            "pos" : {
+                "x" : 0,
+                "y" : 0
+            },
+            "underlayTile" : "Prefabs/Tiles/StoneSpikeDynamic",
+            "id" : 1
+        },
+        {
+            "pos" : {
+                "x" : 1,
+                "y" : 0
+            },
+            "underlayTile" : "Prefabs/Tiles/Stone1",
+            "id" : 0
+        },
+        {
+            "pos" : {
+                "x" : 2,
+                "y" : 0
+            },
+            "underlayTile" : "Prefabs/Tiles/Stone1",
+            "id" : 0
+        },
+        {
+            "pos" : {
+                "x" : -2,
+                "y" : 1
+            },
+            "underlayTile" : "Prefabs/Tiles/Stone1",
+            "id" : 0
+        },
+        {
+            "pos" : {
+                "x" : -1,
+                "y" : 1
+            },
+            "underlayTile" : "Prefabs/Tiles/Stone1",
+            "id" : 0
+        },
+        {
+            "pos" : {
+                "x" : 0,
+                "y" : 1
+            },
+            "underlayTile" : "Prefabs/Tiles/Stone1",
+            "id" : 0
+        },
+        {
+            "pos" : {
+                "x" : -2,
+                "y" : -2
+            },
+            "underlayTile" : "Prefabs/Tiles/Stone1",
+            "id" : 0
+        },
+        {
+            "pos" : {
+                "x" : 1,
+                "y" : 1
+            },
+            "underlayTile" : "Prefabs/Tiles/Stone1",
+            "id" : 0
+        },
+        {
+            "pos" : {
+                "x" : 2,
+                "y" : 1
+            },
+            "underlayTile" : "Prefabs/Tiles/Stone1",
+            "id" : 0
+        },
+        {
+            "pos" : {
+                "x" : -2,
+                "y" : 2
+            },
+            "underlayTile" : "Prefabs/Tiles/Stone1",
+            "id" : 0
+        },
+        {
+            "pos" : {
+                "x" : -1,
+                "y" : 2
+            },
+            "underlayTile" : "Prefabs/Tiles/Stone1",
+            "id" : 0
+        },
+        {
+            "pos" : {
+                "x" : 0,
+                "y" : 2
+            },
+            "underlayTile" : "Prefabs/Tiles/Stone1",
+            "id" : 0
+        },
+        {
+            "pos" : {
+                "x" : 1,
+                "y" : 2
+            },
+            "underlayTile" : "Prefabs/Tiles/Stone1",
+            "id" : 0
+        },
+        {
+            "pos" : {
+                "x" : 2,
+                "y" : 2
+            },
+            "underlayTile" : "Prefabs/Tiles/Stone1",
+            "id" : 0
+        }
+    ],
+    "jsonProps" : [
+        {
+            "pos" : {
+                "x" : -2,
+                "y" : -1
+            },
+            "underlayTile" : "Prefabs/Props/BinProp",
+            "id" : 0
+        },
+        {
+            "pos" : {
+                "x" : 2,
+                "y" : 1
+            },
+            "underlayTile" : "Prefabs/Props/BinProp",
+            "id" : 0
+        },
+        {
+            "pos" : {
+                "x" : 2,
+                "y" : -1
+            },
+            "underlayTile" : "Prefabs/Props/BinProp",
+            "id" : 0
+        }
+    ]
+}
