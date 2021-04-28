@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Newtonsoft.Json;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -20,6 +21,8 @@ public class RoomManager : MonoBehaviour {
     [SerializeField] private Button meleeBtn;
     [SerializeField] private Button rangeBtn;
     [SerializeField] private Button defenseBtn;
+
+    [SerializeField] private Transform enemyParent;
     
     private NextAction nextAction;
     public List<Vector2> availableCells = new List<Vector2>();
@@ -27,8 +30,8 @@ public class RoomManager : MonoBehaviour {
     private LoadActionManager loadActionManager = new LoadActionManager();
 
     public Target UserTarget;
-    public List<Target> AffectedTargets;
     public List<Target> RoomTargets;
+    public List<AI> RoomAIs;
     
     public int Turn { get; set; } = 1;
 
@@ -43,15 +46,24 @@ public class RoomManager : MonoBehaviour {
         doActionManager.initDoActionManager();
     }
 
+    void spawnEnemy() {
+        var _enemy = Resources.Load("Prefabs/Enemies/SingleKeyEnemy") as GameObject;
+        var _cell = Map.MapInfo.mapCellPrefabs.First(_c => _c.mapCellJson.pos.Equals(new Vector2(0, 2)));
+        var _ske = Instantiate(_enemy, enemyParent);
+        _ske.GetComponent<RectTransform>().anchoredPosition = _cell.gameObject.GetComponent<RectTransform>().anchoredPosition;
+        var _add = _ske.GetComponent<SingleKeyEnemy>();
+        _add.setCell(_cell.mapCellJson.pos);
+        RoomAIs.Add(_add);
+    }
+
     private void Start() {
         playerData.moveAnim(playerData.currentCell, true);
         finishTurnBtn.onClick.AddListener(() => {
             StartCoroutine(changeTurnAndUpdateTilesAndEnemies());
         });
 
-        AffectedTargets = new List<Target>();
-        RoomTargets = new List<Target> {playerData};
-
+        RoomTargets = new List<Target>();
+        RoomAIs = new List<AI>();
 
         moveBtn.onClick.AddListener(() => {
             UserTarget = playerData;
@@ -72,6 +84,8 @@ public class RoomManager : MonoBehaviour {
             UserTarget = playerData;
             SetNextAction(NextAction.DEFENSE);
         });
+        
+        spawnEnemy();
     }
 
     private void enableButtons(bool _enable) {
@@ -97,9 +111,28 @@ public class RoomManager : MonoBehaviour {
     
     IEnumerator changeTurnAndUpdateTilesAndEnemies() {
         enableButtons(false);
+        
+        RoomTargets.Clear();
+        RoomTargets.AddRange(RoomAIs);
+        RoomTargets.Add(playerData);
+        
         Turn++;
         // Enemy update
-        
+        foreach (var _enemy in RoomAIs) {
+            UserTarget = _enemy;
+            
+            roomManager.nextAction = _enemy.loadNextAction(this);
+            var _range = GameConfig.basicMovements[(int)roomManager.nextAction].range;
+            var _rangeType = GameConfig.basicMovements[(int) roomManager.nextAction].rangeType;
+            loadActionManager.loadAction(roomManager, _range, _rangeType, (int)roomManager.nextAction);
+            
+            var _finalCell = _enemy.loadFinalCell(this);
+            if(availableCells.Any())
+                roomManager.doActionManager.doAction(roomManager, _finalCell, roomManager.nextAction);
+                
+            _enemy.setEnergy(3);
+        }
+
         // Cell update
         foreach (var _cell in Map.MapInfo.mapCellPrefabs)
             _cell.update(this);
@@ -113,6 +146,9 @@ public class RoomManager : MonoBehaviour {
         
         turnTxt.text = $"Turn: {Turn}";
         enableButtons(true);
+
+        UserTarget = playerData;
+        
         yield return null;
     }
     
@@ -156,11 +192,6 @@ public class RoomManager : MonoBehaviour {
         foreach (var _cell in availableCells) 
             Map.MapInfo.mapCellPrefabs.First(_c => _c.mapCellJson.pos.Equals(_cell)).upSide.GetComponent<SpriteRenderer>().color = Color.white;
         availableCells.Clear();
-
-        if (_full) {
-            UserTarget = null;
-            AffectedTargets.Clear();
-        }
     }
 
     // private static string statusToString(State _state) {

@@ -34,7 +34,7 @@ public class StatusManager : MonoBehaviour {
 
     private void addStatusFlag(StatusType _status) {
         currentAppliedStatus |= _status;
-        var _statusConfig = GameConfig.status[(int) Math.Log((int) _status, 2) + 1];
+        var _statusConfig = GameConfig.statusInfo[(int) Math.Log((int) _status, 2) + 1];
         statusTurnCounter[_status] = Instantiate(statuses[(int) Math.Log((int) _status, 2)], container.transform).GetComponent<StatusView>();
         statusTurnCounter[_status].Turns = IsoMath.randomInt(_statusConfig.duration.min, _statusConfig.duration.max);
         statusTurnCounter[_status].setup();

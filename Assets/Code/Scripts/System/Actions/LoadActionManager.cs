@@ -60,7 +60,7 @@ public class LoadActionManager {
     
     private bool allDirectionsRange(RoomManager _roomManager, int _range, int _action) {
         var _color = debugColorSelectionForTiles(_action, _roomManager);
-        var _targetCell = _roomManager.getPlayerData().currentCell;
+        var _targetCell = _roomManager.UserTarget.getCell();
 
         for (var _i = -_range; _i <= _range; _i++) {
             for (var _j = -_range; _j <= _range; _j++) {
@@ -82,7 +82,7 @@ public class LoadActionManager {
 
     private bool crossRange(RoomManager _roomManager, int _range, int _action) {
         var _color = debugColorSelectionForTiles(_action, _roomManager);
-        var _targetCell = _roomManager.getPlayerData().currentCell;
+        var _targetCell = _roomManager.UserTarget.getCell();
 
         for (var _i = 1; _i <= _range; _i++) {
             if (Map.MapInfo.validArea.mouseInsideMap(new Vector2(_targetCell.x + _i, _targetCell.y))) {
@@ -132,7 +132,7 @@ public class LoadActionManager {
     
     private bool individualRange(RoomManager _roomManager, int _range, int _action) {
         var _color = debugColorSelectionForTiles(_action, _roomManager);
-        var _targetCell = _roomManager.getPlayerData().currentCell;
+        var _targetCell = _roomManager.UserTarget.getCell();
         _roomManager.availableCells.Add(_targetCell);
         Map.MapInfo.mapCellPrefabs.First(_c => (int) _c.mapCellJson.pos.x == (int) _targetCell.x &&
                                          (int) _targetCell.y == (int) _c.mapCellJson.pos.y).upSide.GetComponent<SpriteRenderer>().color = _color;

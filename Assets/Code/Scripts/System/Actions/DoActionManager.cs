@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 using UnityEngine;
 
 public class DoActionManager {
@@ -25,7 +26,6 @@ public class DoActionManager {
 
     public bool doAction(RoomManager _roomManager, Vector2 _finalCell, NextAction _action) {
         if (!canActionBeDone(_roomManager, _finalCell, (int)_action)) {
-            
             if(_roomManager.UserTarget.getEnergy() - GameConfig.basicMovements[(int)_action].cost < 0)
                 _roomManager.clearTurn();
             
@@ -54,11 +54,13 @@ public class DoActionManager {
         if(!_cellOk && Map.MapInfo.validArea.mouseInsideMap(_finalCell))
             Debug.Log("Action cannot be done! Selected tile is not a valid one!");
         
-        var _energyOk = _roomManager.getPlayerData().currentEnergy - _energyCost >= 0;
-        if(!_energyOk && Map.MapInfo.validArea.mouseInsideMap(_finalCell)) {
+        var _energyOk = _roomManager.UserTarget.getEnergy() - _energyCost >= 0;
+        if(!_energyOk && Map.MapInfo.validArea.mouseInsideMap(_finalCell) && _roomManager.UserTarget.Equals(_roomManager.getPlayerData())) {
             _roomManager.getPlayerData().shakeIfEmptyEnergy();
             Debug.Log("Action cannot be done! You have not enough energy!");
         }
+        
+        Debug.Log($"CellOk: {_cellOk}, enetgyOk: {_energyOk}");
         
         return _cellOk && _energyOk;
     }

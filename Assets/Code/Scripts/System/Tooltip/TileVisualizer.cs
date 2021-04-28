@@ -59,7 +59,7 @@ public class TileVisualizer : MonoBehaviour {
         string _statusName;
 
         if (_statusId > 0)
-            _statusName = GameConfig.status[_statusId].name;
+            _statusName = GameConfig.statusInfo[_statusId].name;
         else
             _statusName = "---"; 
         

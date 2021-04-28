@@ -12,6 +12,18 @@ public enum RangeType { CROSS = 0, INDIVIDUAL = 1, CIRCLE = 2, DIAGONAL = 3, ALL
 
 // ------------ ENUMS -----------
 
+// ---------- ENEMIES INFO ---------
+
+public class EnemyInfoJson {
+    public string name;
+    public int baseHealth;
+    public int baseEnergy;
+    public int baseAttack;
+    public int baseDefense;
+}
+
+// ---------- ENEMIES INFO ---------
+
 // ---------- PROP INFO ---------
 
 public class Movable {
@@ -29,7 +41,6 @@ public class PropInfoJson {
 }
 
 // ---------- PROP INFO ---------
-
 
 // ---------- CELL INFO ---------
 
@@ -55,7 +66,7 @@ public class Duration {
     public int max;
 }
 
-public class Status {
+public class StatusJson {
     public string name;
     public float probabilityToAffect;
     public float damagerPerTurn;
@@ -73,7 +84,7 @@ public class ApplyStatusJson {
     public float probability;
 }
 
-public class MovementJson {
+public class ActionJson {
     public string name;
     public string description;
     public RangeType rangeType;
@@ -89,8 +100,8 @@ public class MovementJson {
 
 
 public class GameConfig {
-    public static Dictionary<int, MovementJson> basicMovements;
-    public static Dictionary<int, Status> status;
+    public static Dictionary<int, ActionJson> basicMovements;
+    public static Dictionary<int, StatusJson> statusInfo;
     public static Dictionary<int, CellInfoJson> cellsInfo;
     public static Dictionary<int, PropInfoJson> propsInfo;
 
@@ -124,7 +135,7 @@ public class GameConfig {
         var _sr = new StreamReader(_mapUrl);
         var _json = _sr.ReadToEnd();
         _sr.Close();
-        basicMovements = JsonConvert.DeserializeObject<Dictionary<int, MovementJson>>(_json);
+        basicMovements = JsonConvert.DeserializeObject<Dictionary<int, ActionJson>>(_json);
         Debug.Log("Loaded basic movements");
     }
 
@@ -133,7 +144,7 @@ public class GameConfig {
         var _sr = new StreamReader(_mapUrl);
         var _json = _sr.ReadToEnd();
         _sr.Close();
-        status = JsonConvert.DeserializeObject<Dictionary<int, Status>>(_json);
+        statusInfo = JsonConvert.DeserializeObject<Dictionary<int, StatusJson>>(_json);
         Debug.Log("Loaded status");
     }
 }

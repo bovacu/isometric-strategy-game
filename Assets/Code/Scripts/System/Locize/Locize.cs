@@ -39,7 +39,7 @@ public class TooltipConfigStatusJson {
     public string curedBy;
 }
 
-public class StatusJson {
+public class StatusLocizeJson {
     public List<StatusInfoJson> types;
     public TooltipConfigStatusJson tooltipConfig;
 }
@@ -47,7 +47,7 @@ public class StatusJson {
 
 public class Locize {
     
-    public static StatusJson status;
+    public static StatusLocizeJson status;
     public static Dictionary<string, string> locized;
     public static CellVisualizerJson cellVisualizer;
 
@@ -79,7 +79,7 @@ public class Locize {
         var _sr = new StreamReader(_mapUrl);
         var _json = _sr.ReadToEnd();
         _sr.Close();
-        status = JsonConvert.DeserializeObject<StatusJson>(_json);
+        status = JsonConvert.DeserializeObject<StatusLocizeJson>(_json);
     }
 
     public static string translateHashtags(string _data, bool _ignoreHexNumbers = true) {

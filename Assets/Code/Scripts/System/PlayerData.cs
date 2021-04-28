@@ -52,8 +52,8 @@ public class PlayerData : MonoBehaviour, Target {
     }
 
     public void setStatus(StatusType _status) {
-        healthState = _status;
         statusManager.addStatus(_status);
+        healthState = statusManager.currentAppliedStatus;
     }
 
     public void setCell(Vector2 _cell) {
