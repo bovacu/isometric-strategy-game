@@ -17,23 +17,10 @@ public class LoadActionManager {
     
     private Color debugColorSelectionForTiles(int _nextAction, RoomManager _roomManager) {
         Color _color;
-        // switch (_nextAction) {
-        //     case (int)NextAction.MOVE: _color = new Color(103 / 255f, 245 / 255f, 13 / 255f, 1);
-        //         break;
-        //     case (int)NextAction.MELEE: _color = new Color(1, 66 / 255f, 66 / 255f, 1);
-        //         break;
-        //     case (int)NextAction.RANGE: _color = new Color(193 / 255f, 54 / 255f, 1, 1);
-        //         break;
-        //     case (int)NextAction.DEFENSE: _color = new Color(1, 192 / 255f, 40 / 255f, 1);
-        //         break;
-        //     default:
-        //         throw new ArgumentOutOfRangeException(nameof(_nextAction), _nextAction, null);
-        // }
-
         if (_roomManager.UserTarget.getEnergy() - GameConfig.basicMovements[_nextAction].cost < 0) {
             _color = Color.red;
         } else
-            _color = new Color(103 / 255f, 245 / 255f, 13 / 255f, 1);
+            _color = new Color(103 / 255f, 245 / 255f, 13 / 255f, 0.85f);
 
         return _color;
     }
@@ -52,7 +39,8 @@ public class LoadActionManager {
 
     void checkIfMovePossible(RoomManager _roomManager, Vector2 _finalPos, int _action, Cell _cell) {
         if(_action == (int)NextAction.MOVE)
-            if (Map.MapInfo.props.FirstOrDefault(_p => _p.getCell().Equals(_finalPos)) != null) {
+            if (Map.MapInfo.props.FirstOrDefault(_p => _p.getCell().Equals(_finalPos)) != null ||
+                _roomManager.RoomTargets.FirstOrDefault(_ai => _ai.getCell().Equals(_finalPos)) != null) {
                 _cell.upSide.GetComponent<SpriteRenderer>().color = Color.white;
                 _roomManager.availableCells.Remove(_finalPos);
             }

@@ -26,34 +26,33 @@ public class RoomManager : MonoBehaviour {
     
     private NextAction nextAction;
     public List<Vector2> availableCells = new List<Vector2>();
-    private DoActionManager doActionManager = new DoActionManager();
-    private LoadActionManager loadActionManager = new LoadActionManager();
 
     public Target UserTarget;
     public List<Target> RoomTargets;
     public List<AI> RoomAIs;
+
+    public static bool playerTurn = false;
+
+    public int Turn {
+        get; 
+        set;
+    } = 1;
+    public NextAction NextAction {
+        get => nextAction;
+        set => nextAction = value;
+    }
     
-    public int Turn { get; set; } = 1;
+    public LoadActionManager LoadActionManager { get; } = new LoadActionManager();
+    public DoActionManager DoActionManager { get; } = new DoActionManager();
 
     private void Awake() {
         roomManager = this;
-        playerData.gameObject.SetActive(true);
         nextAction = NextAction.IDLE;
         nextActionTxt.text = $"Next Action: {nextAction}";
         turnTxt.text = $"Turn: {Turn}";
         
-        loadActionManager.initLoadActionManager();
-        doActionManager.initDoActionManager();
-    }
-
-    void spawnEnemy() {
-        var _enemy = Resources.Load("Prefabs/Enemies/SingleKeyEnemy") as GameObject;
-        var _cell = Map.MapInfo.mapCellPrefabs.First(_c => _c.mapCellJson.pos.Equals(new Vector2(0, 2)));
-        var _ske = Instantiate(_enemy, enemyParent);
-        _ske.GetComponent<RectTransform>().anchoredPosition = _cell.gameObject.GetComponent<RectTransform>().anchoredPosition;
-        var _add = _ske.GetComponent<SingleKeyEnemy>();
-        _add.setCell(_cell.mapCellJson.pos);
-        RoomAIs.Add(_add);
+        LoadActionManager.initLoadActionManager();
+        DoActionManager.initDoActionManager();
     }
 
     private void Start() {
@@ -69,23 +68,22 @@ public class RoomManager : MonoBehaviour {
             UserTarget = playerData;
             SetNextAction(NextAction.MOVE);
         });
-        
         meleeBtn.onClick.AddListener(() => {
             UserTarget = playerData;
             SetNextAction(NextAction.MELEE);
         });
-        
         rangeBtn.onClick.AddListener(() => {
             UserTarget = playerData;
             SetNextAction(NextAction.RANGE);
         });
-        
         defenseBtn.onClick.AddListener(() => {
             UserTarget = playerData;
             SetNextAction(NextAction.DEFENSE);
         });
-        
-        spawnEnemy();
+    }
+
+    public static void addEnemy(AI _enemy) {
+        roomManager.RoomAIs.Add(_enemy);
     }
 
     private void enableButtons(bool _enable) {
@@ -111,43 +109,51 @@ public class RoomManager : MonoBehaviour {
     
     IEnumerator changeTurnAndUpdateTilesAndEnemies() {
         enableButtons(false);
+        playerTurn = false;
         
         RoomTargets.Clear();
         RoomTargets.AddRange(RoomAIs);
         RoomTargets.Add(playerData);
+
+        yield return enemiesUpdate();
+        yield return cellsUpdate();
+        yield return statusUpdate();
+        yield return turnUpdate();
+    }
+
+    private IEnumerator enemiesUpdate() {
+        RoomAIs = RoomAIs.OrderBy(_i => Guid.NewGuid()).ToList();
         
-        Turn++;
-        // Enemy update
         foreach (var _enemy in RoomAIs) {
             UserTarget = _enemy;
-            
-            roomManager.nextAction = _enemy.loadNextAction(this);
-            var _range = GameConfig.basicMovements[(int)roomManager.nextAction].range;
-            var _rangeType = GameConfig.basicMovements[(int) roomManager.nextAction].rangeType;
-            loadActionManager.loadAction(roomManager, _range, _rangeType, (int)roomManager.nextAction);
-            
-            var _finalCell = _enemy.loadFinalCell(this);
-            if(availableCells.Any())
-                roomManager.doActionManager.doAction(roomManager, _finalCell, roomManager.nextAction);
-                
-            _enemy.setEnergy(3);
+            yield return _enemy.startStateMachine(this);
         }
-
-        // Cell update
+    }
+    
+    private IEnumerator cellsUpdate() {
         foreach (var _cell in Map.MapInfo.mapCellPrefabs)
             _cell.update(this);
 
-        // Status update
+        return null;
+    }
+    
+    private IEnumerator statusUpdate() {
         foreach (var _target in RoomTargets) 
             _target.updateHealthStatus();
 
-        playerData.setEnergy(playerData.baseEnergy);
-        SetNextAction(NextAction.IDLE);
-        
+        return null;
+    }
+
+    private IEnumerator turnUpdate() {
+        UserTarget = playerData;
+        Turn++;
         turnTxt.text = $"Turn: {Turn}";
         enableButtons(true);
+        
+        playerData.setEnergy(playerData.baseEnergy);
+        SetNextAction(NextAction.IDLE);
 
-        UserTarget = playerData;
+        playerTurn = true;
         
         yield return null;
     }
@@ -160,7 +166,7 @@ public class RoomManager : MonoBehaviour {
         if(roomManager.nextAction == NextAction.IDLE)
             return;
         
-        if(roomManager.doActionManager.doAction(roomManager, _finalCell, roomManager.nextAction))
+        if(roomManager.DoActionManager.doAction(roomManager, _finalCell, roomManager.nextAction))
             _onEnd?.Invoke();
     }
 
@@ -185,7 +191,7 @@ public class RoomManager : MonoBehaviour {
         
         var _intAction = (int) _action;
         var _range = GameConfig.basicMovements[_intAction].range;
-        loadActionManager.loadAction(roomManager, _range, GameConfig.basicMovements[_intAction].rangeType, _intAction);
+        LoadActionManager.loadAction(roomManager, _range, GameConfig.basicMovements[_intAction].rangeType, _intAction);
     }
 
     public void clearTurn(bool _full = false) {
@@ -194,17 +200,8 @@ public class RoomManager : MonoBehaviour {
         availableCells.Clear();
     }
 
-    // private static string statusToString(State _state) {
-    //     switch (_state) {
-    //         case State.NONE: return "none";
-    //         case State.BURNT: return "burnt";
-    //         case State.FROZEN: return "frozen";
-    //         case State.PARALIZED: return "paralized";
-    //         case State.POISONED: return "poisoned";
-    //         case State.CONFUSED: return "confused";
-    //         case State.TAUNTED: return "taunted";
-    //         default:
-    //             throw new ArgumentOutOfRangeException(nameof(_state), _state, null);
-    //     }
-    // }
+    public void clearCellColor() {
+        foreach (var _cell in availableCells) 
+            Map.MapInfo.mapCellPrefabs.First(_c => _c.mapCellJson.pos.Equals(_cell)).upSide.GetComponent<SpriteRenderer>().color = Color.white;
+    }
 }

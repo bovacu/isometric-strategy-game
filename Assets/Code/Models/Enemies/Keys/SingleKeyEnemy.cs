@@ -7,7 +7,7 @@ public class SingleKeyEnemy : BaseKey {
         enemyInfoJson = new EnemyInfoJson {
             baseAttack = 1,
             baseDefense = 1,
-            baseEnergy = 3,
+            baseEnergy = 2,
             baseHealth = 4
         };
 
@@ -25,7 +25,16 @@ public class SingleKeyEnemy : BaseKey {
     }
 
     public override void meleeAnim(Vector2 _finalPos, bool _inmediate = false) {
-        throw new System.NotImplementedException();
+        var _initalPosIso = new Vector2(currentCell.x, currentCell.y);
+        var _mapCell = Map.MapInfo.mapCellPrefabs.First(_c => _c.mapCellJson.pos.Equals(_finalPos)).gameObject.GetComponent<RectTransform>().anchoredPosition;
+        var _currentPosCanvas = gameObject.GetComponent<RectTransform>().anchoredPosition;
+        var _finalPoint = new Vector2((_mapCell.x + _currentPosCanvas.x) / 2f, (_mapCell.y + _currentPosCanvas.y) / 2f);
+        
+        LeanTween.moveLocal(gameObject, _finalPoint, 0.25f)
+            .setEase(LeanTweenType.easeSpring).setOnComplete(() => {
+                LeanTween.moveLocal(gameObject, Map.MapInfo.mapCellPrefabs.First(_c => _c.mapCellJson.pos.Equals(_initalPosIso)).
+                    gameObject.GetComponent<RectTransform>().anchoredPosition, 0.25f).setEase(LeanTweenType.easeSpring);
+            });
     }
 
     public override void rangeAnim(Vector2 _finalPos, bool _inmediate = false) {

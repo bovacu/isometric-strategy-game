@@ -58,11 +58,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\AllIn1SpriteShader\Demo\Scripts\All1ShaderDemoController.cs" />
+     <Compile Include="Assets\AllIn1SpriteShader\Demo\Scripts\All1TextureOffsetOverTime.cs" />
+     <Compile Include="Assets\AllIn1SpriteShader\Demo\Scripts\AllIn1ScrollProperty.cs" />
+     <Compile Include="Assets\AllIn1SpriteShader\Demo\Scripts\Demo2AutoScroll.cs" />
+     <Compile Include="Assets\AllIn1SpriteShader\Demo\Scripts\DemoCamera.cs" />
+     <Compile Include="Assets\AllIn1SpriteShader\Demo\Scripts\DemoCircleExpositor.cs" />
+     <Compile Include="Assets\AllIn1SpriteShader\Demo\Scripts\DemoItem.cs" />
+     <Compile Include="Assets\AllIn1SpriteShader\Demo\Scripts\DemoRandomColorSwap.cs" />
+     <Compile Include="Assets\AllIn1SpriteShader\Demo\Scripts\DemoRepositionExpositor.cs" />
+     <Compile Include="Assets\AllIn1SpriteShader\Scripts\All1CreateUnifiedOutline.cs" />
+     <Compile Include="Assets\AllIn1SpriteShader\Scripts\AllIn1Shader.cs" />
+     <Compile Include="Assets\AllIn1SpriteShader\Scripts\AllIn1ShaderWindow.cs" />
+     <Compile Include="Assets\AllIn1SpriteShader\Scripts\RandomSeed.cs" />
+     <Compile Include="Assets\AllIn1SpriteShader\Scripts\SetAtlasUvs.cs" />
+     <Compile Include="Assets\AllIn1SpriteShader\Scripts\SetGlobalTime.cs" />
      <Compile Include="Assets\Code\Math\IsoMath.cs" />
      <Compile Include="Assets\Code\Models\Cells\Cell.cs" />
      <Compile Include="Assets\Code\Models\Cells\NonInteractableCell.cs" />
      <Compile Include="Assets\Code\Models\Cells\SpikeUpDownCell.cs" />
-     <Compile Include="Assets\Code\Models\Entity.cs" />
+     <Compile Include="Assets\Code\Models\Enemies\AI.cs" />
+     <Compile Include="Assets\Code\Models\Enemies\Keys\BaseKey.cs" />
+     <Compile Include="Assets\Code\Models\Enemies\Keys\SingleKeyEnemy.cs" />
      <Compile Include="Assets\Code\Models\GameConfig.cs" />
      <Compile Include="Assets\Code\Models\Map.cs" />
      <Compile Include="Assets\Code\Models\TileCalcs.cs" />
@@ -71,12 +88,15 @@
      <Compile Include="Assets\Code\Scripts\Debug\DebugInfo.cs" />
      <Compile Include="Assets\Code\Scripts\Map\CursorModifier.cs" />
      <Compile Include="Assets\Code\Scripts\Map\MapControls.cs" />
-     <Compile Include="Assets\Code\Scripts\Map\MapLoader.cs" />
+     <Compile Include="Assets\Code\Scripts\Map\RoomLoader.cs" />
      <Compile Include="Assets\Code\Scripts\Map\RoomManager.cs" />
      <Compile Include="Assets\Code\Scripts\Map\TileDebugWindow.cs" />
      <Compile Include="Assets\Code\Scripts\System\Actions\DoActionManager.cs" />
      <Compile Include="Assets\Code\Scripts\System\Actions\LoadActionManager.cs" />
      <Compile Include="Assets\Code\Scripts\System\Actions\Target.cs" />
+     <Compile Include="Assets\Code\Scripts\System\Actions\TooltipTriggerActions.cs" />
+     <Compile Include="Assets\Code\Scripts\System\Actions\UiInputStopper.cs" />
+     <Compile Include="Assets\Code\Scripts\System\Health\EnergyBarBatteryController.cs" />
      <Compile Include="Assets\Code\Scripts\System\Health\EnergyBarManager.cs" />
      <Compile Include="Assets\Code\Scripts\System\Health\HealthBarBatteryController.cs" />
      <Compile Include="Assets\Code\Scripts\System\Health\HealthBarManager.cs" />
@@ -85,18 +105,28 @@
      <Compile Include="Assets\Code\Scripts\System\Health\TooltipTrigger.cs" />
      <Compile Include="Assets\Code\Scripts\System\Inventory\Inventory.cs" />
      <Compile Include="Assets\Code\Scripts\System\Inventory\Item.cs" />
-     <Compile Include="Assets\Code\Scripts\System\Locize.cs" />
+     <Compile Include="Assets\Code\Scripts\System\Locize\Locize.cs" />
+     <Compile Include="Assets\Code\Scripts\System\Loot\LootItem.cs" />
      <Compile Include="Assets\Code\Scripts\System\PlayerData.cs" />
+     <Compile Include="Assets\Code\Scripts\System\Props\BinProp.cs" />
+     <Compile Include="Assets\Code\Scripts\System\Props\Prop.cs" />
+     <Compile Include="Assets\Code\Scripts\System\StateMachine\AIState.cs" />
+     <Compile Include="Assets\Code\Scripts\System\StateMachine\IdleState.cs" />
+     <Compile Include="Assets\Code\Scripts\System\StateMachine\MeleeState.cs" />
+     <Compile Include="Assets\Code\Scripts\System\StateMachine\MoveState.cs" />
+     <Compile Include="Assets\Code\Scripts\System\Tooltip\TileVisualizer.cs" />
      <Compile Include="Assets\Code\Scripts\System\Tooltip\Tooltip.cs" />
      <Compile Include="Assets\Code\Scripts\System\Tooltip\TooltipManager.cs" />
-     <Compile Include="Assets\Code\Scripts\System\TurnManager.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\LeanTween\ReadMe.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
+     <None Include="Assets\AllIn1SpriteShader\Resources\AllIn1SpriteShader.shader" />
+     <None Include="Assets\AllIn1SpriteShader\Resources\AllIn1SpriteShaderScaledTime.shader" />
      <None Include="Assets\Fonts\AvenuePixel1\LICENSE (SIL OFL 1.1).txt" />
      <None Include="Assets\Fonts\AvenuePixel1\CHANGELOG (v1.1).txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
+     <None Include="Assets\AllIn1SpriteShader\Resources\AllIn1SpriteShaderUiMask.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
      <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
@@ -111,6 +141,7 @@
      <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
+     <None Include="Assets\AllIn1SpriteShader\Resources\AllIn1OneShaderFunctions.cginc" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/Users/borjavazquez/Documents/Unity/Projects/isometric-strategy-game/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>

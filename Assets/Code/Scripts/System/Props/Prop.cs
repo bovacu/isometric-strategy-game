@@ -1,25 +1,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface Prop {
+public abstract class Prop : MonoBehaviour {
 
-    PropInfoJson getJsonInfo();
-    void setJsonInfo(PropInfoJson _jsonInfo);
+    public abstract PropInfoJson getJsonInfo();
+    public abstract void setJsonInfo(PropInfoJson _jsonInfo);
     
-    void setLayer(int _layer);
+    public abstract void setLayer(int _layer);
     
-    Vector2 getCell();
-    void setCell(Vector2 _finalCell);
+    public abstract Vector2 getCell();
+    public abstract void setCell(Vector2 _finalCell);
 
-    bool isDestructible();
-    void setDestructible(bool _destructible);
+    public abstract bool isDestructible();
+    public abstract void setDestructible(bool _destructible);
 
-    bool isMovable();
-    void setMovable(bool _movable);
+    public abstract bool isMovable();
+    public abstract void setMovable(bool _movable);
 
-    List<LootItem> getLoot();
-    void setLoot(List<LootItem> _lootItems);
+    public abstract List<LootItem> getLoot();
+    public abstract void setLoot(List<LootItem> _lootItems);
 
-    void breakAnim(Vector2 _finalPos, bool _inmediate = false);
-    void moveAnim(Vector2 _finalPos, bool _inmediate = false);
+    public abstract void breakAnim(Vector2 _finalPos, bool _inmediate = false);
+    public abstract void moveAnim(Vector2 _finalPos, bool _inmediate = false);
 }

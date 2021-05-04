@@ -8824,6 +8824,8 @@ MonoBehaviour:
     type: 3}
   mapSize: {x: 5, y: 5}
   mapParent: {fileID: 753397615}
+  propsParent: {fileID: 653061531}
+  enemiesParent: {fileID: 1789902027}
 --- !u!4 &1266281540
 Transform:
   m_ObjectHideFlags: 0

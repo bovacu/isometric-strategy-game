@@ -6,6 +6,42 @@
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="AllIn1SpriteShader" t="Include">
+          <e p="Demo" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="All1ShaderDemoController.cs" t="Include" />
+              <e p="All1TextureOffsetOverTime.cs" t="Include" />
+              <e p="AllIn1ScrollProperty.cs" t="Include" />
+              <e p="Demo2AutoScroll.cs" t="Include" />
+              <e p="DemoCamera.cs" t="Include" />
+              <e p="DemoCircleExpositor.cs" t="Include" />
+              <e p="DemoItem.cs" t="Include" />
+              <e p="DemoRandomColorSwap.cs" t="Include" />
+              <e p="DemoRepositionExpositor.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Editor" t="Include">
+            <e p="AllIn1ShaderGradientDrawer.cs" t="Include" />
+            <e p="AllIn1ShaderScriptEditor.cs" t="Include" />
+            <e p="AllIn1SpriteShader.cs" t="Include" />
+            <e p="AllIn1SpriteShaderStencil.cs" t="Include" />
+            <e p="AllIn1UrpShader.cs" t="Include" />
+          </e>
+          <e p="Resources" t="Include">
+            <e p="AllIn1OneShaderFunctions.cginc" t="Include" />
+            <e p="AllIn1SpriteShader.shader" t="Include" />
+            <e p="AllIn1SpriteShaderScaledTime.shader" t="Include" />
+            <e p="AllIn1SpriteShaderUiMask.shader" t="Include" />
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="All1CreateUnifiedOutline.cs" t="Include" />
+            <e p="AllIn1Shader.cs" t="Include" />
+            <e p="AllIn1ShaderWindow.cs" t="Include" />
+            <e p="RandomSeed.cs" t="Include" />
+            <e p="SetAtlasUvs.cs" t="Include" />
+            <e p="SetGlobalTime.cs" t="Include" />
+          </e>
+        </e>
         <e p="Code" t="Include">
           <e p="Math" t="Include">
             <e p="IsoMath.cs" t="Include" />
@@ -16,7 +52,13 @@
               <e p="NonInteractableCell.cs" t="Include" />
               <e p="SpikeUpDownCell.cs" t="Include" />
             </e>
-            <e p="Entity.cs" t="Include" />
+            <e p="Enemies" t="Include">
+              <e p="AI.cs" t="Include" />
+              <e p="Keys" t="Include">
+                <e p="BaseKey.cs" t="Include" />
+                <e p="SingleKeyEnemy.cs" t="Include" />
+              </e>
+            </e>
             <e p="GameConfig.cs" t="Include" />
             <e p="Map.cs" t="Include" />
             <e p="TileCalcs.cs" t="Include" />
@@ -32,7 +74,7 @@
             <e p="Map" t="Include">
               <e p="CursorModifier.cs" t="Include" />
               <e p="MapControls.cs" t="Include" />
-              <e p="MapLoader.cs" t="Include" />
+              <e p="RoomLoader.cs" t="Include" />
               <e p="RoomManager.cs" t="Include" />
               <e p="TileDebugWindow.cs" t="Include" />
             </e>
@@ -41,8 +83,11 @@
                 <e p="DoActionManager.cs" t="Include" />
                 <e p="LoadActionManager.cs" t="Include" />
                 <e p="Target.cs" t="Include" />
+                <e p="TooltipTriggerActions.cs" t="Include" />
+                <e p="UiInputStopper.cs" t="Include" />
               </e>
               <e p="Health" t="Include">
+                <e p="EnergyBarBatteryController.cs" t="Include" />
                 <e p="EnergyBarManager.cs" t="Include" />
                 <e p="HealthBarBatteryController.cs" t="Include" />
                 <e p="HealthBarManager.cs" t="Include" />
@@ -54,13 +99,28 @@
                 <e p="Inventory.cs" t="Include" />
                 <e p="Item.cs" t="Include" />
               </e>
-              <e p="Locize.cs" t="Include" />
+              <e p="Locize" t="Include">
+                <e p="Locize.cs" t="Include" />
+              </e>
+              <e p="Loot" t="Include">
+                <e p="LootItem.cs" t="Include" />
+              </e>
               <e p="PlayerData.cs" t="Include" />
+              <e p="Props" t="Include">
+                <e p="BinProp.cs" t="Include" />
+                <e p="Prop.cs" t="Include" />
+              </e>
+              <e p="StateMachine" t="Include">
+                <e p="AIState.cs" t="Include" />
+                <e p="IdleState.cs" t="Include" />
+                <e p="MeleeState.cs" t="Include" />
+                <e p="MoveState.cs" t="Include" />
+              </e>
               <e p="Tooltip" t="Include">
+                <e p="TileVisualizer.cs" t="Include" />
                 <e p="Tooltip.cs" t="Include" />
                 <e p="TooltipManager.cs" t="Include" />
               </e>
-              <e p="TurnManager.cs" t="Include" />
             </e>
           </e>
         </e>

@@ -8,7 +8,7 @@ public class MapControls : MonoBehaviour {
 
     [Header("Map")]
     [SerializeField] private GameObject map;
-    [SerializeField] private MapLoader mapLoader;
+    [SerializeField] private RoomLoader mapLoader;
     [SerializeField] private GameObject floorShadow;
 
     [Header("Selected")]
@@ -90,7 +90,6 @@ public class MapControls : MonoBehaviour {
     private void keyboard() {
         centerMap();
         resetZoom();
-        // debugShake();
     }
 
     private void debugShake() {
@@ -219,7 +218,8 @@ public class MapControls : MonoBehaviour {
     public void selectTile(Vector2 _finalCell) {
         if (_finalCell != currentSelectedTile) {
             
-            tileVisualizer.update(_finalCell);
+            if(RoomManager.playerTurn)
+                tileVisualizer.update(_finalCell);
             
             if (Map.MapInfo.validArea.mouseInsideMap(_finalCell)) {
                 if(!selectedPrefab.activeInHierarchy)

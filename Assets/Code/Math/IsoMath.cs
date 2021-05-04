@@ -12,6 +12,16 @@ public class IsoMath {
     public static int randomInt(int _min, int _max) {
         return random.Next(_min, _max + 1);
     }
+
+    public static int cellDistance(Vector2 _cellOrigin, Vector2 _cellDestination) {
+        var _xDistance = (int)Mathf.Abs(_cellOrigin.x - _cellDestination.x);
+        var _yDistance = (int)Mathf.Abs(_cellOrigin.y - _cellDestination.y);
+        return _xDistance + _yDistance;
+    }
+
+    private static bool haveSameSign(int _a, int _b) {
+        return (_a ^ _b) >= 0;
+    }
     
     public static void initIsoMathWithSeed(int _seed) {
         random = new Random(_seed);
