@@ -104,14 +104,25 @@ public class GameConfig {
     public static Dictionary<int, StatusJson> statusInfo;
     public static Dictionary<int, CellInfoJson> cellsInfo;
     public static Dictionary<int, PropInfoJson> propsInfo;
+    public static Dictionary<int, EnemyInfoJson> enemiesInfo;
 
     public static void initGameData() {
         initBasicMovements();
         initStatus();
         initPropsInfo();
         initCellsInfo();
+        initEnemiesInfo();
     }
 
+    private static void initEnemiesInfo() {
+        var _mapUrl = $"{Application.streamingAssetsPath}/Data/gameData/enemies.json";
+        var _sr = new StreamReader(_mapUrl);
+        var _json = _sr.ReadToEnd();
+        _sr.Close();
+        enemiesInfo = JsonConvert.DeserializeObject<Dictionary<int, EnemyInfoJson>>(_json);
+        Debug.Log("Loaded enemies info");
+    }
+    
     private static void initPropsInfo() {
         var _mapUrl = $"{Application.streamingAssetsPath}/Data/gameData/propsInfo.json";
         var _sr = new StreamReader(_mapUrl);

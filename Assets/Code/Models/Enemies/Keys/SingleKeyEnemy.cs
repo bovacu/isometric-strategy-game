@@ -3,20 +3,7 @@ using System.Linq;
 using UnityEngine;
 
 public class SingleKeyEnemy : BaseKey {
-    private void Start() {
-        enemyInfoJson = new EnemyInfoJson {
-            baseAttack = 1,
-            baseDefense = 1,
-            baseEnergy = 2,
-            baseHealth = 4
-        };
-
-        currentAttack = enemyInfoJson.baseAttack;
-        currentDefense = enemyInfoJson.baseDefense;
-        currentEnergy = enemyInfoJson.baseEnergy;
-        currentHealth = enemyInfoJson.baseHealth;
-    }
-
+    
     public override void moveAnim(Vector2 _finalPos, bool _inmediate = false) {
         var _mapCell = Map.MapInfo.mapCellPrefabs.First(_c =>
             (int) _c.mapCellJson.pos.x == (int) _finalPos.x &&

@@ -23,10 +23,17 @@ public class MapPropJson {
     public int id;
 }
 
+public class MapEnemiesJson {
+    public Vector2 pos;
+    public string underlayTile;
+    public int id;
+}
+
 public class Map {
 
     public List<MapCellJson> jsonTiles;
     public List<MapPropJson> jsonProps;
+    public List<MapEnemiesJson> jsonEnemies;
     public MapInfo info;
     
     [JsonIgnore] private static Map map;

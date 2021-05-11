@@ -91,20 +91,19 @@ public class RoomLoader : MonoBehaviour {
     }
 
     void spawnEnemies() {
-        var _enemy = Resources.Load("Prefabs/Enemies/SingleKeyEnemy") as GameObject;
-        var _cell = Map.MapInfo.mapCellPrefabs.First(_c => _c.mapCellJson.pos.Equals(new Vector2(0, 2)));
-        var _ske = Instantiate(_enemy, enemiesParent);
-        _ske.GetComponent<RectTransform>().anchoredPosition = _cell.gameObject.GetComponent<RectTransform>().anchoredPosition;
-        var _add = _ske.GetComponent<SingleKeyEnemy>();
-        _add.setCell(_cell.mapCellJson.pos);
-        RoomManager.addEnemy(_add);
-        
-        var _cell2 = Map.MapInfo.mapCellPrefabs.First(_c => _c.mapCellJson.pos.Equals(new Vector2(-3, -2)));
-        var _ske1 = Instantiate(_enemy, enemiesParent);
-        _ske1.GetComponent<RectTransform>().anchoredPosition = _cell2.gameObject.GetComponent<RectTransform>().anchoredPosition;
-        var _add1 = _ske1.GetComponent<SingleKeyEnemy>();
-        _add1.setCell(_cell2.mapCellJson.pos);
-        RoomManager.addEnemy(_add1);
+        foreach (var _enemyJson in Map.MapInfo.jsonEnemies) {
+            var _enemy = Resources.Load(_enemyJson.underlayTile) as GameObject;
+            var _cell = Map.MapInfo.mapCellPrefabs.First(_c => _c.mapCellJson.pos.Equals(_enemyJson.pos));
+            
+            var _enemyPrefab = Instantiate(_enemy, enemiesParent);
+            _enemyPrefab.GetComponent<RectTransform>().anchoredPosition = _cell.gameObject.GetComponent<RectTransform>().anchoredPosition;
+            
+            var _add = _enemyPrefab.GetComponent<SingleKeyEnemy>();
+            _add.setCell(_enemyJson.pos);
+            _add.setInfo(GameConfig.enemiesInfo[_enemyJson.id]);
+            
+            RoomManager.addEnemy(_add);
+        }
     }
     
     private void LoadMap() {

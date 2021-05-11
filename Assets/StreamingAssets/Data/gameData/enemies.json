@@ -1,0 +1,16 @@
+{
+  "0" : {
+    "name" : "singleKeyMelee",
+    "baseEnergy" : 1,
+    "baseHealth" : 3,
+    "baseAttack" : 2,
+    "baseDefense" : 0
+  },
+  "1" : {
+    "name" : "singleKeyRange",
+    "baseEnergy" : 1,
+    "baseHealth" : 2,
+    "baseAttack" : 1,
+    "baseDefense" : 0
+  }
+}

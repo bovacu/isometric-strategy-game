@@ -15,6 +15,19 @@ public abstract class BaseKey : MonoBehaviour, AI {
     protected StatusType currentStatus;
     protected AIState state;
 
+    public EnemyInfoJson getInfo() {
+        return enemyInfoJson;
+    }
+
+    public void setInfo(EnemyInfoJson _enemyInfoJson) {
+        enemyInfoJson = _enemyInfoJson;
+
+        currentAttack = _enemyInfoJson.baseAttack;
+        currentDefense = _enemyInfoJson.baseDefense;
+        currentEnergy = _enemyInfoJson.baseEnergy;
+        currentHealth = _enemyInfoJson.baseHealth;
+    }
+    
     public AIState CurrentAIState {
         get => state;
         set => state = value;

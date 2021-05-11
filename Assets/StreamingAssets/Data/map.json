@@ -479,5 +479,23 @@
             "underlayTile" : "Prefabs/Props/BinProp",
             "id" : 0
         }
+    ],
+    "jsonEnemies" : [
+        {
+            "pos" : {
+                "x" : 0,
+                "y" : 2
+            },
+            "underlayTile" : "Prefabs/Enemies/SingleKeyEnemy",
+            "id" : 0
+        },
+        {
+            "pos" : {
+                "x" : -3,
+                "y" : -2
+            },
+            "underlayTile" : "Prefabs/Enemies/SingleKeyEnemy",
+            "id" : 0
+        }
     ]
 }
