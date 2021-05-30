@@ -69,6 +69,14 @@ public abstract class BaseKey : MonoBehaviour, AI {
         return currentStatus;
     }
 
+    public int getMeleeAttack() {
+        return currentAttack;
+    }
+
+    public void setMeleeAttack(int _meleeAttack) {
+        currentAttack = _meleeAttack;
+    }
+
     public IEnumerator startStateMachine(RoomManager _roomManager) {
         Debug.Log("Starting State Machine");
         state = new IdleState(this);

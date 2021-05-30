@@ -20,406 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ff4361c-badc-40f2-b68c-20fcfc97eaf9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Alpha Cutoff.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Alpha Cutoff.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/AlphaCutoff.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/AlphaCutoff.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/AtlasSpriteBoy.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/AtlasSpriteBoy.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Blur.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Blur.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Blur.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Blur.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Burn.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Burn.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Burn.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Burn.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/BurningSoldier.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/BurningSoldier.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/BurningSoldier.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/BurningSoldier.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/CrazyPattern.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/CrazyPattern.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/CrazyPattern.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/CrazyPattern.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/CustomGradient.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/CustomGradient.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/CustomGradient.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/CustomGradient.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Fade.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Fade.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Fade.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Fade.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Fill Amount 1.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Fill Amount 1.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Fill Amount.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Fill Amount.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/FillAmount.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/FillAmount.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Fish Eye.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Fish Eye.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Frame.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Frame.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Hallucination.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Hallucination.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Hit Effect 1.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Hit Effect 1.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Hit Effect.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Hit Effect.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/HitEffect.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/HitEffect.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Hologram.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Hologram.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/IceSoldier.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/IceSoldier.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/IceSoldier.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/IceSoldier.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Impact.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Impact.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Impact1.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Impact1.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/MotionBlur.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/MotionBlur.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Offset.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Offset.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Offset.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Offset.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Original.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Original.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Posterize.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Posterize.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Posterize.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Posterize.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Rotate.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Rotate.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Rotate.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Rotate.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/ScreenHit.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/ScreenHit.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/ScreenHit.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/ScreenHit.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Shield Soldier.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Shield Soldier.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/ShieldSparksPS.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/ShieldSparksPS.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Shine.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Shine.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Shine.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Shine.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/ShinyBoy.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/ShinyBoy.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Soldier.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Soldier.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/SoldierRun.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/SoldierRun.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Sprite.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Sprite.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Teleport.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Teleport.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Twist 1.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Twist 1.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Twist.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Twist.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Twist.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Twist.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/TwistDisappear.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/TwistDisappear.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Zoom.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Zoom.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Zoom.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/Zoom.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/hpBar.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Animation/hpBar.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Demo.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Demo.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Demo2.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Demo2.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Fonts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Fonts/CaviarDreams.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Fonts/CaviarDreams.ttf.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Fonts/CaviarDreams_Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Fonts/CaviarDreams_Bold.ttf.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Fonts/PoetsenOne-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Fonts/PoetsenOne-Regular.ttf.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Materials/Color Ramp Gradient.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Materials/Color Ramp Gradient.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Materials/DemoGradient.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Materials/DemoGradient.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Materials/Fire.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Materials/Fire.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Materials/FireSoldier.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Materials/FireSoldier.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Materials/Ice.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Materials/Ice.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Materials/IceSoldier.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Materials/IceSoldier.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Materials/MagicRing.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Materials/MagicRing.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Materials/Outline1.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Materials/Outline1.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Materials/Shield.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Materials/Shield.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Materials/ShieldSoldier.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Materials/ShieldSoldier.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Materials/SnowFlake.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Materials/SnowFlake.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Materials/Sparks.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Materials/Sparks.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/PostProcessProfiles.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/PostProcessProfiles/AllIn1PostProcessing.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/PostProcessProfiles/AllIn1PostProcessing.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Scripts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Scripts/All1ShaderDemoController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Scripts/All1ShaderDemoController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Scripts/All1TextureOffsetOverTime.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Scripts/All1TextureOffsetOverTime.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Scripts/AllIn1ScrollProperty.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Scripts/AllIn1ScrollProperty.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Scripts/Demo2AutoScroll.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Scripts/Demo2AutoScroll.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Scripts/DemoCamera.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Scripts/DemoCamera.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Scripts/DemoCircleExpositor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Scripts/DemoCircleExpositor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Scripts/DemoItem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Scripts/DemoItem.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Scripts/DemoRandomColorSwap.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Scripts/DemoRandomColorSwap.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Scripts/DemoRepositionExpositor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Scripts/DemoRepositionExpositor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Textures.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Textures/BoyGirl.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Textures/BoyGirl.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Textures/Circle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Textures/Circle.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Textures/IceTexture.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Textures/IceTexture.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Textures/Square.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Textures/Square.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Textures/backMountain.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Textures/backMountain.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Textures/coals.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Textures/coals.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Textures/coalsEmissive.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Textures/coalsEmissive.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Textures/flag.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Textures/flag.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Textures/flameShape.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Textures/flameShape.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Textures/grass.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Textures/grass.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Textures/magicAura.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Textures/magicAura.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Textures/magic_particle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Textures/magic_particle.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Textures/shield.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Textures/shield.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Textures/shieldGlow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Textures/shieldGlow.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Textures/snowFlake.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Textures/snowFlake.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Textures/spaceSoldier.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Textures/spaceSoldier.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Textures/spaceSoldierColorSwap.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Textures/spaceSoldierColorSwap.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Textures/spaceSoldierGlow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Textures/spaceSoldierGlow.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Textures/spaceSoldierHelmetTopMask.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Textures/spaceSoldierHelmetTopMask.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Textures/spaceSoldierNormal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Textures/spaceSoldierNormal.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Textures/spark.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Textures/spark.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Textures/splotch.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Textures/splotch.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Textures/sunDoodle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Textures/sunDoodle.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Textures/water.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Demo/Textures/water.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Documentation.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Documentation.pdf.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Editor.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Editor/AllIn1ShaderGradientDrawer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Editor/AllIn1ShaderGradientDrawer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Editor/AllIn1ShaderScriptEditor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Editor/AllIn1ShaderScriptEditor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Editor/AllIn1SpriteShader.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Editor/AllIn1SpriteShader.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Editor/AllIn1SpriteShaderStencil.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Editor/AllIn1SpriteShaderStencil.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Editor/AllIn1UrpShader.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Editor/AllIn1UrpShader.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Materials/EmptyMaterial.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Materials/EmptyMaterial.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Materials/ScaledTIme.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Materials/ScaledTIme.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Materials/UIStencil.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Materials/UIStencil.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Resources.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Resources/AllIn1OneShaderFunctions.cginc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Resources/AllIn1OneShaderFunctions.cginc.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Resources/AllIn1SpriteShader.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Resources/AllIn1SpriteShader.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Resources/AllIn1SpriteShaderScaledTime.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Resources/AllIn1SpriteShaderScaledTime.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Resources/AllIn1SpriteShaderUiMask.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Resources/AllIn1SpriteShaderUiMask.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Scripts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Scripts/All1CreateUnifiedOutline.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Scripts/All1CreateUnifiedOutline.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Scripts/AllIn1Shader.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Scripts/AllIn1Shader.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Scripts/AllIn1ShaderWindow.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Scripts/AllIn1ShaderWindow.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Scripts/RandomSeed.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Scripts/RandomSeed.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Scripts/SetAtlasUvs.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Scripts/SetAtlasUvs.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Scripts/SetGlobalTime.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Scripts/SetGlobalTime.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/CustomEditorImage.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/CustomEditorImage.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/CustomEditorImage2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/CustomEditorImage2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/GradientTextures.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/GradientTextures/gradientTexture_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/GradientTextures/gradientTexture_1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/GradientTextures/gradientTexture_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/GradientTextures/gradientTexture_2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/GradientTextures/palette-bumbleberry.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/GradientTextures/palette-bumbleberry.psd.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/GradientTextures/palette-cool.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/GradientTextures/palette-cool.psd.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/GradientTextures/palette-downwell.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/GradientTextures/palette-downwell.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/GradientTextures/palette-earthy.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/GradientTextures/palette-earthy.psd.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/GradientTextures/palette-gameboy-pop-1x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/GradientTextures/palette-gameboy-pop-1x.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/GradientTextures/palette-gameboy.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/GradientTextures/palette-gameboy.psd.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/GradientTextures/palette-metroid-ii-sgb-1x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/GradientTextures/palette-metroid-ii-sgb-1x.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/GradientTextures/palette-mist-gb-1x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/GradientTextures/palette-mist-gb-1x.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/GradientTextures/palette-neapolitan.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/GradientTextures/palette-neapolitan.psd.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/GradientTextures/palette-nintendo-gameboy-bgb-1x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/GradientTextures/palette-nintendo-gameboy-bgb-1x.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/GradientTextures/palette-nintendo-gameboy-black-zero-1x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/GradientTextures/palette-nintendo-gameboy-black-zero-1x.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/GradientTextures/palette-platinum-1x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/GradientTextures/palette-platinum-1x.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/GradientTextures/shadeRamp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/GradientTextures/shadeRamp.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/GradientTextures/toonShadeRamp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/GradientTextures/toonShadeRamp.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/NormalMaps.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/NormalMaps/spaceSoldierNormalMap.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/NormalMaps/spaceSoldierNormalMap.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/UVChecker.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/UVChecker.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/black.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/fire.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/fire.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/fire2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/fire2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/flameNoise.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/flameNoise.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/flameNoise2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/flameNoise2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/gradient.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/gradient.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/gradient2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/gradient2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/rainbow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/rainbow.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/seamlessNoise.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/seamlessNoise.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/toonSeamlessNoise.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/toonSeamlessNoise.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/Textures/white.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllIn1SpriteShader/URP_Import_All1Sh.unitypackage.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/StateMachine.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/StateMachine/AIState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/StateMachine/AIState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/StateMachine/IdleState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/StateMachine/IdleState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/StateMachine/MeleeState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/StateMachine/MeleeState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/StateMachine/MoveState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/StateMachine/MoveState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Data.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Data/game_data.sjson.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PsdPlugin.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unity.2D.Animation.Editor.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unity.2D.Animation.Runtime.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unity.2D.Animation.Triangle.Runtime.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unity.2D.Common.Editor.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unity.2D.Common.Runtime.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unity.2D.Path.Editor.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unity.2D.PixelPerfect.Editor.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unity.2D.PixelPerfect.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unity.2D.Psdimporter.Editor.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unity.2D.Sprite.Editor.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unity.2D.SpriteShape.Editor.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unity.2D.SpriteShape.Runtime.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unity.2D.Tilemap.Editor.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unity.CollabProxy.Editor.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unity.InternalAPIEditorBridge.001.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unity.InternalAPIEngineBridge.001.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unity.Mathematics.Editor.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unity.Mathematics.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unity.Rider.Editor.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unity.TextMeshPro.Editor.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unity.TextMeshPro.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unity.Timeline.Editor.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unity.Timeline.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unity.VSCode.Editor.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnityEditor.TestRunner.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnityEditor.UI.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnityEngine.TestRunner.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnityEngine.UI.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.isometric-strategy-game/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.isometric-strategy-game/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.isometric-strategy-game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.isometric-strategy-game/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Math/IsoMath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Math/IsoMath.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Models/Enemies.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Models/Enemies.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Models/Enemies/AI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Models/Enemies/AI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Models/Enemies/Keys/BaseKey.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Models/Enemies/Keys/BaseKey.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Models/Enemies/Keys/SingleKeyEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Models/Enemies/Keys/SingleKeyEnemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Map/MapControls.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Map/MapControls.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Map/MapLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Map/RoomLoader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Map/MapLoader.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Map/RoomLoader.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Map/RoomManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Map/RoomManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/System/Actions/DoActionManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Actions/DoActionManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/System/Actions/LoadActionManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Actions/LoadActionManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/System/Actions/TooltipTriggerActions.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Actions/TooltipTriggerActions.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/System/Actions/UiInputStopper.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Actions/UiInputStopper.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/System/Locize.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Locize.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/System/Loot.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Loot.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/System/Props.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Props.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/System/Props/BinProp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Props/BinProp.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/System/Props/Prop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Props/Prop.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/System/Tooltip/TileVisualizer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Tooltip/TileVisualizer.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/System/Actions/Target.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/Actions/Target.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/System/PlayerData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/System/PlayerData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/Data/game_data.sjson/642449354.135227" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/Data/game_data.sjson/642449354.135227" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/EditorInstance.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/EditorInstance.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ProtocolInstance.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ProtocolInstance.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptMapper" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptMapper" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ProtocolInstance.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/BuiltinAssemblies.stamp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/SpriteAtlasDatabase.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SpriteAtlasDatabase.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
     </list>
@@ -472,30 +84,30 @@
         <option value="$PROJECT_DIR$/Assets/Code/Models/Cells/CellInteract.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Models/Cells/NonInteractableCell.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/Tooltip/Tooltip.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Models/Map.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Models/Cells/Cell.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/Actions/Target.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Models/GameConfig.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/PlayerData.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/Health/StatusManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/Health/StatusView.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Models/Cells/SpikeUpDownCell.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Math/IsoMath.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Models/Enemies/AI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/Actions/DoActionManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/StateMachine/IdleState.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/Actions/LoadActionManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Models/Enemies/Keys/BaseKey.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/StateMachine/MoveState.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/StateMachine/AIState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Models/Enemies/Keys/SingleKeyEnemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/StateMachine/MeleeState.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/Props/Prop.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/Props/BinProp.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Scripts/Map/MapLoader.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Scripts/Map/RoomLoader.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Scripts/Map/RoomManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Scripts/Map/MapControls.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Models/Map.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Models/GameConfig.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Scripts/Map/RoomLoader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Models/Enemies/Keys/SingleKeyEnemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/Actions/Target.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Models/Enemies/Keys/BaseKey.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/PlayerData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Scripts/System/Actions/DoActionManager.cs" />
       </list>
     </option>
   </component>
@@ -578,7 +190,8 @@
       <workItem from="1618745549171" duration="13508000" />
       <workItem from="1619646903441" duration="2442000" />
       <workItem from="1620058768751" duration="4747000" />
-      <workItem from="1620151492476" duration="6153000" />
+      <workItem from="1620151492476" duration="6243000" />
+      <workItem from="1620750829825" duration="2412000" />
     </task>
     <servers />
   </component>
@@ -703,16 +316,16 @@
     <state x="2192" y="258" key="RiderGenerateDialog/1440.25.1920.1055/0.25.1440.799@1440.25.1920.1055" timestamp="1618747010925" />
     <state x="2192" y="258" key="RiderGenerateDialog/1440.25.1920.1055/0.25.1440.804@1440.25.1920.1055" timestamp="1618086612887" />
     <state x="2192" y="258" key="RiderGenerateDialog/1440.25.1920.1055/0.25.1440.805@1440.25.1920.1055" timestamp="1618072521214" />
-    <state x="1993" y="68" width="784" height="548" key="find.popup" timestamp="1620161224512">
+    <state x="1993" y="68" width="784" height="548" key="find.popup" timestamp="1620756421073">
       <screen x="1440" y="25" width="1920" height="1055" />
     </state>
-    <state x="1993" y="68" width="784" height="548" key="find.popup/1440.25.1920.1055/0.25.1440.796@1440.25.1920.1055" timestamp="1620161224512" />
+    <state x="1993" y="68" width="784" height="548" key="find.popup/1440.25.1920.1055/0.25.1440.796@1440.25.1920.1055" timestamp="1620756421073" />
     <state x="1993" y="68" width="784" height="548" key="find.popup/1440.25.1920.1055/0.25.1440.799@1440.25.1920.1055" timestamp="1618758644202" />
-    <state x="2063" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1620153513751">
+    <state x="2063" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1620758148034">
       <screen x="1440" y="25" width="1920" height="1055" />
     </state>
-    <state x="2063" y="257" width="672" height="678" key="search.everywhere.popup/1440.25.1920.1055/0.25.1440.796@1440.25.1920.1055" timestamp="1620153513751" />
-    <state x="2063" y="257" width="672" height="678" key="search.everywhere.popup/1440.25.1920.1055/0.25.1440.797@1440.25.1920.1055" timestamp="1620153264623" />
+    <state x="2063" y="257" width="672" height="678" key="search.everywhere.popup/1440.25.1920.1055/0.25.1440.796@1440.25.1920.1055" timestamp="1620756385264" />
+    <state x="2063" y="257" width="672" height="678" key="search.everywhere.popup/1440.25.1920.1055/0.25.1440.797@1440.25.1920.1055" timestamp="1620758148034" />
     <state x="2063" y="257" width="672" height="678" key="search.everywhere.popup/1440.25.1920.1055/0.25.1440.799@1440.25.1920.1055" timestamp="1618757804135" />
     <state x="2063" y="257" width="672" height="678" key="search.everywhere.popup/1440.25.1920.1055/0.25.1440.801@1440.25.1920.1055" timestamp="1618520363177" />
     <state x="2063" y="257" width="672" height="678" key="search.everywhere.popup/1440.25.1920.1055/0.25.1440.804@1440.25.1920.1055" timestamp="1617389770225" />

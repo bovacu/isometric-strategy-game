@@ -7,6 +7,9 @@ public interface Target {
     void setStatus(StatusType _status);
     void setCell(Vector2 _cell);
 
+    void setMeleeAttack(int _meleeAttack);
+    int getMeleeAttack();
+    
     Vector2 getCell();
     int getHealth();
     int getEnergy();

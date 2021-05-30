@@ -76,6 +76,14 @@ public class PlayerData : MonoBehaviour, Target {
         return statusManager.currentAppliedStatus;
     }
 
+    public int getMeleeAttack() {
+        return (int)baseAttack;
+    }
+
+    public void setMeleeAttack(int _meleeAttack) {
+        baseAttack = _meleeAttack;
+    }
+
     public void moveAnim(Vector2 _finalPos, bool _inmediate = false) {
         var _mapCell = Map.MapInfo.mapCellPrefabs.First(_c =>
             (int) _c.mapCellJson.pos.x == (int) _finalPos.x &&

@@ -81,6 +81,8 @@ public class DoActionManager {
     private bool basicMelee(ActionData _data, Action _onEnd = null) {
         try {
             _data.roomManager.UserTarget.meleeAnim(_data.finalCell);
+            var _target = _data.roomManager.RoomTargets.FirstOrDefault(_t => _t.getCell().Equals(_data.finalCell));
+            _target.setHealth(_target.getHealth() - _data.roomManager.UserTarget.getMeleeAttack());
             _data.roomManager.SetNextAction((int)NextAction.IDLE);
             
             _onEnd?.Invoke();
